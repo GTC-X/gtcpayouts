@@ -10,7 +10,7 @@ export default function HomePage() {
         className="fixed inset-x-0 bottom-0 z-0 pointer-events-none"
         aria-hidden="true"
       >
-        <div className="relative w-full h-[220px] md:h-[700px]">
+        <div className="relative w-full h-[220px] md:h-[800px]">
           <Image
             src="/bg-overlay.webp"   // <-- replace with your path
             alt=""

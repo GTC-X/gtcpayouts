@@ -270,7 +270,7 @@ const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
         <div className="min-h-screen py-10 mx-auto flex w-full max-w-[600px] flex-col items-center justify-center px-4 text-center">
             <div className="w-full max-w-100%">
                 <Image
-                    src="/logogtcpay.png"
+                    src="/pic/logogtcpay.webp"
                     width={300}
                     height={46}
                     alt="GTCFX"
