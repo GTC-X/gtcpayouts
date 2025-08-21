@@ -7,8 +7,16 @@ const nextConfig = {
   experimental: {
     appDir: true
   },
-  images: {
-    domains: ['gtcfx-bucket.s3.ap-southeast-1.amazonaws.com'],
+images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'gtcfx-bucket.s3.ap-southeast-1.amazonaws.com',
+        pathname: '/**',
+      },
+    ],
+    // For Next.js < 13.1, use:
+    // domains: ['gtcfx-bucket.s3.ap-southeast-1.amazonaws.com'],
   },
 };
 
