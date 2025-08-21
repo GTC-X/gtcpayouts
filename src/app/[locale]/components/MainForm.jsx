@@ -244,8 +244,8 @@ const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
     const inputBase =
         'w-full h-[48px] rounded-[8px] border border-[#CCCCD6] bg-white px-3 placeholder:text-[#B8C6D5] text-[14px] text-[#0F2742] outline-none focus:border-[#14A0DB] transition';
     const selectBase =
-        'w-full h-[48px] rounded-[8px] border border-[#CCCCD6] bg-white text-[14px] text-[#0F2742] outline-none focus:border-[#14A0DB] transition px-3';
-    const errorCls = 'mt-1 text-[12px] text-left text-[#E5484D]';
+        'w-full h-[48px] rounded-[8px] border border-[#CCCCD6] bg-white text-[14px] text-[#0F2742] outline-none focus:border-[#14A0DB] transition px-3 text-left';
+    const errorCls = 'mt-1 text-[12px] text-left text-[#E5484D] ';
 
     const canProceed =
         step === 0
@@ -262,7 +262,7 @@ const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
                     width={300}
                     height={46}
                     alt="GTCFX"
-                    className="lg:w-[330px] mx-auto mb-6 lg:h-[46px] md:w-[120px] md:h-[40px] w-[130px] h-[40px] cursor-pointer"
+                    className="lg:w-[330px] mx-auto mb-6 lg:h-[46px] md:w-[120px] md:h-[40px] w-[200px] h-[31px] cursor-pointer"
                 />
 
                 <div className={`rounded-[18px] bg-white ${cardShadow} border border-[#E6EEF6] mt-10`}>
