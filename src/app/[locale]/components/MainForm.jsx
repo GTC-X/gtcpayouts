@@ -273,7 +273,7 @@ const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
                     <Image
                     src="/logogtcpay.png"
                     width={300}
-                    height={46}
+                    height={46} 
                     alt="GTCFX"
                     className="lg:w-[330px] mx-auto mb-6 lg:h-[46px] md:w-[120px] md:h-[40px] w-[200px] h-[31px] cursor-pointer"
                 />

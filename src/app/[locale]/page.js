@@ -12,10 +12,9 @@ export default function HomePage() {
       >
         <div className="relative w-full h-[220px] md:h-[800px]">
           <Image
-            src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/gtcpayouts/bg-overlay.webp"   // <-- replace with your path
+            src="/bg-overlay.webp"   // <-- replace with your path
             alt=""
             fill
-
             className="object-cover object-top opacity-80"
           />
         </div>
