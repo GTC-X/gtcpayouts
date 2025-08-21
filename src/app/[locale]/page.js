@@ -1,6 +1,8 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import AffiliatedForm from './components/MainForm';
+import bgOverlay from "../../../public/bg-overlay.webp";
+
 
 export default function HomePage() {
   return (
@@ -12,7 +14,7 @@ export default function HomePage() {
       >
         <div className="relative w-full h-[220px] md:h-[800px]">
           <Image
-            src="/bg-overlay.webp"   // <-- replace with your path
+            src={bgOverlay}  // <-- replace with your path
             alt=""
             fill
             className="object-cover object-top opacity-80"
