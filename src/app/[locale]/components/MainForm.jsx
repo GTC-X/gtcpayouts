@@ -885,7 +885,7 @@ const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
     const inputBase =
         'w-full h-[50px] rounded-[12px] border border-[#DDE6F0] bg-white px-3 placeholder:text-[#B8C6D5] text-[14px] text-[#0F2742] outline-none focus:border-[#14A0DB] transition';
     const selectBase =
-        'w-full h-[50px] rounded-[12px] border border-[#DDE6F0] bg-white text-[14px] text-[#0F2742] outline-none focus:border-[#14A0DB] transition';
+        'w-full h-[50px] rounded-[12px] border border-[#DDE6F0] bg-white text-[14px] text-[#0F2742] outline-none focus:border-[#14A0DB] transition px-3';
     const errorCls = 'mt-1 text-[12px] text-left text-[#E5484D]';
 
     const canProceed =
@@ -896,19 +896,19 @@ const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
             : true;
 
     return (
-        <div className="min-h-screen w-full flex items-start justify-center px-4 py-10">
+        <div className="min-h-screen py-10 mx-auto flex w-full max-w-[600px] flex-col items-center justify-center px-4 text-center">
             <div className="w-full max-w-100%">
                 <Image
-                    src="/logo.jpeg"
-                    width={200}
-                    height={72}
+                    src="/logogtcpay.png"
+                    width={300}
+                    height={46}
                     alt="GTCFX"
-                    className="lg:w-[200px] mx-auto mb-6 lg:h-[40px] md:w-[120px] md:h-[40px] w-[130px] h-[40px] cursor-pointer"
+                    className="lg:w-[330px] mx-auto mb-6 lg:h-[46px] md:w-[120px] md:h-[40px] w-[130px] h-[40px] cursor-pointer"
                 />
 
-                <div className={`rounded-[18px] bg-white ${cardShadow} border border-[#E6EEF6]`}>
+                <div className={`rounded-[18px] bg-white ${cardShadow} border border-[#E6EEF6] mt-10`}>
                     <div className="px-6 pt-7 pb-6">
-                        <h2 className="text-[24px] font-extrabold text-[#1A2A3A] text-center mb-1">
+                        <h2 className="text-[24px] font-extrabold text-[#04417B] text-center mb-1">
                             {'Register Now'}
                         </h2>
                         {subtitle ? (
@@ -1023,7 +1023,7 @@ const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
                                                         />
                                                     )}
                                                     inputStyle={{
-                                                        width: 46,
+                                                        width: 54,
                                                         height: 46,
                                                         borderRadius: 10,
                                                         border: '1px solid #DDE6F0',
@@ -1039,7 +1039,7 @@ const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
                                                     <button
                                                         type="button"
                                                         onClick={verifyEmailOtp}
-                                                        className="h-[40px] px-4 rounded-[10px] border border-[#DDE6F0] text-[#0F2742] hover:bg-[#F6FAFE]"
+                                                        className="h-[46px] px-4 rounded-[10px] border border-[#DDE6F0] text-[#0F2742] hover:bg-[#F6FAFE]"
                                                     >
                                                         Verify Code
                                                     </button>
