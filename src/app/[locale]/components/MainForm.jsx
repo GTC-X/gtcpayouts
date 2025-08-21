@@ -15,7 +15,7 @@ import { countryList } from "../context/useCountriesDetails";
 // import { countries as phoneAllowed } from './defaultCountries';
 import Link from 'next/link';
 import { toast } from 'react-toastify';
-import Image from 'next/image';
+import Logo from '../assets/logogtcpay.png'
 
 const EmailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -269,16 +269,14 @@ const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
     return (
         <div className="min-h-screen py-10 mx-auto flex w-full max-w-[600px] flex-col items-center justify-center px-4 text-center">
             <div className="w-full max-w-100%">
-                <div className='relative w-full h-full'>
-                    <Image
-                    src="/logogtcpay.png"
-                    width={300}
-                    height={46} 
-                    alt="GTCFX"
-                    className="lg:w-[330px] mx-auto mb-6 lg:h-[46px] md:w-[120px] md:h-[40px] w-[200px] h-[31px] cursor-pointer"
-                />
+                <div className="relative w-full">
+                    <img
+                        src={Logo.src}
+                        alt="GTCFX"
+                        className="block mx-auto mb-6 lg:w-[330px] lg:h-[46px] md:w-[120px] md:h-[40px] w-[200px] h-[31px] cursor-pointer"
+                    />
                 </div>
-                
+
 
                 <div className={`rounded-[18px] bg-white ${cardShadow} border border-[#E6EEF6] mt-10`}>
                     <div className="px-6 pt-7 pb-6">
