@@ -15,7 +15,7 @@ export default function HomePage() {
             src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/gtcpayouts/bg-overlay.webp"   // <-- replace with your path
             alt=""
             fill
-            priority
+
             className="object-cover object-top opacity-80"
           />
         </div>

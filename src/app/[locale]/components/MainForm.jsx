@@ -269,9 +269,9 @@ const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
     return (
         <div className="min-h-screen py-10 mx-auto flex w-full max-w-[600px] flex-col items-center justify-center px-4 text-center">
             <div className="w-full max-w-100%">
-                <div className='relative w-full'>
+                <div className='relative w-full h-full'>
                     <Image
-                    src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/gtcpayouts/logogtcpay.webp"
+                    src="/logogtcpay.png"
                     width={300}
                     height={46}
                     alt="GTCFX"
