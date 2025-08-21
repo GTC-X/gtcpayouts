@@ -57,7 +57,7 @@ const yesNo = ['Yes', 'No'];
 const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
     const searchParams = useSearchParams();
     const path = usePathname();
-    const { country: originCountry, ip: originIp } = useLocationDetail("en");
+    const { countryCode: originCountry, ip: originIp, countryData } = useLocationDetail("en");
 
     // Stepper & OTP state
     const [step, setStep] = useState(0);
@@ -88,8 +88,20 @@ const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
     );
 
     const defaultCountryName =
-        countryList?.find((n) => n.alpha_2_code === originCountry)?.en_short_name ||
+        countryList?.find((n) => n.alpha_2_code == originCountry)?.en_short_name ||
         'UAE (United Arab Emirates)';
+
+    useEffect(() => {
+        if (countryData?.country) {
+            const filterData = countryList.find(
+                (item) => item?.alpha_2_code == countryData.country
+            );
+            formik.setFieldValue(
+                "country",
+                filterData ? filterData?.en_short_name : ""
+            );
+        }
+    }, [countryData?.country, countryList]);
 
     const formik = useFormik({
         initialValues: {
@@ -559,6 +571,7 @@ const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
                                                 (opts || []).map((o) => o.value)
                                             )
                                         }
+                                        className=' text-left'
                                         classNamePrefix="react-select"
                                         styles={{
                                             control: (base, state) => ({
