@@ -223,7 +223,7 @@ const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
 
     // ====== CellXpert submit (kept as in your code) ======
     const sendToCellxpertAPI = async (values) => {
-        const apiUrl = 'https://agents.gtcfx.com/api/registeraffiliate/';
+        const apiUrl = '/api/affilicate';
         const params = new URLSearchParams({
             username: values.userName || values.email,
             password: values?.Password,
