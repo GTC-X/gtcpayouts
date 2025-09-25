@@ -102,8 +102,68 @@ const FEATURES = [
                 />
             </svg>
         ),
-        title: "Ultra-Tight Spreads",
-        body: "Institutional-grade pricing so your clients pay less, trade more, and stick around longer.",
+        title: "Lightning-Fast Deposits & Withdrawals",
+        body: "When we say “instant,” we mean instant! Whether your traders are making deposits or withdrawing their funds, everything is instant. We know that your traders’ money moves as fast as their trades, and the markets never stop.",
+    },
+      {
+        icon: (
+            <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                className="text-[#0B4E8F]"
+            >
+                <path
+                    d="M12 3v18M3 12h18"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                />
+            </svg>
+        ),
+        title: "24/7 Multilingual Support",
+        body: "No matter the time zone your traders are in, our outstanding Customer Care team is here to serve your traders in their language. They’re going to love how we treat them like actual human beings too.",
+    },
+      {
+        icon: (
+            <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                className="text-[#0B4E8F]"
+            >
+                <path
+                    d="M12 3v18M3 12h18"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                />
+            </svg>
+        ),
+        title: "Fuel Engagement with Trading Competitions",
+        body: "When we say “instant,” we mean instant! Whether your traders are making deposits or withdrawing their funds, everything is instant. We know that your traders’ money moves as fast as their trades, and the markets never stop.",
+    },
+     {
+        icon: (
+            <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                className="text-[#0B4E8F]"
+            >
+                <path
+                    d="M12 3v18M3 12h18"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                />
+            </svg>
+        ),
+        title: "GTC VIP is the Ultimate Loyalty Programme",
+        body: "Every trade counts. With GTC VIP, your traders get rewarded for doing what they already do… trading. From supercars and gold bullion to dream holidays, top tech, and apartments in Dubai, this programme keeps them engaged, loyal, and hungry for more.",
     },
 ];
 
@@ -245,7 +305,7 @@ function Card({ icon, title, body }) {
             style={{ borderColor: BRAND.cardBorder }}
         >
             <div className="px-8 py-8">
-                <div className="flex items-center gap-2 text-[#03A7D9]">
+                <div className="flex gap-2 text-[#03A7D9]">
                     {icon}
                     <h3 className="text-[16px] font-semibold text-[#03A7D9]">
                         {title}

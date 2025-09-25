@@ -258,6 +258,21 @@ export default function ReasonsFlipGrid() {
         <div className="mt-5 md:mt-12 text-center">
           <button className=" inline-flex h-[46px] items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]">
             Grow My Business
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              className="translate-x-[1px]"
+              fill="none"
+            >
+              <path
+                d="M9 6l6 6l-6 6"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
           </button>
         </div>
       </div>
@@ -317,8 +332,8 @@ function FrontCard({ title, icon, bgColor, color, band }) {
     band === "teal"
       ? "bg-[linear-gradient(135deg,#00B8D4_0%,#15A7CF_48%,transparent_48%)]"
       : band === "navy"
-      ? "bg-[linear-gradient(135deg,#0B4E8F_0%,#0B6BB2_48%,transparent_48%)]"
-      : "bg-[linear-gradient(135deg,#F59E0B_0%,#F39A0D_48%,transparent_48%)]";
+        ? "bg-[linear-gradient(135deg,#0B4E8F_0%,#0B6BB2_48%,transparent_48%)]"
+        : "bg-[linear-gradient(135deg,#F59E0B_0%,#F39A0D_48%,transparent_48%)]";
 
   return (
     <div className="relative h-full rounded-[16px] overflow-hidden">
