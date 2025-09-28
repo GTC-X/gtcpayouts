@@ -1,0 +1,52 @@
+"use client"
+import { useRouter } from "@/i18n/navigation";
+import React from "react";
+
+export default function CommonLastBanner({ data, page }) {
+    const router = useRouter();
+    return (
+        <section className="relative w-full">
+            {/* Background image */}
+            <img
+                src={data?.bg}  /* ⬅️ replace with your image path */
+                alt=""
+                className="h-[460px] w-full object-center object-cover"
+            />
+
+            {/* Blue overlay */}
+            <div className="absolute inset-0 bg-[#0B65A0]/85" />
+
+            {/* Content */}
+            <div className="absolute inset-0">
+                <div className="mx-auto flex h-full container flex-col items-center justify-center text-center">
+                    <h2 className="text-white font-extrabold max-w-4xl tracking-tight leading-[66px] text-[26px] sm:text-[36px] md:text-[44px] lg:text-[50px]">
+                        {data?.title}
+                    </h2>
+
+                    <button
+                        className="mt-16 inline-flex h-[46px] cursor-pointer items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
+                        onMouseEnter={() => router.prefetch?.("/single-form")} // prefetch on intent too
+                        onClick={() => router.push(`/single-form?source=${page}`)}
+                    >
+                        {data?.btnText}
+                        <svg
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            className="translate-x-[1px]"
+                            fill="none"
+                        >
+                            <path
+                                d="M9 6l6 6l-6 6"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+    );
+}
