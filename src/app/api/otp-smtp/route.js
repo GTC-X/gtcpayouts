@@ -12,9 +12,9 @@ export async function POST(req) {
     lowerCaseAlphabets: false,
   });
   const mailData = {
-    from: '"GTCFX" <portal@mx4.gtcmail.com>',
+    from: '"GTC Payouts" <portal@mx4.gtcmail.com>',
     to: email,
-    subject: "Your GTCFX OTP Code",
+    subject: "Your GTC Payouts OTP Code",
     text: `Your OTP is ${otp}`,
     html:
       locale == "ar"
@@ -36,7 +36,7 @@ export async function POST(req) {
             <!-- Logo -->
             <tr>
               <td align="right" style="padding-bottom: 20px;">
-                <img src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/email-test.png" alt="شعار GTC" style="width: 120px;" />
+                <img src="https://gtcpayouts.vercel.app/_next/static/media/logogtcpay.b11b4629.png" alt="شعار GTC" style="width: 120px;" />
               </td>
             </tr>
 
@@ -77,7 +77,7 @@ export async function POST(req) {
             <tr>
               <td style="font-size:14px;color:#000000;padding-bottom:20px;">
                 إذا كانت لديك أي أسئلة أو تحتاج إلى مساعدة إضافية، فلا تتردد في التواصل معنا عبر 
-                <a href="mailto:support@gtcfx.com" style="color:#0066cc;text-decoration:none;">support@gtcfx.com</a>.
+                <a href="mailto:support@gtcpayouts.com" style="color:#0066cc;text-decoration:none;">support@gtcpayouts.com</a>.
                 نحن هنا لدعمك وضمان أفضل تجربة لك معنا.
               </td>
             </tr>
@@ -100,11 +100,11 @@ export async function POST(req) {
                 <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
                     <td align="right">
-                      <img src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/email-test.png" alt="شعار GTC" style="width: 100px;" />
+                      <img src="https://gtcpayouts.vercel.app/_next/static/media/logogtcpay.b11b4629.png" alt="شعار GTC" style="width: 100px;" />
                     </td>
                   <td align="right" dir="rtl" style="font-size: 13px; color: #192055; line-height: 25px; text-align: right;">
                     📞 الهاتف: <span dir="ltr">+971 800 667788</span><br/>
-                    ✉️ البريد الإلكتروني: <a href="mailto:support@gtcfx.com" style="color: #192055; text-decoration: none;">support@gtcfx.com</a>
+                    ✉️ البريد الإلكتروني: <a href="mailto:support@gtcpayouts.com" style="color: #192055; text-decoration: none;">support@gtcpayouts.com</a>
                   </td>
                   </tr>
                 </table>
@@ -239,7 +239,7 @@ export async function POST(req) {
            <!-- Logo -->
             <tr>
               <td align="left" style="padding-bottom: 20px;">
-                <img src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/email-test.png" alt="GTC Logo" style="width: 120px;" />
+                <img src="https://gtcpayouts.vercel.app/_next/static/media/logogtcpay.b11b4629.png" alt="GTC Logo" style="width: 120px;" />
               </td>
             </tr>
 
@@ -282,7 +282,7 @@ export async function POST(req) {
             <tr>
               <td style="font-size:14px;color:#000000;padding-bottom:20px;">
                 If you’ve got any questions or need further assistance, please don’t hesitate to contact us at 
-                <a href="mailto:support@gtcfx.com" style="color:#0066cc;text-decoration:none;">support@gtcfx.com</a>.
+                <a href="mailto:support@gtcpayouts.com" style="color:#0066cc;text-decoration:none;">support@gtcpayouts.com</a>.
                 We are here to support you and ensure your experience with us is the best you’ve ever experienced.
               </td>
             </tr>
@@ -305,11 +305,11 @@ export async function POST(req) {
                 <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
                     <td align="left">
-                      <img src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/email-test.png" alt="GTC Logo" style="width: 100px;" />
+                      <img src="https://gtcpayouts.vercel.app/_next/static/media/logogtcpay.b11b4629.png" alt="GTC Logo" style="width: 100px;" />
                     </td>
                     <td align="right" style="font-size: 13px; color: #192055; line-height: 25px;">
                       📞 Phone: +971 800 667788<br/>
-                      ✉️ Email: <a href="mailto:support@gtcfx.com" style="color: #192055; text-decoration: none;">support@gtcfx.com</a>
+                      ✉️ Email: <a href="mailto:support@gtcpayouts.com" style="color: #192055; text-decoration: none;">support@gtcpayouts.com</a>
                     </td>
                   </tr>
                   

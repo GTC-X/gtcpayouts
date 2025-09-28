@@ -17,7 +17,7 @@ export const emailTempletesEnglish = (data) => {
            <!-- Logo -->
             <tr>
               <td align="left" style="padding-bottom: 20px;">
-                <img src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/email-test.png" alt="GTC Logo" style="width: 140px;" />
+                <img src="https://gtcpayouts.vercel.app/_next/static/media/logogtcpay.b11b4629.png" alt="GTC Logo" style="width: 140px;" />
               </td>
             </tr>
 
@@ -85,11 +85,11 @@ You’ve just filled in the GTC Partnership Programme form. Here’s what to do 
                 <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
                     <td align="left">
-                      <img src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/email-test.png" alt="GTC Logo" style="width: 140px;" />
+                      <img src="https://gtcpayouts.vercel.app/_next/static/media/logogtcpay.b11b4629.png" alt="GTC Logo" style="width: 140px;" />
                     </td>
                     <td align="right" style="font-size: 13px; color: #192055; line-height: 25px;">
                       📞 Phone: +971 800 667788<br/>
-                      ✉️ Email: <a href="mailto:support@gtcfx.com" style="color: #192055; text-decoration: none;">support@gtcfx.com</a>
+                      ✉️ Email: <a href="mailto:support@gtcpayouts.com" style="color: #192055; text-decoration: none;">support@gtcpayouts.com</a>
                     </td>
                   </tr>
                   
@@ -284,7 +284,7 @@ export const emailTempletesArabic = (data) => {
                     </td>
                    <td align="right" dir="rtl" style="font-size: 13px; color: #192055; line-height: 25px; text-align: right;">
                     📞 الهاتف: <span dir="ltr">+971 800 667788</span><br/>
-                    ✉️ البريد الإلكتروني: <a href="mailto:support@gtcfx.com" style="color: #192055; text-decoration: none;">support@gtcfx.com</a>
+                    ✉️ البريد الإلكتروني: <a href="mailto:support@gtcpayouts.com" style="color: #192055; text-decoration: none;">support@gtcpayouts.com</a>
                   </td>
                   </tr>
                 </table>
@@ -497,7 +497,7 @@ Confirm your email to switch to GTC.
                     </td>
                     <td align="right" style="font-size: 13px; color: #192055; line-height: 25px;">
                       📞 Phone: +971 800 667788<br/>
-                      ✉️ Email: <a href="mailto:support@gtcfx.com" style="color: #192055; text-decoration: none;">support@gtcfx.com</a>
+                      ✉️ Email: <a href="mailto:support@gtcpayouts.com" style="color: #192055; text-decoration: none;">support@gtcpayouts.com</a>
                     </td>
                   </tr>
                   
@@ -682,7 +682,7 @@ export const emailTempleteSwitchArabic = (data) => {
                     </td>
                     <td align="left" style="font-size: 13px; color: #192055; line-height: 25px;">
                       📞 الهاتف: +971 800 667788<br/>
-                      ✉️ البريد: <a href="mailto:support@gtcfx.com" style="color: #192055; text-decoration: none;">support@gtcfx.com</a>
+                      ✉️ البريد: <a href="mailto:support@gtcpayouts.com" style="color: #192055; text-decoration: none;">support@gtcpayouts.com</a>
                     </td>
                   </tr>
                 </table>
@@ -864,7 +864,7 @@ export const emailTempleteSwitchRussian = (data) => {
                     </td>
                     <td align="right" style="font-size: 13px; color: #192055; line-height: 25px;">
                       📞 Телефон: +971 800 667788<br/>
-                      ✉️ Эл. почта: <a href="mailto:support@gtcfx.com" style="color: #192055; text-decoration: none;">support@gtcfx.com</a>
+                      ✉️ Эл. почта: <a href="mailto:support@gtcpayouts.com" style="color: #192055; text-decoration: none;">support@gtcpayouts.com</a>
                     </td>
                   </tr>
                   
@@ -1049,7 +1049,7 @@ Confirma tu correo electrónico para pasarte a GTC.
                     </td>
                     <td align="right" style="font-size: 13px; color: #192055; line-height: 25px;">
                       📞 Teléfono: +971 800 667788<br/>
-                      ✉️ Correo electrónico: <a href="mailto:support@gtcfx.com" style="color: #192055; text-decoration: none;">support@gtcfx.com</a>
+                      ✉️ Correo electrónico: <a href="mailto:support@gtcpayouts.com" style="color: #192055; text-decoration: none;">support@gtcpayouts.com</a>
                     </td>
                   </tr>
                   
@@ -1233,7 +1233,7 @@ Confirme seu e-mail para migrar para a GTC.
                     </td>
                     <td align="right" style="font-size: 13px; color: #192055; line-height: 25px;">
                       📞 Telefone: +971 800 667788<br/>
-                      ✉️ E-mail: <a href="mailto:support@gtcfx.com" style="color: #192055; text-decoration: none;">support@gtcfx.com</a>
+                      ✉️ E-mail: <a href="mailto:support@gtcpayouts.com" style="color: #192055; text-decoration: none;">support@gtcpayouts.com</a>
                     </td>
                   </tr>
                   
@@ -1418,7 +1418,7 @@ export const emailTempleteSwitchChinese = (data) => {
                     </td>
                     <td align="right" style="font-size: 13px; color: #192055; line-height: 25px;">
                       📞 电话：+971 800 667788<br/>
-                      ✉️ 邮箱：<a href="mailto:support@gtcfx.com" style="color: #192055; text-decoration: none;">support@gtcfx.com</a>
+                      ✉️ 邮箱：<a href="mailto:support@gtcpayouts.com" style="color: #192055; text-decoration: none;">support@gtcpayouts.com</a>
                     </td>
                   </tr>
                   
