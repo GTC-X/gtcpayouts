@@ -18,7 +18,7 @@
 
 //       {/* Page content */}
 //       <section className="relative min-h-screen bg-[#F2F6F9]">
-//         {/* Keep content above the overlay */}
+//         {/* Keep content above the overlay */} 
 //         <div className="relative z-20 container mx-auto py-10">
 //           <AffiliatedForm />
 //         </div>
