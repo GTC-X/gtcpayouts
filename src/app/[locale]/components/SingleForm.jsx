@@ -1,19 +1,26 @@
 "use client"
+import { useSearchParams } from "next/navigation";
 import React, { useState } from "react";
 // import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 export default function GtcSignupTabs() {
     const [tab, setTab] = useState("affiliate");
+    const params = useSearchParams()
+    const source = params.get("source");
+    React.useEffect(() => {
+        if (source === "ib") {
+            setTab("ib");
+        }
+    }, [source])
 
     const isAffiliate = tab === "affiliate";
     const btnText = isAffiliate ? "Sign Up as an Affiliate" : "Sign Up as an IB";
 
     return (
-        <div className="relative overflow-hidden font-[Poppins] text-[#0F172A]">
+        <div className="relative overflow-hidden w-full font-[Poppins] text-[#0F172A]">
 
             {/* page container */}
             <div className="relative mx-auto container  py-10 lg:py-12">
-
 
                 {/* main grid */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">

@@ -30,7 +30,7 @@
 // app/page.tsx  (App Router)  — or pages/index.tsx if using Pages Router
 import AffiliatedForm from "./components/MainForm";
 import bgOverlay from "./assets/bg-overlay.webp"; // ✅ static import gives a hashed .src at build
- import FxOfferingSection from "./new/components/sectionOne";
+import FxOfferingSection from "./new/components/sectionOne";
 import GtcCpaHero from "./new/components/banner";
 import ReasonsFlipGrid from "./new/components/sectionTwo";
 import ClientsSlider from "./new/components/sectionThree";
@@ -38,11 +38,18 @@ import FaqSection from "./new/components/sectionFour";
 import PartnerCta from "./new/components/lastSection";
 import CommonFooter from "./components/Footer";
 import CommonHeader from "./components/Header";
+import SliderModalPrime from "./components/SliderModal";
+
+export const metadata = {
+  title: "Uptp $1,850 CPA | GTC Payouts",
+  description:
+    "Other FX broker affiliate websites talk about “earning a stable income.” Forget stable. Think explosive! GTC Payouts gives you one of the highest CPA offers in the market. Isn’t it time you grew your Introducing Broker business with us?",
+};
 
 export default function HomePage() {
   return (
     <>
-    <CommonHeader/>
+      <CommonHeader />
       <GtcCpaHero />
       <FxOfferingSection />
       <ReasonsFlipGrid />
@@ -50,6 +57,7 @@ export default function HomePage() {
       <FaqSection />
       <PartnerCta />
       <CommonFooter />
+      <SliderModalPrime isOpen={false} />
     </>
   );
 }

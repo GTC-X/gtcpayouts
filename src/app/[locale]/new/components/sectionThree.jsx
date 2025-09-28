@@ -196,7 +196,7 @@ export default function ClientsSlider() {
 
     return (
         <section className="bg-white">
-            <div className="mx-auto container pt-10 md:pt-14 pb-14">
+            <div className="mx-auto container pt-5 md:pt-14 md:pb-14 pb-10">
                 {/* heading */}
                 <h2 className="text-[28px] md:text-[40px] font-extrabold leading-tight text-[#03A7D9]">
                     Your clients are going to adore trading with GTC
@@ -237,7 +237,7 @@ export default function ClientsSlider() {
                     </div>
 
                     {/* Dots (left) */}
-                    <div className=" flex justify-between mt-10 ">
+                    <div className=" flex justify-between md:mt-10 mt-5 ">
                         <div className="flex items-center gap-2">
                             {pages.map((_, i) => (
                                 <button

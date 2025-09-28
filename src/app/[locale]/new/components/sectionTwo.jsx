@@ -1,3 +1,5 @@
+"use client"
+import { useRouter } from "@/i18n/navigation";
 import React from "react";
 // import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
@@ -229,9 +231,10 @@ const CARDS = [
 
 /** ======= Section ======= */
 export default function ReasonsFlipGrid() {
+  const router = useRouter();
   return (
     <section className="bg-white">
-      <div className="container mx-auto pt-12 pb-14 md:pt-16 md:pb-20 font-[Poppins]">
+      <div className="container mx-auto pt-12 pb-10 md:pt-16 md:pb-20 font-[Poppins]">
         {/* heading */}
         <h2 className="text-center text-[#03A7D9] font-semibold text-[24px] md:text-[32px] leading-tight">
           Here’s why thousands of Affiliates & IBs are
@@ -255,8 +258,11 @@ export default function ReasonsFlipGrid() {
         </div>
 
         {/* CTA */}
-        <div className="mt-5 md:mt-12 text-center">
-          <button className=" inline-flex h-[46px] items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]">
+        <div className="mt-8 md:mt-12 text-center">
+          <button className=" inline-flex h-[46px] cursor-pointer items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
+            onMouseEnter={() => router.prefetch?.("/single-form")} // prefetch on intent too
+            onClick={() => router.push("/single-form?source=affiliate")}
+          >
             Grow My Business
             <svg
               width="18"
@@ -286,7 +292,7 @@ function FlipCard({ front, back }) {
     <div className="group outline-none" tabIndex={0}>
       <div
         className="
-          relative h-[400px] sm:h-[400px] w-full
+          relative h-[350px] sm:h-[400px] w-full
           [transform-style:preserve-3d] transform-gpu transition-transform duration-700
           hover:[transform:rotateY(180deg)]
           focus:[transform:rotateY(180deg)]
@@ -339,7 +345,7 @@ function FrontCard({ title, icon, bgColor, color, band }) {
     <div className="relative h-full rounded-[16px] overflow-hidden">
       {/* diagonal band */}
       <div
-        className={` h-[200px] ${bgColor} [clip-path:none] md:[clip-path:polygon(0%_0%,100%_0,100%_20%,100%_100%,0%_40%)]
+        className={` md:h-[200px] h-[150px] ${bgColor} [clip-path:polygon(0%_0%,100%_0,100%_20%,100%_100%,0%_40%)]
  ${band}`}
       />
 

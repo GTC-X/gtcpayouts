@@ -1,4 +1,3 @@
-'use client'
 import CommonEarningSection from "../components/EarningSection";
 import CommonFlipCard from "../components/FlipCard";
 import CommonFooter from "../components/Footer";
@@ -6,6 +5,11 @@ import CommonHeader from "../components/Header";
 import CommonHeroBanner from "../components/HeroBanner";
 import CommonLastBanner from "../components/LastBanner";
 import CommonSlider from "../components/Slider";
+
+export const metadata = {
+    title: 'Earn Up To $1,850 CPA | GTC Payouts',
+    description: 'Stop chasing small deals. At GTC Payouts, we give affiliates one of the highest CPA offers in the market, up to $1,850 per referral. Global traffic accepted, instant payouts, and no caps. This is how you scale your affiliate business.',
+}
 
 function CheckSvg() {
     return (
@@ -319,11 +323,11 @@ export default function AffiliatePage() {
     return (
         <>
             <CommonHeader />
-            <CommonHeroBanner data={heroData} />
-            <CommonSlider data={sliderData} />
-            <CommonEarningSection data={earningData} />
-            <CommonFlipCard data={flipCardData} />
-            <CommonLastBanner data={lastSectionData} />
+            <CommonHeroBanner data={heroData} page="affiliate" />
+            <CommonSlider data={sliderData} page="affiliate" />
+            <CommonEarningSection data={earningData} page="affiliate" />
+            <CommonFlipCard data={flipCardData} page="affiliate" />
+            <CommonLastBanner data={lastSectionData} page="affiliate" />
             <CommonFooter />
         </>
     );

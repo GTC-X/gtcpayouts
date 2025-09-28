@@ -1,9 +1,12 @@
-'use client'
 import CommonFooter from "../components/Footer";
 import CommonHeader from "../components/Header";
 import bgOverlay from "../assets/bg-overlay.webp"; // ✅ static import gives a hashed .src at build
 import TalkToUs from "../components/TalkToUs";
 
+export const metadata = {
+    title: 'Talk to Us | GTC Payouts',
+    description: 'If you’ve got a question about joining us as a Forex Affiliate or as an Introducing Broker, go ahead and send it over to us. Simply fill in the form and we’ll get back to you!',
+}
 
 export default function page() {
     return (

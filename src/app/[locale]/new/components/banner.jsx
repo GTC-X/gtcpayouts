@@ -1,7 +1,16 @@
 "use client"
+import { useRouter } from "@/i18n/navigation";
 import React from "react";
 
 export default function GtcCpaHero() {
+    const router = useRouter()
+    const [navigating, setNavigating] = React.useState(false);
+
+    const go = React.useCallback(() => {
+        setNavigating(true);
+        // Next.js doesn't support push(url, { state }). Use a query string instead.
+        router.push("/single-form?source=affiliate");
+    }, [router]);
     return (
         <div className="relative overflow-hidden bg-white font-[Poppins] text-[#0F172A]">
             <div className="pointer-events-none absolute inset-0 z-0">
@@ -24,7 +33,7 @@ export default function GtcCpaHero() {
             <main className="relative z-20 mx-auto container pb-10 pt-8 lg:pb-20 lg:pt-20">
                 <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-10">
                     {/* LEFT: copy */}
-                    <div className="lg:col-span-7">
+                    <div className="lg:col-span-7 text-center md:text-left">
                         <p className="text-[50px] text-[#04417B]">Up to</p>
 
                         <h1 className="mt-1">
@@ -41,24 +50,27 @@ export default function GtcCpaHero() {
 
                         <button
                             type="button"
-                            className="mt-10 inline-flex h-[46px] items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
+                            onMouseEnter={() => router.prefetch?.("/single-form")} // prefetch on intent too
+                            onClick={go}
+                            disabled={navigating}
+                            className="mt-10 inline-flex h-[46px] cursor-pointer items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
                         >
                             Grow My Business
-                               <svg
-                            width="18"
-                            height="18"
-                            viewBox="0 0 24 24"
-                            className="translate-x-[1px]"
-                            fill="none"
-                        >
-                            <path
-                                d="M9 6l6 6l-6 6"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            />
-                        </svg>
+                            <svg
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                className="translate-x-[1px]"
+                                fill="none"
+                            >
+                                <path
+                                    d="M9 6l6 6l-6 6"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                />
+                            </svg>
                         </button>
                     </div>
 
@@ -68,14 +80,14 @@ export default function GtcCpaHero() {
                         <img
                             src="/person2.png" // put your cut-out person here (transparent PNG)
                             alt="Businessman"
-                            className=" absolute left-[5%] bottom-0 right-0 z-20 mx-auto max-w-full select-none"
+                            className=" hidden md:block absolute left-[5%] bottom-0 right-0 z-20 mx-auto max-w-full select-none"
                             style={{ width: "82%" }}
                         />
                     </div>
                 </div>
 
                 {/* Stats strip */}
-                <div className="mt-16 lg:mt-16 relative z-50">
+                <div className="md:mt-16 mt-6 lg:mt-16 relative z-50">
                     <div className="rounded-[12px] border border-[#B4C5D2] bg-white px-4 py-4 shadow-[0_10px_30px_rgba(15,23,42,0.08)] sm:px-6 lg:px-8">
                         <div className="grid grid-cols-1 divide-y divide-[#E6ECF2] sm:grid-cols-3 sm:divide-y-0 sm:divide-x lg:grid-cols-5">
                             <Stat value={`Over <b class="text-[#03A7D9]">175K</b><br/> Partners Worldwide`} />

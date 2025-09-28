@@ -1,6 +1,9 @@
+"use client"
+import { useRouter } from "@/i18n/navigation";
 import React from "react";
 
-export default function CommonLastBanner({ data }) {
+export default function CommonLastBanner({ data, page }) {
+    const router = useRouter();
     return (
         <section className="relative w-full">
             {/* Background image */}
@@ -21,7 +24,9 @@ export default function CommonLastBanner({ data }) {
                     </h2>
 
                     <button
-                        className="mt-16 inline-flex h-[46px] items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
+                        className="mt-16 inline-flex h-[46px] cursor-pointer items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
+                        onMouseEnter={() => router.prefetch?.("/single-form")} // prefetch on intent too
+                        onClick={() => router.push(`/single-form?source=${page}`)}
                     >
                         {data?.btnText}
                         <svg

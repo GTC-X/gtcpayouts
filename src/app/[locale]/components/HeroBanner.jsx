@@ -1,8 +1,10 @@
 "use client"
+import { useRouter } from "@/i18n/navigation";
 import React from "react";
 
 /** Pixel-perfect hero (TailwindCSS) with background layers + bubbles */
-export default function CommonHeroBanner({ data }) {
+export default function CommonHeroBanner({ data, page }) {
+    const router = useRouter();
     return (
         <div className="relative overflow-hidden bg-white font-[Poppins] text-[#0F172A]">
 
@@ -26,7 +28,9 @@ export default function CommonHeroBanner({ data }) {
 
                         <button
                             type="button"
-                            className="mt-10 inline-flex h-[46px] items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
+                            className="mt-10 inline-flex h-[46px] cursor-pointer items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
+                            onMouseEnter={() => router.prefetch?.("/single-form")} // prefetch on intent too
+                            onClick={() => router.push(`/single-form?source=${page}`)}
                         >
                             {data?.btnText}
                         </button>

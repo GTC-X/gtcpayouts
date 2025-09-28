@@ -1,3 +1,5 @@
+"use client"
+import { useRouter } from "@/i18n/navigation";
 import React from "react";
 
 export default function FxOfferingSection() {
@@ -34,6 +36,7 @@ export default function FxOfferingSection() {
                             descTop="As a GTC Affiliate, you can earn up to 50% of the revenue that’s generated from all the traders you refer to us."
                             descBold="When your traders trade, you earn, and earn big!"
                             cta="Become a GTC Affiliate"
+                            page="affiliate"
                         />
                         <OfferCard
                             title="IB Programme"
@@ -43,6 +46,7 @@ export default function FxOfferingSection() {
                             descTop="As a GTC IB, you can earn up to 80% of the revenue that’s generated from all the traders you refer to us."
                             descBold="Your traders move the markets & you collect the rewards."
                             cta="Become a GTC IB"
+                            page="ib"
                         />
                     </div>
                 </div>
@@ -59,48 +63,53 @@ function OfferCard({
     descTop,
     descBold,
     cta,
+    page
 }) {
+    const router = useRouter()
     return (
         <div className="rounded-[16px] bg-white text-[#0F172A] shadow-[0_12px_36px_rgba(0,0,0,0.10)] border border-white/80 px-6 sm:px-8 py-8 md:py-10">
             <h3 className="text-[20px] md:text-[32px] font-semibold text-[#04417B]">
                 {title}
             </h3>
 
-            <p className="mt-10 text-[20px] tracking-wide text-[#04417B]">{kicker}</p>
+            <p className="md:mt-10 mt-5 text-[20px] tracking-wide text-[#04417B]">{kicker}</p>
             <div
                 className="mt-1 text-[28px] md:text-[32px] text-[#ed8946] font-extrabold leading-tight"
             >
                 {highlight}
             </div>
 
-            <p className="mt-10 text-[20px] leading-[28px] text-[#04417B]">
+            <p className="md:mt-10 mt-5 text-[20px] leading-[28px] text-[#04417B]">
                 {descTop}
             </p>
 
-            <p className="mt-10 text-[22px] font-semibold text-[#04417B]">
+            <p className="md:mt-10 mt-5 text-[22px] font-semibold text-[#04417B]">
                 {descBold}
             </p>
 
             <button
                 type="button"
-                className="mt-10 inline-flex h-[46px] items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
+                className="md:mt-10 mt-5 cursor-pointer inline-flex h-[46px] items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
+                onMouseEnter={() => router.prefetch?.("/single-form")} // prefetch on intent too
+                onClick={() => router.push(`/single-form?source=${page}`)}
+
             >
                 {cta}
-                   <svg
-                            width="18"
-                            height="18"
-                            viewBox="0 0 24 24"
-                            className="translate-x-[1px]"
-                            fill="none"
-                        >
-                            <path
-                                d="M9 6l6 6l-6 6"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            />
-                        </svg>
+                <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    className="translate-x-[1px]"
+                    fill="none"
+                >
+                    <path
+                        d="M9 6l6 6l-6 6"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                    />
+                </svg>
                 {/* <HiOutlineArrowNarrowRight className="text-[18px]" /> */}
             </button>
         </div>

@@ -1,7 +1,10 @@
+"use client"
+import { useRouter } from "@/i18n/navigation";
 import React from "react";
 
 /** ======= Section ======= */
-export default function CommonFlipCard({ data }) {
+export default function CommonFlipCard({ data, page }) {
+    const router = useRouter();
     return (
         <section className="bg-white">
             <div className="container mx-auto pt-12 pb-14 md:pt-16 md:pb-20 font-[Poppins]">
@@ -26,7 +29,10 @@ export default function CommonFlipCard({ data }) {
 
                 {/* CTA */}
                 <div className="mt-5 md:mt-12 text-center">
-                    <button className=" inline-flex h-[46px] items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]">
+                    <button className=" inline-flex h-[46px] cursor-pointer items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
+                        onMouseEnter={() => router.prefetch?.("/single-form")} // prefetch on intent too
+                        onClick={() => router.push(`/single-form?source=${page}`)}
+                    >
                         {data?.btnText}
                     </button>
                 </div>

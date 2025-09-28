@@ -1,4 +1,3 @@
-'use client'
 import CommonEarningSection from "../components/EarningSection";
 import CommonFlipCard from "../components/FlipCard";
 import CommonFooter from "../components/Footer";
@@ -6,6 +5,11 @@ import CommonHeader from "../components/Header";
 import CommonHeroBanner from "../components/HeroBanner";
 import CommonLastBanner from "../components/LastBanner";
 import CommonSlider from "../components/Slider";
+
+export const metadata = {
+    title: 'Earn Up To 18% Rebates as an Introducing Broker with GTC! | GTC Payouts',
+    description: 'Unlike other brokers where you’ll receive just a cut of the profits, at GTC you’re going to keep the lion’s share of revenue from every trader you refer. Instant payouts, global reach, zero caps.',
+}
 
 function CheckSvg() {
     return (
@@ -319,11 +323,11 @@ export default function HomePage() {
     return (
         <>
             <CommonHeader />
-            <CommonHeroBanner data={heroData} />
-            <CommonSlider data={sliderData} />
-            <CommonEarningSection data={earningData} />
-            <CommonFlipCard data={flipCardData} />
-            <CommonLastBanner data={lastSectionData} />
+            <CommonHeroBanner data={heroData} page="ib" />
+            <CommonSlider data={sliderData} page="ib" />
+            <CommonEarningSection data={earningData} page="ib" />
+            <CommonFlipCard data={flipCardData} page="ib" />
+            <CommonLastBanner data={lastSectionData} page="ib" />
             <CommonFooter />
         </>
     );

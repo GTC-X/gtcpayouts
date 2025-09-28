@@ -5,7 +5,7 @@ export default function CommonFooter() {
         <footer className="w-full bg-white">
             <div className="mx-auto container">
                 {/* Row */}
-                <div className="grid grid-cols-2 items-center py-8">
+                <div className="grid grid-cols-2 gap-4 items-center py-8">
                     {/* Left: Logo */}
                     <a href="#" className="flex items-center">
                         {/* swap src with your asset */}

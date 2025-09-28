@@ -9,14 +9,12 @@ export default function TalkToUs() {
         <div className="relative overflow-hidden font-[Poppins] text-[#0F172A]">
 
             {/* page container */}
-            <div className="relative mx-auto container  py-10 lg:py-12">
-
-
+            <div className="relative">
                 {/* main grid */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
                     {/* left copy */}
                     <div className="lg:col-span-6 xl:col-span-7">
-                        <h1 className="mt-2 text-[76px]  leading-[96px] tracking-[-0.02em] font-bold">
+                        <h1 className="mt-2 md:text-[76px] text-[56px]  leading-[96px] tracking-[-0.02em] font-bold">
                             <span className="text-[#03A7D9]">Talk to Us</span>{" "}
                         </h1>
 
