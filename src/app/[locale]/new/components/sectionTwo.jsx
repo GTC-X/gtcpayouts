@@ -351,7 +351,9 @@ function FrontCard({ title, icon, bgColor, color, band }) {
 
       <div className="relative flex flex-col justify-end px-6 pb-6">
         <div className="mb-6">{icon}</div>
-        <h3 className={`text-[26px] leading-[36px] ${color}`}>{title}</h3>
+        <h3 className={`text-[26px] leading-[36px] ${color}`}> {title.split("\n").map((line, i) => (
+      <span key={i} className="block">{line}</span>
+    ))}</h3>
       </div>
     </div>
   );

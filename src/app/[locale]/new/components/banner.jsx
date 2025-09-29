@@ -80,7 +80,7 @@ export default function GtcCpaHero() {
                         <img
                             src="/person2.png" // put your cut-out person here (transparent PNG)
                             alt="Businessman"
-                            className=" hidden md:block absolute left-[5%] bottom-0 right-0 z-20 mx-auto max-w-full select-none"
+                            className=" hidden md:block absolute left-[16%] bottom-0 right-0 z-20 mx-auto max-w-full select-none"
                             style={{ width: "82%" }}
                         />
                     </div>
