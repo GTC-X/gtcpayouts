@@ -91,13 +91,13 @@ export default function GtcCpaHero() {
                     <div className="rounded-[12px] border border-[#B4C5D2] bg-white px-4 py-4 shadow-[0_10px_30px_rgba(15,23,42,0.08)] sm:px-6 lg:px-8">
                         <div className="grid grid-cols-1 divide-y divide-[#E6ECF2] sm:grid-cols-3 sm:divide-y-0 sm:divide-x lg:grid-cols-6">
                             <Stat value={`Over <b class="text-[#03A7D9]">175K</b><br/> Partners Worldwide`} />
+                                                        <Stat value={`Up To <br/> <b class="text-[#03A7D9]">$1,850</b> CPA`} />
+
                             <Stat value={`Over <b class="text-[#03A7D9]">$2 Billion</b> <br/> In Payouts`} />
-                             <Stat value={`Over <b class="text-[#03A7D9]">$3.3 Million</b> <br/> Payouts a Month`} />
-                            <Stat value={`Up To <br/> <b class="text-[#03A7D9]">$1,850</b> CPA`} />
-                              <Stat value={`<b class="text-[#03A7D9]">Award-Winning</b> <br/> IB Programme`} />
+                                                        <Stat value={`<b class="text-[#03A7D9]">Award-Winning</b> <br/> IB Programme`} />
+
+                            <Stat value={`Over <b class="text-[#03A7D9]">$3.3 Million</b> <br/> Payouts a Month`} />
                             <Stat value={`Over <b class="text-[#03A7D9]">Up To 80% in</b> <br/> Rebates for IBs`} />
-                          
-                           
                         </div>
                     </div>
                     <p className="sr-only">Up to 80% in Rebates for IBs</p>
@@ -113,7 +113,7 @@ function Stat({ value }) {
     return (
         <div className="flex items-center justify-center py-3">
             <div className="text-center">
-                <div className="text-[14px] uppercase tracking-wide text-[#04417B]"
+                <div className="text-[14px] tracking-wide text-[#04417B]"
                     dangerouslySetInnerHTML={{ __html: value }}
                 />
             </div>
