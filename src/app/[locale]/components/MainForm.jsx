@@ -267,22 +267,13 @@ const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
             : true;
 
     return (
-        <div className="min-h-screen py-10 mx-auto flex w-full max-w-[600px] flex-col items-center justify-center px-4 text-center">
+        <div className="mx-auto flex w-full flex-col items-center justify-center text-center">
             <div className="w-full max-w-100%">
-                <div className="relative w-full">
-                    <img
-                        src={Logo.src}
-                        alt="GTCFX"
-                        className="block mx-auto mb-6 lg:w-[330px] lg:h-[46px] md:w-[120px] md:h-[40px] w-[200px] h-[31px] cursor-pointer"
-                    />
-                </div>
+       
 
-
-                <div className={`rounded-[18px] bg-white ${cardShadow} border border-[#E6EEF6] mt-10`}>
+                <div className={` bg-white ${cardShadow} border border-[#E6EEF6]`}>
                     <div className="px-6 pt-7 pb-6">
-                        <h2 className="text-[24px] font-extrabold text-[#04417B] text-center mb-1">
-                            {'Register Now'}
-                        </h2>
+                  
                         {subtitle ? (
                             <p className="text-center text-sm text-[#6B7A8B] mb-5">{subtitle}</p>
                         ) : (

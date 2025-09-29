@@ -13,10 +13,24 @@ export default function CommonSlider({ data }) {
     const min = 0;
     const max = 250;
     const step = 1;
+    const base = 600
 
     const pct = ((Math.min(value, max) - min) / (max - min)) * 100;
 
     const payout = value * 3; // <-- as requested
+
+    const getTotal = (value) => {
+        if (value <= 29) {
+            return value * base
+        }
+        if (value >= 30 && value <= 49) {
+            return value * base + 5000
+        }
+        if (value > 49) {
+            return (value * base) + 10000
+        }
+    }
+
     const fmt = (n) =>
         n.toLocaleString(undefined, { maximumFractionDigits: 0 });
 
@@ -84,7 +98,7 @@ export default function CommonSlider({ data }) {
                                 style={{ left: `calc(${pct}% )` }}
                             >
                                 <div className="rounded-md bg-[#17A7D9] px-2.5 py-1 text-sm font-semibold text-white shadow">
-                                    {fmt(value)}
+                                    {fmt((value))}
                                 </div>
                                 <div className="mx-auto h-0 w-0 border-x-8 border-t-8 border-x-transparent border-t-[#17A7D9]" />
                             </div>
@@ -116,7 +130,7 @@ export default function CommonSlider({ data }) {
                             {/* Right metric */}
                             <div className="text-right">
                                 <div className="text-[40px] font-extrabold leading-none text-[#03A7D9]">
-                                    ${fmt(payout)}
+                                    ${fmt(getTotal(value))}
                                 </div>
                                 <div className="mt-1 text-[14px] font-normal tracking-wide text-[#04417B]">
                                     Your total payouts

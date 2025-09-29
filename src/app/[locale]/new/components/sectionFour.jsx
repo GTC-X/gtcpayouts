@@ -11,16 +11,16 @@ const COLORS = {
 };
 
 const FAQS = [
-    { q: "What is the GTC Affiliate Program?", a: "Short answer content goes here." },
-    { q: "Who can join the GTC Affiliate Program?", a: "Short answer content goes here." },
-    { q: "How much can I earn as a GTC Affiliate?", a: "Short answer content goes here." },
-    { q: "What makes GTC Affiliates different from other broker partner programs?", a: "Short answer content goes here." },
-    { q: "What commission structures does GTC Affiliates offer?", a: "Short answer content goes here." },
-    { q: "What benefits will I get from joining GTC Affiliates?", a: "Short answer content goes here." },
-    { q: "How fast will I get paid?", a: "Short answer content goes here." },
-    { q: "Do you provide marketing materials?", a: "Short answer content goes here." },
-    { q: "Is there a minimum traffic requirement to join?", a: "Short answer content goes here." },
-    { q: "Can I track my performance in real time?", a: "Short answer content goes here." },
+    { q: "What is the GTC Affiliate Program?", a: "It’s our CPA partnership program where you earn up to $1,850 per referral. It’s also one of the highest payouts in the industry." },
+    { q: "Who can join the GTC Affiliate Program?", a: "Anyone with traffic, really. So, that includes affiliates, marketers, media buyers, website owners, influencers. If you can send traders, you can earn." },
+    { q: "How much can I earn as a GTC Affiliate?", a: "There’s no cap. With CPA up to $1,850 per trader, your income depends on how much traffic you bring. We’ve already got some affiliates earning $280,000 per month in commission." },
+    { q: "What makes GTC Affiliates different from other broker partner programs?", a: "Bigger payouts, faster withdrawals, global traffic acceptance, and top-tier promo tools that actually convert." },
+    { q: "What commission structures does GTC Affiliates offer?", a: "We a focus on high-paying CPA deals for affiliates, coupled with up to 80% revenue share (Introducing Broker commissions/rebates) for IBs, we’ve got the right commission structure that’s geared at seeing your business grow. Simply pick the one that suits your business model." },
+    { q: "What benefits will I get from joining GTC Affiliates?", a: "Instant payouts, exclusive bonuses, dedicated support, and access to traffic from 80+ countries." },
+    { q: "How fast will I get paid?", a: "We process payouts instantly. Your money moves as fast as your traffic." },
+    { q: "Do you provide marketing materials?", a: "Yes we do! We provide you with banners, landing pages, videos, widgets, and social media creatives. And all of them are fully optimised to convert and bring you commissions." },
+    { q: "Is there a minimum traffic requirement to join?", a: "No. Whether you’re starting small or running big campaigns, we’ve got a deal for you." },
+    { q: "Can I track my performance in real time?", a: "Absolutely. Our dashboard shows you every click, conversion, and commission in real time. Full transparency, zero guesswork." },
 ];
 
 export default function FaqSection() {
@@ -38,7 +38,7 @@ export default function FaqSection() {
             <div className="mx-auto container relative py-12 md:py-16">
                 <div className="grid grid-cols-1 lg:grid-cols-[1fr_1px_1.3fr] gap-10 lg:gap-14 items-center">
                     {/* Left intro */}
-                    <div className="text-center lg:text-right max-w-[520px] lg:ml-auto">
+                    <div className="text-center lg:text-right max-w-[540px] lg:ml-auto">
                         <div className="text-[32px] leading-[22px] " style={{ color: COLORS.teal }}>
                             Our
                         </div>

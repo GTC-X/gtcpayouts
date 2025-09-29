@@ -48,9 +48,7 @@ export default function CommonEarningSection({ data }) {
                             {/* Item 1 */}
                             {data?.cardData?.map((single, index) =>
                                 <div className="flex items-center  flex-col gap-5" key={index}>
-                                    <CircleIcon>
-                                        {single?.icons}
-                                    </CircleIcon>
+                                    <img src={single?.icons} alt="icon" className="h-12 w-12" />
                                     <div className="text-center">
                                         <div
                                             className="font-semibold"

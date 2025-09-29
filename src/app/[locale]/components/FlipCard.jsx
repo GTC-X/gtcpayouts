@@ -34,6 +34,21 @@ export default function CommonFlipCard({ data, page }) {
                         onClick={() => router.push(`/single-form?source=${page}`)}
                     >
                         {data?.btnText}
+                        <svg
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            className="translate-x-[1px]"
+                            fill="none"
+                        >
+                            <path
+                                d="M9 6l6 6l-6 6"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            />
+                        </svg>
                     </button>
                 </div>
             </div>
@@ -105,7 +120,9 @@ function FrontCard({ title, icon, bgColor, color, band }) {
             />
 
             <div className="relative flex flex-col justify-end px-6 pb-6">
-                <div className="mb-6">{icon}</div>
+                <div className="mb-6">
+                    <img src={icon} alt="" className=" shrink-0" />
+                </div>
                 <h3 className={`text-[26px] leading-[36px] ${color}`}>{title}</h3>
             </div>
         </div>
