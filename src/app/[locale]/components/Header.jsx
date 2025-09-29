@@ -14,9 +14,10 @@ const CommonHeader = () => {
                 <nav className="hidden items-center gap-8 text-[14px] text-[#0F172A]/70 md:flex">
                     <Link href="/" className="transition-colors hover:text-[#00B8D4]">
                         Home                    </Link>
-                    <Link className="transition-colors hover:text-[#00B8D4]" href="/affliate">Affiliate</Link>
-                    <Link className="transition-colors hover:text-[#00B8D4]" href="/broker">Broker</Link>
-                    <Link className="transition-colors hover:text-[#00B8D4]" href="/talk-to-us">Get in Touch</Link>
+                    <Link className="transition-colors hover:text-[#00B8D4]" href="/cpa-affiliates">Affiliates</Link>
+                    <Link className="transition-colors hover:text-[#00B8D4]" href="/introducing-broker">IB</Link>
+                    <Link className="transition-colors hover:text-[#00B8D4]" href="/contact-us">Get in Touch</Link>
+                    <Link className="transition-colors hover:bg-[#00B8D4] bg-secondary text-white font-medium px-4 py-2 rounded-lg" href="/sign-up">Sign Up</Link>
                 </nav>
             </header>
 

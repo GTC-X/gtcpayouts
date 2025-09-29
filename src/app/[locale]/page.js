@@ -41,9 +41,9 @@ import CommonHeader from "./components/Header";
 import SliderModalPrime from "./components/SliderModal";
 
 export const metadata = {
-  title: "Uptp $1,850 CPA | GTC Payouts",
+  title: "Become a GTC Partner & Earn More with Top CPA & Rebates",
   description:
-    "Other FX broker affiliate websites talk about “earning a stable income.” Forget stable. Think explosive! GTC Payouts gives you one of the highest CPA offers in the market. Isn’t it time you grew your Introducing Broker business with us?",
+    "Register as a GTC Partner today & earn up to $1,850 CPA as an Affiliate or 80% in rebates as an IB. Fast payouts & loyalty rewards that keep traders active.",
 };
 
 export default function HomePage() {
