@@ -4,31 +4,20 @@ import bgOverlay from "../assets/bg-overlay.webp"; // ✅ static import gives a 
 import CommonHeader from "../components/Header";
 import AffiliatedForm from "../components/MainForm";
 import CommonFooter from "../components/Footer";
+import GtcSignupTabsCard from "../components/GtcSignupTabsCard";
 
 const Page = () => {
   return (
     <>
     <CommonHeader />
+    <section className="relative py-10 bg-[#F2F6F9]">
       {/* Fixed overlay pinned to the bottom of the viewport */}
-      <div
-        aria-hidden="true"
-        className="fixed inset-x-0 bottom-0 z-10 pointer-events-none select-none"
-      >
-        <div
-          className="w-full h-[220px] md:h-[800px] bg-top bg-cover opacity-80"
-          style={{ backgroundImage: `url(${bgOverlay.src})` }}
-        />
+      <div className="max-w-lg mx-auto">
+<GtcSignupTabsCard />
       </div>
-
-      {/* Page content */}
-      <section className="relative bg-[#F2F6F9]">
-        {/* Keep content above the overlay */}
-        <div className="relative z-20 container mx-auto">
-          <AffiliatedForm />
-        </div>
-      </section>
+          </section>
       <CommonFooter />
-    </>
+</>
   );
 };
 
