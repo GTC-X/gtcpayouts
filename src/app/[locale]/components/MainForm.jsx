@@ -267,7 +267,7 @@ const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
             : true;
 
     return (
-        <div className="min-h-screen py-10 mx-auto flex w-full max-w-[600px] flex-col items-center justify-center px-4 text-center">
+        <div className="py-10 md:py-16 xl:py-20 mx-auto flex w-full max-w-[600px] flex-col items-center justify-center px-4 text-center">
             <div className="w-full max-w-100%">
                 <div className="relative w-full">
                     <img

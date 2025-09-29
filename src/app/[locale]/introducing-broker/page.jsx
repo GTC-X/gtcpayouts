@@ -7,8 +7,8 @@ import CommonLastBanner from "../components/LastBanner";
 import CommonSlider from "../components/Slider";
 
 export const metadata = {
-    title: 'Earn Up To 18% Rebates as an Introducing Broker with GTC! | GTC Payouts',
-    description: 'Unlike other brokers where you’ll receive just a cut of the profits, at GTC you’re going to keep the lion’s share of revenue from every trader you refer. Instant payouts, global reach, zero caps.',
+    title: 'GTC’s Introducing Brokers Earn Up To 80% in Rebates',
+    description: 'As a GTC Introducing Broker you can earn up to 80% in rebates, which is the biggest IB rebates scheme in the world! Grow your IB business with GTC!',
 }
 
 function CheckSvg() {
