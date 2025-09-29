@@ -7,8 +7,8 @@ import CommonLastBanner from "../components/LastBanner";
 import CommonSlider from "../components/Slider";
 
 export const metadata = {
-    title: 'Earn Up To $1,850 CPA | GTC Payouts',
-    description: 'Stop chasing small deals. At GTC Payouts, we give affiliates one of the highest CPA offers in the market, up to $1,850 per referral. Global traffic accepted, instant payouts, and no caps. This is how you scale your affiliate business.',
+    title: 'GTC Affiliates Earn Up To $1,850 CPA!',
+    description: 'Join the GTC Affiliate Programme and earn up to $1,850 CPA per referral. One of the highest CPA offers in the world with instant payouts and global reach.',
 }
 
 function CheckSvg() {
