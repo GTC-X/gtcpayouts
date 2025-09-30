@@ -9,7 +9,7 @@ export default function GtcCpaHero() {
     const go = React.useCallback(() => {
         setNavigating(true);
         // Next.js doesn't support push(url, { state }). Use a query string instead.
-        router.push("/single-form?source=affiliate");
+        router.push("/sign-up?source=affiliate");
     }, [router]);
     return (
         <div className="relative overflow-hidden bg-white font-[Poppins] text-[#0F172A]">

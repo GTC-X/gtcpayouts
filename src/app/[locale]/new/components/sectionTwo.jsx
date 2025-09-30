@@ -168,7 +168,7 @@ const CARDS = [
     back: "Your money moves as fast as your traffic. Withdraw your commissions instantly through a wide range of secure payment methods. No delays, no excuses, just quick access to your earnings.",
   },
   {
-    title: "Marketing Tools & Promos",
+    title: "Marketing Tools \n& Promos",
     band: "orange",
     bgColor: "bg-[#ED8946]",
     color: "text-[#ED8946]",

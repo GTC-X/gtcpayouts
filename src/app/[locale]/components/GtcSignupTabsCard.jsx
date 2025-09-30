@@ -27,61 +27,91 @@ export default function GtcSignupTabsCard({ defaultTab = "affiliate", onTabChang
   };
 
   return (
-    <div
-      className="rounded-2xl bg-white border border-[#EEF2F7] shadow-[0_8px_24px_rgba(0,0,0,0.08)] overflow-hidden"
-      role="region"
-      aria-label="GTC signup"
-    >
-      {/* Tabs header */}
-      <div
-        className="flex items-stretch bg-[#F7FAFC]"
-        role="tablist"
-        aria-label="Choose signup type"
-      >
-        <TabButton
-          id="tab-affiliate"
-          controls="panel-affiliate"
-          active={isAffiliate}
-          onClick={() => switchTab("affiliate")}
-        >
-          Sign Up as an Affiliate
-        </TabButton>
+    <div className="relative overflow-hidden font-[Poppins] text-[#0F172A]">
 
-        <TabButton
-          id="tab-ib"
-          controls="panel-ib"
-          active={!isAffiliate}
-          onClick={() => switchTab("ib")}
-        >
-          Sign Up as an IB
-        </TabButton>
-      </div>
+      {/* page container */}
+      <div className="relative">
+        {/* main grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          {/* left copy */}
+          <div className="lg:col-span-6 xl:col-span-7">
+            <p className="mt-4 max-w-[520px] text-[22px] leading-[32px] text-[#04417B]">
+              Sign up as a
+            </p>
+            <h1 className="mt-0 md:text-[76px] text-[56px] leading-[66px]  md:leading-[96px] tracking-[-0.02em] font-bold">
+              <span className="text-[#03A7D9]">GTC Partner</span>{" "}
+            </h1>
 
-      {/* Divider (the thin orange line under the active tab per design) */}
-      <div className="h-[2px] w-full bg-transparent">
-        <div
-          className={`h-[2px] bg-[#F59E0B] transition-all duration-300 ${
-            isAffiliate ? "w-1/2 translate-x-0" : "w-1/2 translate-x-full"
-          }`}
-        />
-      </div>
-
-      {/* Panel area */}
-      <div className="">
-        {isAffiliate ? (
-          <div
-            id="panel-affiliate"
-            role="tabpanel"
-            aria-labelledby="tab-affiliate"
-          >
-            <AffiliatedForm />
+            <p className="mt-4 max-w-[520px] text-[22px] leading-[32px] text-[#04417B]">
+              Simply select whether you want to sign up
+              as an Affiliate or as an IB. Either way,
+              you’re in great hands when you become
+              a GTC Partner.
+            </p>
+            <p className="mt-4 max-w-[520px] text-[22px] leading-[32px] text-[#04417B]">
+              If you’re already a GTC Partner,<span className=" text-[#ED8946] font-semibold"> sign in.</span>
+            </p>
           </div>
-        ) : (
-          <div id="panel-ib" role="tabpanel" aria-labelledby="tab-ib">
-            <IntroducingBrokerForm />
+          <div className="lg:col-span-6 xl:col-span-5">
+            <div
+              className="rounded-2xl bg-white border border-[#EEF2F7] shadow-[0_8px_24px_rgba(0,0,0,0.08)] overflow-hidden"
+              role="region"
+              aria-label="GTC signup"
+            >
+              {/* Tabs header */}
+              <div
+                className="flex items-stretch bg-[#F7FAFC]"
+                role="tablist"
+                aria-label="Choose signup type"
+              >
+                <TabButton
+                  id="tab-affiliate"
+                  controls="panel-affiliate"
+                  active={isAffiliate}
+                  onClick={() => switchTab("affiliate")}
+                >
+                  Sign Up as an Affiliate
+                </TabButton>
+
+                <TabButton
+                  id="tab-ib"
+                  controls="panel-ib"
+                  active={!isAffiliate}
+                  onClick={() => switchTab("ib")}
+                >
+                  Sign Up as an IB
+                </TabButton>
+              </div>
+
+              {/* Divider (the thin orange line under the active tab per design) */}
+              <div className="h-[2px] w-full bg-transparent">
+                <div
+                  className={`h-[2px] bg-[#F59E0B] transition-all duration-300 ${isAffiliate ? "w-1/2 translate-x-0" : "w-1/2 translate-x-full"
+                    }`}
+                />
+              </div>
+
+              {/* Panel area */}
+              <div className="">
+                {isAffiliate ? (
+                  <div
+                    id="panel-affiliate"
+                    role="tabpanel"
+                    aria-labelledby="tab-affiliate"
+                  >
+                    <AffiliatedForm />
+                  </div>
+                ) : (
+                  <div id="panel-ib" role="tabpanel" aria-labelledby="tab-ib">
+                    <IntroducingBrokerForm />
+                  </div>
+                )}
+              </div>
+            </div>
           </div>
-        )}
+        </div>
       </div>
+
     </div>
   );
 }
