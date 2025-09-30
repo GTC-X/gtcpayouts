@@ -25,10 +25,10 @@ const CARDS = [
         />
       </svg>
     ),
-    back: "We don’t play small. With GTC Payouts you can earn up to $1,850 CPA per referral—the highest offers in the FX space.",
+    back: "We don’t play small. With GTC Payouts you can earn up to $1,850 CPA per referral, which is one of the highest offers in the entire FX world. More referrals, more cash, no caps.",
   },
   {
-    title: "Massive Rebates\nfor IBs",
+    title: "Massive Rebates for IBs",
     band: "navy",
     bgColor: "bg-[#04417B]",
     color: "text-[#04417B]",
@@ -63,10 +63,10 @@ const CARDS = [
         </defs>
       </svg>
     ),
-    back: "As an IB, earn up to 80% of the revenue your traders generate. Simple, clear, rapid payouts designed for scale.",
+    back: "As a GTC Introducing Broker, you’ll earn up to 80% of the revenue from every trader you refer. Your traders trade, and you keep the lion’s share. Simple, aggressive, and highly rewarding.",
   },
   {
-    title: "Global Reach,\nLimitless Earnings",
+    title: "Global Reach, Limitless Earnings",
     band: "orange",
     bgColor: "bg-[#ED8946]",
     color: "text-[#ED8946]",
@@ -88,10 +88,10 @@ const CARDS = [
         />
       </svg>
     ),
-    back: "Why limit your earnings? Our reach spans the world—more regions, more traders, more growth for you.",
+    back: "Why limit your earning potential? With GTC, we accept traffic from South America, South East Asia, MENA, and the GCC. This gives you global reach, international scalability, and unlimited Affiliate & IB growth.",
   },
   {
-    title: "Instant Access to\nYour Commissions",
+    title: "Instant Access to Your Commissions",
     band: "navy",
     bgColor: "bg-[#04417B]",
     color: "text-[#04417B]",
@@ -165,10 +165,10 @@ const CARDS = [
         </defs>
       </svg>
     ),
-    back: "Fast, transparent withdrawals. No delays, no excuses—just quick access to your earnings.",
+    back: "Your money moves as fast as your traffic. Withdraw your commissions instantly through a wide range of secure payment methods. No delays, no excuses, just quick access to your earnings.",
   },
   {
-    title: "Marketing Tools &\nPromos",
+    title: "Marketing Tools & Promos",
     band: "orange",
     bgColor: "bg-[#ED8946]",
     color: "text-[#ED8946]",
@@ -200,10 +200,10 @@ const CARDS = [
         />
       </svg>
     ),
-    back: "High-converting banners, landing pages, tracking links, and seasonal promos to accelerate acquisition.",
+    back: "From high-converting banners, landing pages, videos, widgets, and content, we arm you with everything you need to drive traffic, crush conversions, and scale your income fast.",
   },
   {
-    title: "Track Every Click\n& Conversion",
+    title: "Track Every Click & Conversion",
     band: "teal",
     bgColor: "bg-[#03A7D9]",
     color: "text-[#03A7D9]",
@@ -225,7 +225,7 @@ const CARDS = [
         />
       </svg>
     ),
-    back: "Know exactly what works with real-time analytics: clicks, conversions, deposits, and revenue—optimized for growth.",
+    back: "See exactly how much you’re earning in real-time with detailed reports on clicks, referrals, conversions, and commissions. No hidden numbers, just complete transparency on your growth.",
   },
 ];
 
@@ -361,6 +361,6 @@ function FrontCard({ title, icon, bgColor, color, band }) {
 
 function BackCard({ text }) {
   return (
-    <p className="text-[22px] leading-[32px] text-white max-w-[90%]">{text}</p>
+    <p className="text-base md:text-[18px] leading-[32px] text-white">{text}</p>
   );
 }
