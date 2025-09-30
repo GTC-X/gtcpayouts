@@ -30,8 +30,8 @@ export default function CommonFlipCard({ data, page }) {
                 {/* CTA */}
                 <div className="mt-5 md:mt-12 text-center">
                     <button className=" inline-flex h-[46px] cursor-pointer items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
-                        onMouseEnter={() => router.prefetch?.("/single-form")} // prefetch on intent too
-                        onClick={() => router.push(`/single-form?source=${page}`)}
+                        onMouseEnter={() => router.prefetch?.("/sign-up")} // prefetch on intent too
+                        onClick={() => router.push(`/sign-up?source=${page}`)}
                     >
                         {data?.btnText}
                         <svg

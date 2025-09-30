@@ -53,7 +53,7 @@ export default function HomePage() {
         para: "Unlike other brokers where you’ll receive just a cut of the profits, at GTC you’re going to keep the lion’s share of revenue from every trader you refer. Instant payouts, global reach, zero caps.",
         btnText: "Sign Up as an IB",
         titleColor: "#03A7D9",
-        img: "icons/ib-banner.svg",
+        img: "icons/new-ib-banner.png",
     }
     const sliderData = {
         title1: "How Much You’ll Earn as a GTC",

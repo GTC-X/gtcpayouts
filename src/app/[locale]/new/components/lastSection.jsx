@@ -26,8 +26,8 @@ export default function PartnerCta() {
 
           <button
             className="md:mt-16 mt-8 inline-flex cursor-pointer h-[46px] items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
-            onMouseEnter={() => router.prefetch?.("/single-form")} // prefetch on intent too
-            onClick={() => router.push("/single-form?source=affiliate")}
+            onMouseEnter={() => router.prefetch?.("/sign-up")} // prefetch on intent too
+            onClick={() => router.push("/sign-up?source=affiliate")}
           >
             Grow My Business
             <svg

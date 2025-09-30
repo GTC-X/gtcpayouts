@@ -24,7 +24,7 @@ const FEATURES = [
   {
     icon: "/icons/icon3.svg",
     title: "Trusted Global Powerhouse",
-    body: "Every GTC trading account comes with zero swap charges, forever. No exceptions, no fine print. Just pure trading freedom. Tell your traders about how we pass on the swap savings your clients make back to them and watch them smile.",
+    body: "GTC is a multi-regulated market leader, licensed under the SCA (UAE), FSC (Mauritius), FSCA (South Africa) & VFSC (Vanuatu), which gives your traders the trust and protection they deserve.",
   },
 
   // Add more items if you want the arrows/dots to paginate beyond one page
@@ -104,10 +104,9 @@ export default function ClientsSlider() {
                   <div
                     className={`
                       grid gap-6
-                      ${
-                        perView === 3
-                          ? "lg:grid-cols-3 md:grid-cols-2 grid-cols-1"
-                          : ""
+                      ${perView === 3
+                        ? "lg:grid-cols-3 md:grid-cols-2 grid-cols-1"
+                        : ""
                       }
                       ${perView === 2 ? "md:grid-cols-2 grid-cols-1" : ""}
                       ${perView === 1 ? "grid-cols-1" : ""}
@@ -130,9 +129,8 @@ export default function ClientsSlider() {
                   key={i}
                   onClick={() => setPage(i)}
                   aria-label={`Go to slide ${i + 1}`}
-                  className={`h-2.5 w-2.5 rounded-full transition-all ${
-                    i === page ? "bg-[#ED8946]" : "bg-[#C8D3DD]"
-                  }`}
+                  className={`h-2.5 w-2.5 rounded-full transition-all ${i === page ? "bg-[#ED8946]" : "bg-[#C8D3DD]"
+                    }`}
                 />
               ))}
             </div>
@@ -144,11 +142,10 @@ export default function ClientsSlider() {
                 disabled={page === 0}
                 aria-label="Previous"
                 className={`h-9 w-9 rounded-full grid place-items-center text-white transition
-              ${
-                page === 0
-                  ? "bg-[#F3D9A8] cursor-not-allowed"
-                  : "bg-[#ED8946] hover:bg-[#ec990b]"
-              }`}
+              ${page === 0
+                    ? "bg-[#F3D9A8] cursor-not-allowed"
+                    : "bg-[#ED8946] hover:bg-[#ec990b]"
+                  }`}
               >
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                   <path
@@ -163,11 +160,10 @@ export default function ClientsSlider() {
                 onClick={() => go(1)}
                 disabled={page === maxPage}
                 aria-label="Next"
-                className={`h-9 w-9 rounded-full grid place-items-center text-white transition ${
-                  page === maxPage
+                className={`h-9 w-9 rounded-full grid place-items-center text-white transition ${page === maxPage
                     ? "bg-[#F3D9A8] cursor-not-allowed"
                     : "bg-[#ED8946] hover:bg-[#ec990b]"
-                }`}
+                  }`}
               >
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                   <path
@@ -193,9 +189,11 @@ function Card({ icon, title, body }) {
       className="rounded-[10px] border"
       style={{ borderColor: BRAND.cardBorder }}
     >
-      <div className="px-8 py-8">
-        <div className="flex items-start gap-2 text-[#03A7D9]">
-          <img src={icon} alt="" className="shrink-0" />
+      <div className="px-5 py-8">
+        <div className="flex items-center gap-2 text-[#03A7D9]">
+          <div>
+            <img src={icon} alt="" className="shrink-0" />
+          </div>
           <h3 className="text-[16px] font-semibold text-[#03A7D9]">{title}</h3>
         </div>
         <p className="mt-3 text-[16px] leading-[20px] text-[#4D4D70]">{body}</p>

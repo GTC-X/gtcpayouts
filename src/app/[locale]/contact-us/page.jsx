@@ -13,7 +13,7 @@ export default function page() {
         <>
             <div
                 aria-hidden="true"
-                className="fixed inset-x-0 bottom-0 z-10 pointer-events-none select-none"
+                className=" inset-x-0 absolute bottom-0 z-10 pointer-events-none select-none"
             >
                 <div
                     className="w-full h-[220px] md:h-[800px] bg-top bg-cover opacity-60"

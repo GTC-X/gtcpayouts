@@ -7,13 +7,14 @@ const CommonHeader = () => {
         <div className="w-full">
             {/* ==== HEADER ==== */}
             <header className="relative z-20 mx-auto flex container items-center justify-between py-6 w-full">
-                <img src="/logogtcpay.png" alt="GTC Payouts" className="h-8 cursor-pointer w-auto"
+               <Link href="/">
+               <img src="/logogtcpay.png" alt="GTC Payouts" className="h-8 cursor-pointer w-auto"
                     onMouseEnter={() => router.prefetch?.("/")} // prefetch on intent too
                     onClick={() => router.push("/")}
                 />
+               </Link> 
                 <nav className="hidden items-center gap-8 text-[14px] text-[#0F172A]/70 md:flex">
-                    <Link href="/" className="transition-colors hover:text-[#00B8D4]">
-                        Home                    </Link>
+                  
                     <Link className="transition-colors hover:text-[#00B8D4]" href="/cpa-affiliates"> CPA Affiliates</Link>
                     <Link className="transition-colors hover:text-[#00B8D4]" href="/introducing-broker">Introducing Broker</Link>
                     <Link className="transition-colors hover:text-[#00B8D4]" href="/contact-us">Contact Us</Link>

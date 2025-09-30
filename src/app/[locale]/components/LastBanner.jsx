@@ -26,8 +26,8 @@ export default function CommonLastBanner({ data, page }) {
 
                     <button
                         className={`mt-16 inline-flex h-[46px] cursor-pointer items-center gap-2 rounded-[12px] ${isAffiliate ? " bg-white" : "bg-[#ED8946]"} px-6 text-[16px] font-semibold ${isAffiliate ? "text-[#04417B]" : "text-white"} transition-colors ${isAffiliate ? " hover:bg-white" : "hover:bg-[#ea9a0a]"}`}
-                        onMouseEnter={() => router.prefetch?.("/single-form")} // prefetch on intent too
-                        onClick={() => router.push(`/single-form?source=${page}`)}
+                        onMouseEnter={() => router.prefetch?.("/sign-up")} // prefetch on intent too
+                        onClick={() => router.push(`/sign-up?source=${page}`)}
                     >
                         {data?.btnText}
                         <svg
