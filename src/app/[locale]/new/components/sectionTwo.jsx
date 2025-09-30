@@ -25,7 +25,7 @@ const CARDS = [
         />
       </svg>
     ),
-    back: "We don’t play small. With GTC Payouts you can earn up to $1,850 CPA per referral—the highest offers in the FX space.",
+    back: "We don’t play small. With GTC Payouts you can earn up to $1,850 CPA per referral, which is one of the highest offers in the entire FX world. More referrals, more cash, no caps.",
   },
   {
     title: "Massive Rebates for IBs",
@@ -361,6 +361,6 @@ function FrontCard({ title, icon, bgColor, color, band }) {
 
 function BackCard({ text }) {
   return (
-    <p className="text-[22px] leading-[32px] text-white max-w-[90%]">{text}</p>
+    <p className="text-base md:text-[18px] leading-[32px] text-white">{text}</p>
   );
 }
