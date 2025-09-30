@@ -16,7 +16,7 @@ export default function CommonHeroBanner({ data, page }) {
                         <p className="text-[32px] font-semibold text-[#04417B]">{data?.heading1}</p>
 
                         <h1 className="mt-1">
-                            <span className="block text-[64px] leading-[68px] sm:text-[68px] sm:leading-[72px] lg:text-[76px] my-2 font-extrabold text-[#ED8946] tracking-[-0.02em]">
+                            <span className="block text-[64px] leading-[68px] sm:text-[68px] sm:leading-[72px] lg:text-[76px] my-2 font-extrabold text-[#ED8946] tracking-[-0.02em]" style={{ color: data?.titleColor }}>
                                 {data?.title}
                             </span>
                         </h1>
@@ -33,6 +33,21 @@ export default function CommonHeroBanner({ data, page }) {
                             onClick={() => router.push(`/single-form?source=${page}`)}
                         >
                             {data?.btnText}
+                            <svg
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                className="translate-x-[1px]"
+                                fill="none"
+                            >
+                                <path
+                                    d="M9 6l6 6l-6 6"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                />
+                            </svg>
                         </button>
                     </div>
 
@@ -40,7 +55,7 @@ export default function CommonHeroBanner({ data, page }) {
                     <div className="">
                         {/* Person image sits in front of bars/background */}
                         <img
-                            src="/af-banner.svg" // put your cut-out person here (transparent PNG)
+                            src={data?.img || "/af-banner.svg"} // put your cut-out person here (transparent PNG)
                             alt="Businessman"
                             className="  left-[5%] bottom-0 right-0 z-20 mx-auto max-w-full select-none"
                             style={{ width: "100%" }}

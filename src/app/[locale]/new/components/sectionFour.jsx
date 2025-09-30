@@ -38,7 +38,7 @@ export default function FaqSection() {
             <div className="mx-auto container relative py-12 md:py-16">
                 <div className="grid grid-cols-1 lg:grid-cols-[1fr_1px_1.3fr] gap-10 lg:gap-14 items-center">
                     {/* Left intro */}
-                    <div className="text-center lg:text-right max-w-[520px] lg:ml-auto">
+                    <div className="text-center lg:text-right max-w-[540px] lg:ml-auto">
                         <div className="text-[32px] leading-[22px] " style={{ color: COLORS.teal }}>
                             Our
                         </div>

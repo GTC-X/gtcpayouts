@@ -4,6 +4,7 @@ import React from "react";
 
 export default function CommonLastBanner({ data, page }) {
     const router = useRouter();
+    const isAffiliate = page === "affiliate";
     return (
         <section className="relative w-full">
             {/* Background image */}
@@ -24,7 +25,7 @@ export default function CommonLastBanner({ data, page }) {
                     </h2>
 
                     <button
-                        className="mt-16 inline-flex h-[46px] cursor-pointer items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
+                        className={`mt-16 inline-flex h-[46px] cursor-pointer items-center gap-2 rounded-[12px] ${isAffiliate ? " bg-white" : "bg-[#ED8946]"} px-6 text-[16px] font-semibold ${isAffiliate ? "text-[#04417B]" : "text-white"} transition-colors ${isAffiliate ? " hover:bg-white" : "hover:bg-[#ea9a0a]"}`}
                         onMouseEnter={() => router.prefetch?.("/single-form")} // prefetch on intent too
                         onClick={() => router.push(`/single-form?source=${page}`)}
                     >
