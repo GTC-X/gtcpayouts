@@ -28,7 +28,7 @@ const CARDS = [
     back: "We don’t play small. With GTC Payouts you can earn up to $1,850 CPA per referral, which is one of the highest offers in the entire FX world. More referrals, more cash, no caps.",
   },
   {
-    title: "Massive Rebates for IBs",
+    title: "Massive \n Rebates for IBs",
     band: "navy",
     bgColor: "bg-[#04417B]",
     color: "text-[#04417B]",
@@ -66,7 +66,7 @@ const CARDS = [
     back: "As a GTC Introducing Broker, you’ll earn up to 80% of the revenue from every trader you refer. Your traders trade, and you keep the lion’s share. Simple, aggressive, and highly rewarding.",
   },
   {
-    title: "Global Reach, Limitless Earnings",
+    title: "Global Reach, \n Limitless Earnings",
     band: "orange",
     bgColor: "bg-[#ED8946]",
     color: "text-[#ED8946]",
@@ -91,7 +91,7 @@ const CARDS = [
     back: "Why limit your earning potential? With GTC, we accept traffic from South America, South East Asia, MENA, and the GCC. This gives you global reach, international scalability, and unlimited Affiliate & IB growth.",
   },
   {
-    title: "Instant Access to Your Commissions",
+    title: "Instant Access \nto Your Commissions",
     band: "navy",
     bgColor: "bg-[#04417B]",
     color: "text-[#04417B]",
@@ -203,7 +203,7 @@ const CARDS = [
     back: "From high-converting banners, landing pages, videos, widgets, and content, we arm you with everything you need to drive traffic, crush conversions, and scale your income fast.",
   },
   {
-    title: "Track Every Click & Conversion",
+    title: "Track Every \nClick & Conversion",
     band: "teal",
     bgColor: "bg-[#03A7D9]",
     color: "text-[#03A7D9]",
@@ -305,7 +305,7 @@ function FlipCard({ front, back }) {
         onClick={toggle}
         onKeyDown={onKeyDown}
         className={[
-          "relative h-[350px] sm:h-[400px] w-full",
+          "relative h-[330px] sm:h-[400px] w-full",
           "[transform-style:preserve-3d] transform-gpu transition-transform duration-700 will-change-transform",
           // desktop hover still works
           "hover:[transform:rotateY(180deg)]",

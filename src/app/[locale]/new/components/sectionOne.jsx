@@ -21,7 +21,7 @@ export default function FxOfferingSection() {
                     <h2 className="text-[24px] md:text-[40px] leading-tight font-semibold">
                         Our FX Affiliate & IB Offering
                     </h2>
-                    <p className="mt-6 text-[16px] md:text-[20px] leading-[28px] text-white max-w-[760px] mx-auto">
+                    <p className="md:mt-6 mt-3 text-[16px] md:text-[20px] leading-[20px] md:leading-[28px] text-white max-w-[760px] mx-auto">
                         Whether you’re an FX Affiliate or an Introducing Broker, we’ve got the offer
                         that’ll see your business grow.
                     </p>
@@ -67,7 +67,7 @@ function OfferCard({
 }) {
     const router = useRouter()
     return (
-        <div className="rounded-[16px] bg-white text-[#0F172A] shadow-[0_12px_36px_rgba(0,0,0,0.10)] border border-white/80 px-6 sm:px-8 py-8 md:py-10">
+        <div className="rounded-[16px] bg-white text-[#0F172A] shadow-[0_12px_36px_rgba(0,0,0,0.10)] border border-white/80 px-8 sm:px-8 py-8 md:py-10">
             <h3 className="text-[20px] md:text-[32px] font-semibold text-[#04417B]">
                 {title}
             </h3>

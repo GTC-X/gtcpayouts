@@ -480,9 +480,18 @@ const IntroducingBrokerForm = () => {
                     <button
                         disabled={isDisable}
                         type="submit"
-                        className="bg-primary cursor-pointer text-white w-full font-bold py-4 px-8 rounded-md border border-[#CCCCD6]"
+                        className={`w-full h-[54px] rounded-[12px] font-semibold tracking-wide flex items-center justify-center gap-2 transition ${!isDisable
+                            ? 'bg-[#09A5DE] hover:bg-[#0797CB] text-white'
+                            : 'bg-[#F2F2F5] text-[#B2B2C1] cursor-not-allowed'
+                            }`}
                     >
-                        {loading ? t("submitting") : t("submit")}
+                        Sign Up as an IB
+                        <svg width="18" height="18" viewBox="0 0 24 24" className="opacity-90">
+                            <path
+                                fill="currentColor"
+                                d="M13.172 12L8.222 7.05l1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                            />
+                        </svg>
                     </button>
                 </div>
             </form>
