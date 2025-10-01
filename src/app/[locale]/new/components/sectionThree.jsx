@@ -137,43 +137,34 @@ export default function ClientsSlider() {
 
             {/* Arrows (right) */}
             <div className="flex items-center gap-3">
-              <button
-                onClick={() => go(-1)}
-                disabled={page === 0}
-                aria-label="Previous"
-                className={`h-9 w-9 rounded-full grid place-items-center text-white transition
-              ${page === 0
-                    ? "bg-[#F3D9A8] cursor-not-allowed"
-                    : "bg-[#ED8946] hover:bg-[#ec990b]"
-                  }`}
-              >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M15 6l-6 6l6 6"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                  />
-                </svg>
-              </button>
-              <button
-                onClick={() => go(1)}
-                disabled={page === maxPage}
-                aria-label="Next"
-                className={`h-9 w-9 rounded-full grid place-items-center text-white transition ${page === maxPage
-                    ? "bg-[#F3D9A8] cursor-not-allowed"
-                    : "bg-[#ED8946] hover:bg-[#ec990b]"
-                  }`}
-              >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M9 6l6 6l-6 6"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                  />
-                </svg>
-              </button>
+            {/* Prev */}
+<button
+  onClick={() => go(-1)}
+  disabled={page === 0}
+  aria-label="Previous"
+  className={`md:h-9 md:w-9 h-6 w-6 rounded-full grid place-items-center text-white transition
+    ${page === 0 ? "bg-[#F3D9A8] cursor-not-allowed" : "bg-[#ED8946] hover:bg-[#ec990b]"}
+  `}
+>
+  <svg viewBox="0 0 24 24" fill="none" className="w-3 h-3 md:w-5 md:h-5">
+    <path d="M15 6l-6 6l6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+  </svg>
+</button>
+
+{/* Next */}
+<button
+  onClick={() => go(1)}
+  disabled={page === maxPage}
+  aria-label="Next"
+  className={`md:h-9 md:w-9 h-6 w-6 rounded-full grid place-items-center text-white transition
+    ${page === maxPage ? "bg-[#F3D9A8] cursor-not-allowed" : "bg-[#ED8946] hover:bg-[#ec990b]"}
+  `}
+>
+  <svg viewBox="0 0 24 24" fill="none" className="w-3 h-3 md:w-5 md:h-5">
+    <path d="M9 6l6 6l-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+  </svg>
+</button>
+
             </div>
           </div>
         </div>

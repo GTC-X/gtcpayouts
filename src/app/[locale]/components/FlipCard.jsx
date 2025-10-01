@@ -12,7 +12,7 @@ export default function CommonFlipCard({ data, page }) {
                 <h2 className="text-center text-[#03A7D9] font-semibold text-[24px] md:text-[32px] leading-tight">
                     {data?.title}
                 </h2>
-                <p className="mt-8 text-center text-[#04417B] text-[16px] leading-[20px] md:leading-[32px] max-w-[780px] mx-auto">
+                <p className="mt-8 text-center px-3 md:px-0  text-[#04417B] text-[16px] leading-[20px] md:leading-[32px] max-w-[780px] mx-auto">
                     {data?.desc}
                 </p>
 

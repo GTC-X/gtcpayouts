@@ -13,6 +13,7 @@ export default function GtcSignupTabsCard({ defaultTab = "affiliate", onTabChang
   const [tab, setTab] = useState(defaultTab);
   const params = useSearchParams();
 
+
   // Allow preselect via query (?source=ib)
   useEffect(() => {
     const source = params.get("source");
@@ -49,7 +50,15 @@ export default function GtcSignupTabsCard({ defaultTab = "affiliate", onTabChang
               a GTC Partner.
             </p>
             <p className="mt-4 max-w-[520px] md:text-[22px] md:leading-[32px] text-[16px] leading-[20px] text-[#04417B]">
-              If you’re already a GTC Partner,<span className=" text-[#ED8946] font-semibold"> sign in.</span>
+              If you’re already a GTC Partner, <span className=" text-[#ED8946] font-semibold">
+                <a
+                  href={"https://mygtcfx.com/"}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  sign in
+                </a>
+              </span>
             </p>
           </div>
           <div className="lg:col-span-6 xl:col-span-5">
