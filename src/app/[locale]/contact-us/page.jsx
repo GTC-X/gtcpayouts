@@ -11,19 +11,17 @@ export const metadata = {
 export default function page() {
     return (
         <>
-            <div
-                aria-hidden="true"
-                className=" inset-x-0 absolute bottom-0 z-10 pointer-events-none select-none"
-            >
-                <div
-                    className="w-full h-[220px] md:h-[800px] bg-top bg-cover opacity-60"
-                    style={{ backgroundImage: `url(${bgOverlay.src})` }}
-                />
-            </div>
             <section className="relative min-h-screen ">
                 <CommonHeader />
-                <div className="relative z-20 container mx-auto py-10">
-                    <TalkToUs />
+                <div className="relative z-20 py-10">
+                    <img
+                        src="/bg-overlay.webp"
+                        alt=""
+                        className="absolute right-0 left-0 w-full object-none bottom-0 h-[92%] max-h-[780px] opacity-100 md:opacity-60"
+                    />
+                    <div className="container mx-auto ">
+                        <TalkToUs />
+                    </div>
                 </div>
                 <CommonFooter />
             </section>
