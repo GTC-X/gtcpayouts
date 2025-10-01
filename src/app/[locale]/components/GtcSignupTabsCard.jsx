@@ -50,7 +50,7 @@ export default function GtcSignupTabsCard({ defaultTab = "affiliate", onTabChang
               a GTC Partner.
             </p>
             <p className="mt-4 max-w-[520px] md:text-[22px] md:leading-[32px] text-[16px] leading-[20px] text-[#04417B]">
-              Already have an account? <br/><span className=" text-[#ED8946] font-semibold hover:underline">
+              Already have an account? <br/><span className=" text-[#ED8946]  hover:underline">
                 <a
                   href={"https://mygtcfx.com/"}
                   target="_blank"
@@ -59,7 +59,7 @@ export default function GtcSignupTabsCard({ defaultTab = "affiliate", onTabChang
                   Sign in as an Affiliate
                 </a>
               </span> {" "}
-              or  <span className=" text-[#ED8946] font-semibold hover:underline">
+              or  <span className=" text-[#ED8946]  hover:underline">
                 <a
                   href={"https://agents.gtcfx.com/v2/login/"}
                   target="_blank"
