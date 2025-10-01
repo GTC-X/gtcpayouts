@@ -43,7 +43,7 @@ const FEATURES = [
   {
     icon: "/icons/icon6.svg",
     title: "Fuel Engagement with Trading Competitions",
-    body: "When we say “instant,” we mean instant! Whether your traders are making deposits or withdrawing their funds, everything is instant. We know that your traders’ money moves as fast as their trades, and the markets never stop.",
+    body: "GTC’s trading competitions are known worldwide for adding a level of gamification to trading. From demo to live trading competitions, your traders are going to love them. More importantly, the more they trade to win the competition, the more you earn in payouts.",
   },
   {
     icon: "/icons/icon7.svg",
