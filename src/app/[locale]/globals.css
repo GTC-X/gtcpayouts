@@ -134,6 +134,11 @@ html {
   color: #000;
 }
 
+.PhoneInputCountryIcon{
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
 /* Customize PhoneInput inner components */
 .PhoneInput {
   display: flex;
