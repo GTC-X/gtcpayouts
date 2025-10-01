@@ -12,12 +12,12 @@ export default function CommonFlipCard({ data, page }) {
                 <h2 className="text-center text-[#03A7D9] font-semibold text-[24px] md:text-[32px] leading-tight">
                     {data?.title}
                 </h2>
-                <p className="mt-8 text-center text-[#04417B] text-[22px] leading-[32px] max-w-[780px] mx-auto">
+                <p className="mt-8 text-center text-[#04417B] text-[16px] leading-[20px] md:leading-[32px] max-w-[780px] mx-auto">
                     {data?.desc}
                 </p>
 
                 {/* grid */}
-                <div className="mt-8 md:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
+                <div className="mt-8 md:mt-10 px-5 md:px-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
                     {data?.CARDS?.map((c, i) => (
                         <FlipCard
                             key={i}
@@ -28,8 +28,8 @@ export default function CommonFlipCard({ data, page }) {
                 </div>
 
                 {/* CTA */}
-                <div className="mt-5 md:mt-12 text-center">
-                    <button className=" inline-flex h-[46px] cursor-pointer items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
+                <div className="mt-10 md:mt-12 text-center">
+                    <button className=" inline-flex h-[46px] md:w-fit w-full justify-center cursor-pointer items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
                         onMouseEnter={() => router.prefetch?.("/sign-up")} // prefetch on intent too
                         onClick={() => router.push(`/sign-up?source=${page}`)}
                     >
@@ -62,7 +62,7 @@ function FlipCard({ front, back }) {
         <div className="group outline-none" tabIndex={0}>
             <div
                 className="
-          relative h-[400px] sm:h-[400px] w-full
+          relative h-[350px] sm:h-[400px] w-full
           [transform-style:preserve-3d] transform-gpu transition-transform duration-700
           hover:[transform:rotateY(180deg)]
           focus:[transform:rotateY(180deg)]
@@ -115,15 +115,15 @@ function FrontCard({ title, icon, bgColor, color, band }) {
         <div className="relative h-full rounded-[16px] overflow-hidden">
             {/* diagonal band */}
             <div
-                className={` h-[200px] ${bgColor} [clip-path:none] md:[clip-path:polygon(0%_0%,100%_0,100%_20%,100%_100%,0%_40%)]
+                className={` md:h-[200px] h-[180px] ${bgColor}  [clip-path:polygon(0%_0%,100%_0,100%_20%,100%_100%,0%_40%)]
  ${band}`}
             />
 
             <div className="relative flex flex-col justify-end px-6 pb-6">
-                <div className="mb-6">
+                <div className="md:mb-6 mb-3">
                     <img src={icon} alt="" className=" shrink-0" />
                 </div>
-                <h3 className={`text-[26px] leading-[36px] ${color}`}>{title}</h3>
+                <h3 className={`md:text-[26px] text-[24px] leading-[36px] ${color}`}>{title}</h3>
             </div>
         </div>
     );

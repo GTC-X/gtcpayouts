@@ -87,7 +87,7 @@ export default function HomePage() {
                 band: "orange",
                 bgColor: "bg-[#ED8946]",
                 color: "text-[#ED8946]",
-                icon: "/icons/flip-3.svg",
+                icon: "/icons/flip-icon3.svg",
                 back: "Instant commission payouts. Your money moves as fast as you do. Simply make a withdrawal request and the funds will be on their way to you.",
             },
             {

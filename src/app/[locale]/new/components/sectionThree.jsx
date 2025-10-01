@@ -81,12 +81,12 @@ export default function ClientsSlider() {
 
   return (
     <section className="bg-white">
-      <div className="mx-auto container pt-5 md:pt-14 md:pb-14 pb-10">
+      <div className="mx-auto container  pt-5 md:pt-14 md:pb-14 pb-10">
         {/* heading */}
-        <h2 className="text-[28px] md:text-[40px] font-extrabold leading-tight text-[#03A7D9]">
+        <h2 className="text-[24px] leading-[32px] text-center md:text-left md:text-[40px] font-semibold md:leading-tight text-[#03A7D9]">
           Your clients are going to adore trading with GTC
         </h2>
-        <p className="mt-2 text-[15px] md:text-[22px] leading-[32px] text-[#04417B] max-w-[880px]">
+        <p className="md:mt-2  mt-6 text-[16px] leading-[20px] text-center md:text-left md:text-[22px] md:leading-[32px] text-[#04417B] max-w-[880px]">
           We focus on putting your clients first. And yes, we know you hear that
           a lot, but it’s different at GTC, and your traders will tell you just
           how happy they are.
@@ -122,7 +122,7 @@ export default function ClientsSlider() {
           </div>
 
           {/* Dots (left) */}
-          <div className=" flex justify-between md:mt-10 mt-5 ">
+          <div className=" flex md:justify-between items-center flex-col md:flex-row justify-center gap-4 md:mt-10 mt-5 ">
             <div className="flex items-center gap-2">
               {pages.map((_, i) => (
                 <button
@@ -194,9 +194,9 @@ function Card({ icon, title, body }) {
           <div>
             <img src={icon} alt="" className="shrink-0" />
           </div>
-          <h3 className="text-[16px] font-semibold text-[#03A7D9]">{title}</h3>
+          <h3 className="md:text-[16px] text-[13px] font-semibold text-[#03A7D9]">{title}</h3>
         </div>
-        <p className="mt-3 text-[16px] leading-[20px] text-[#4D4D70]">{body}</p>
+        <p className="mt-3 md:text-[16px] text-[13px] leading-[20px] text-[#4D4D70]">{body}</p>
       </div>
     </div>
   );

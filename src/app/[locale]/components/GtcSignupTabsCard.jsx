@@ -34,21 +34,21 @@ export default function GtcSignupTabsCard({ defaultTab = "affiliate", onTabChang
         {/* main grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           {/* left copy */}
-          <div className="lg:col-span-6 xl:col-span-7">
-            <p className="mt-4 max-w-[520px] text-[22px] leading-[32px] text-[#04417B]">
+          <div className="lg:col-span-6 xl:col-span-7 text-center md:text-left">
+            <p className="mt-4 max-w-[520px] md:text-[22px] md:leading-[32px] text-[16px] text-[#04417B]">
               Sign up as a
             </p>
-            <h1 className="mt-0 md:text-[76px] text-[56px] leading-[66px]  md:leading-[96px] tracking-[-0.02em] font-bold">
+            <h1 className="mt-0 md:text-[76px] text-[50px] leading-[64px]  md:leading-[96px] tracking-[-0.02em] font-bold">
               <span className="text-[#03A7D9]">GTC Partner</span>{" "}
             </h1>
 
-            <p className="mt-4 max-w-[520px] text-[22px] leading-[32px] text-[#04417B]">
+            <p className="mt-4 max-w-[520px]md:text-[22px] md:leading-[32px] text-[16px] leading-[20px] text-[#04417B]">
               Simply select whether you want to sign up
               as an Affiliate or as an IB. Either way,
               you’re in great hands when you become
               a GTC Partner.
             </p>
-            <p className="mt-4 max-w-[520px] text-[22px] leading-[32px] text-[#04417B]">
+            <p className="mt-4 max-w-[520px] md:text-[22px] md:leading-[32px] text-[16px] leading-[20px] text-[#04417B]">
               If you’re already a GTC Partner,<span className=" text-[#ED8946] font-semibold"> sign in.</span>
             </p>
           </div>

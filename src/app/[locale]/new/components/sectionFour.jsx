@@ -38,20 +38,20 @@ export default function FaqSection() {
             <div className="mx-auto container relative py-12 md:py-16">
                 <div className="grid grid-cols-1 lg:grid-cols-[1fr_1px_1.3fr] gap-10 lg:gap-14 items-center">
                     {/* Left intro */}
-                    <div className="text-center lg:text-right max-w-[540px] lg:ml-auto">
-                        <div className="text-[32px] leading-[22px] " style={{ color: COLORS.teal }}>
+                    <div className="text-right max-w-[540px] lg:ml-auto">
+                        <div className="text-[24px] leading-[22px] " style={{ color: COLORS.teal }}>
                             Our
                         </div>
 
-                        <h2 className="mt-1 leading-[1.15]">
+                        <h2 className="md:mt-1 leading-[1.15]">
                             <span
-                                className="block text-[40px] my-2 md:text-[34px] font-extrabold"
+                                className="block text-[32px] leading-[40px] md:my-2 md:text-[34px] font-semibold md:font-extrabold"
                                 style={{ color: COLORS.orange }}
                             >
                                 Frequently Asked
                             </span>
                             <span
-                                className="block text-[32px] md:text-[28px]"
+                                className="block text-[24px] md:text-[28px]"
                                 style={{ color: COLORS.teal }}
                             >
                                 Questions
@@ -59,7 +59,7 @@ export default function FaqSection() {
                         </h2>
 
                         <p
-                            className="mt-5 text-[14.5px] md:text-[22px] leading-[32px]"
+                            className="mt-5 text-[14px] leading-[21px] md:text-[22px] md:leading-[32px]"
                             style={{ color: COLORS.body }}
                         >
                             We’ve received a few different questions over the years from Introducing Brokers &amp;
@@ -82,10 +82,10 @@ export default function FaqSection() {
                                     <li key={idx} className="rounded-[10px] border border-transparent">
                                         <button
                                             onClick={() => setOpen(isOpen ? null : idx)}
-                                            className="w-full flex items-center justify-between gap-4 px-5 py-3.5"
+                                            className="w-full flex items-center justify-between gap-4 md:px-5 md:py-3.5 py-2"
                                         >
                                             <span
-                                                className="text-[14.5px] md:text-[18px] font-semibold text-[#04417B] text-right w-full"
+                                                className="text-[12px] md:text-[18px] font-semibold text-[#04417B] text-right w-full"
                                             >
                                                 {item.q}
                                             </span>
@@ -118,7 +118,7 @@ export default function FaqSection() {
                                         >
                                             <div className="overflow-hidden">
                                                 <p
-                                                    className="pb-4 text-[16px] pr-6 text-right leading-[20px]"
+                                                    className="pb-4 md:text-[16px] text-[12px] md:pr-6 pr-3 text-right leading-[14px] md:leading-[20px]"
                                                     style={{ color: COLORS.body }}
                                                 >
                                                     {item.a}

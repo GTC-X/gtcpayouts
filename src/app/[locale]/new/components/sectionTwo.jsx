@@ -240,14 +240,14 @@ export default function ReasonsFlipGrid() {
           Here’s why thousands of Affiliates & IBs are
           <br className="hidden md:block" /> partnering with GTC
         </h2>
-        <p className="mt-8 text-center text-[#04417B] text-[22px] leading-[32px] max-w-[780px] mx-auto">
+        <p className="mt-8 text-center text-[#04417B] text-[16px] leading-[20px] md:leading-[32px] max-w-[780px] mx-auto">
           With over 175,000 partners across a multitude of countries, there’s a
           reason so many forex Affiliates & Introducing Brokers are flocking to
           GTC. Here’s some of the reasons:
         </p>
 
         {/* grid */}
-        <div className="mt-8 md:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
+        <div className="mt-8 md:mt-10 px-5 md:px-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
           {CARDS.map((c, i) => (
             <FlipCard
               key={i}
@@ -258,10 +258,10 @@ export default function ReasonsFlipGrid() {
         </div>
 
         {/* CTA */}
-        <div className="mt-8 md:mt-12 text-center">
-          <button className=" inline-flex h-[46px] cursor-pointer items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
-            onMouseEnter={() => router.prefetch?.("/single-form")} // prefetch on intent too
-            onClick={() => router.push("/single-form?source=affiliate")}
+        <div className="mt-10 md:mt-12 text-center">
+          <button className=" inline-flex h-[46px] w-full md:w-fit cursor-pointer justify-center items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
+            onMouseEnter={() => router.prefetch?.("/sign-up")} // prefetch on intent too
+            onClick={() => router.push("/sign-up?source=affiliate")}
           >
             Grow My Business
             <svg
@@ -286,44 +286,45 @@ export default function ReasonsFlipGrid() {
   );
 }
 
-/** ======= Flip card (pure Tailwind 3D) ======= */
 function FlipCard({ front, back }) {
+  const [flipped, setFlipped] = React.useState(false);
+
+  const toggle = () => setFlipped((v) => !v);
+  const onKeyDown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      toggle();
+    }
+  };
+
   return (
-    <div className="group outline-none" tabIndex={0}>
+    <div className="group outline-none [perspective:1000px]">
       <div
-        className="
-          relative h-[350px] sm:h-[400px] w-full
-          [transform-style:preserve-3d] transform-gpu transition-transform duration-700
-          hover:[transform:rotateY(180deg)]
-          focus:[transform:rotateY(180deg)]
-        "
+        role="button"
+        tabIndex={0}
+        onClick={toggle}
+        onKeyDown={onKeyDown}
+        className={[
+          "relative h-[350px] sm:h-[400px] w-full",
+          "[transform-style:preserve-3d] transform-gpu transition-transform duration-700 will-change-transform",
+          // desktop hover still works
+          "hover:[transform:rotateY(180deg)]",
+          // mobile / keyboard toggle
+          flipped ? "[transform:rotateY(180deg)]" : ""
+        ].join(" ")}
       >
         {/* front */}
         <div
-          className="
-            absolute inset-0 [backface-visibility:hidden]
-            rounded-[16px] bg-white
-            border border-[#EEF2F7]
-          "
-          style={{
-            boxShadow: "1px 6px 16px 0px #0000001A",
-          }}
+          className="absolute inset-0 rounded-[16px] bg-white border border-[#EEF2F7] [backface-visibility:hidden]"
+          style={{ boxShadow: "1px 6px 16px 0px #0000001A", WebkitBackfaceVisibility: "hidden" }}
         >
           {front}
         </div>
 
         {/* back */}
         <div
-          className="
-            absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)]
-            rounded-[16px] text-white
-            bg-[#03A7D9]
-             border border-transparent
-            flex items-center justify-center px-6 text-center
-          "
-          style={{
-            boxShadow: "1px 6px 16px 0px #0000001A",
-          }}
+          className="absolute inset-0 rounded-[16px] text-white bg-[#03A7D9] border border-transparent flex items-center justify-center px-6 text-center [transform:rotateY(180deg)] [backface-visibility:hidden]"
+          style={{ boxShadow: "1px 6px 16px 0px #0000001A", WebkitBackfaceVisibility: "hidden" }}
         >
           {back}
         </div>
@@ -331,6 +332,7 @@ function FlipCard({ front, back }) {
     </div>
   );
 }
+
 
 /** ======= Card faces ======= */
 function FrontCard({ title, icon, bgColor, color, band }) {
@@ -350,8 +352,8 @@ function FrontCard({ title, icon, bgColor, color, band }) {
       />
 
       <div className="relative flex flex-col justify-end px-6 pb-6">
-        <div className="mb-6">{icon}</div>
-        <h3 className={`text-[26px] leading-[36px] ${color}`}> {title.split("\n").map((line, i) => (
+        <div className="md:mb-6 mb-3">{icon}</div>
+        <h3 className={`text-[24px] leading-[30px] md:leading-[36px] ${color}`}> {title.split("\n").map((line, i) => (
       <span key={i} className="block">{line}</span>
     ))}</h3>
       </div>
