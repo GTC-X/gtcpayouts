@@ -52,7 +52,7 @@ export default function CommonHeroBanner({ data, page }) {
                     </div>
 
                     {/* RIGHT: person + bubbles */}
-                    <div className="">
+                    <div className={`${page == "ib" ? "hidden md:block" : "block"} `}>
                         {/* Person image sits in front of bars/background */}
                         <img
                             src={data?.img || "/af-banner.svg"} // put your cut-out person here (transparent PNG)
@@ -61,6 +61,17 @@ export default function CommonHeroBanner({ data, page }) {
                             style={{ width: "100%" }}
                         />
                     </div>
+                    {page == "ib" &&
+                        <div className={`${page == "ib" ? "md:hidden block" : "hidden"} `}>
+                            {/* Person image sits in front of bars/background */}
+                            <img
+                                src={"/new-ib-banner-mobile.png"} // put your cut-out person here (transparent PNG)
+                                alt="Businessman"
+                                className="  left-[5%] bottom-0 right-0 z-20 mx-auto max-w-full select-none"
+                                style={{ width: "100%" }}
+                            />
+                        </div>
+                    }
                 </div>
             </main>
         </div>
