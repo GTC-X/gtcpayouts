@@ -26,7 +26,7 @@ export default function GtcCpaHero() {
                     <img
                         src="/banner-bg.png"
                         alt=""
-                        className="absolute right-0 left-0 w-full bottom-0 h-[92%] max-h-[780px] opacity-60"
+                        className="absolute right-0 left-0 w-full object-none bottom-0 h-[92%] max-h-[780px] opacity-40 md:opacity-60"
                         style={{ transform: "translateY(6%)" }}
                     />
                 </div>

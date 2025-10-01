@@ -57,7 +57,7 @@ export default function CommonEarningSection({ data }) {
                                             {single?.title}
                                         </div>
                                         <p
-                                            className="mt-1 md:text-[20px] text-[15px] leading-[32px]"
+                                            className="mt-1 md:text-[20px] text-[15px] leading-[20px] md:leading-[32px]"
                                             style={{ color: BODY }}
                                         >
                                             {single?.desc}

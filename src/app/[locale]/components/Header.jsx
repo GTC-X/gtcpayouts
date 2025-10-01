@@ -110,7 +110,7 @@ const CommonHeader = () => {
                     aria-haspopup="menu"
                     aria-expanded={open === "login"}
                 >
-                    Login <Chevron open={open === "login"} />
+                    Sign In <Chevron open={open === "login"} />
                 </button>
 
                 {open === "login" && (
@@ -118,8 +118,8 @@ const CommonHeader = () => {
                         className="absolute right-0 mt-4 w-80 rounded-2xl bg-white shadow-lg ring-1 ring-black/5 p-4 z-30 animate-[fadeIn_.12s_ease-out]"
                         onClick={(e) => e.stopPropagation()}
                     >
-                        <p className="text-sm font-semibold text-[#0F172A] mb-4">
-                            Login to your affiliate portal
+                        <p className="text-sm text-center font-semibold text-[#0F172A] mb-4">
+                            Sign In to your affiliate portal
                         </p>
                         <div className="grid grid-cols-2 gap-6">
                             <a
@@ -249,8 +249,8 @@ const CommonHeader = () => {
 
                             {/* Login quick actions */}
                             <div className="mt-2">
-                                <p className="text-sm font-semibold text-[#0F172A] mb-2">
-                                    Login to your affiliate portal
+                                <p className="text-sm text-center font-semibold text-[#0F172A] mb-2">
+                                    Sign In to your affiliate portal
                                 </p>
                                 <div className="grid grid-cols-2 gap-2">
                                     <a

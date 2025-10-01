@@ -111,7 +111,7 @@ export default function HomePage() {
                 band: "teal",
                 bgColor: "bg-[#03A7D9]",
                 color: "text-[#03A7D9]",
-                  icon: "/icons/flip-icon6.svg",
+                  icon: "/icons/flip-icon-10.svg",
                 back: "Every trader you refer receives lifetime Swap-Free trading with GTC. No overnight fees, no hidden charges — just pure trading freedom that keeps them active and keeps you earning.",
             },
         ]

@@ -36,7 +36,7 @@ export default function CommonSlider({ data }) {
 
     return (
         <section className="w-full bg-[#F2F6F9]">
-            <div className="mx-auto container md:pt-16 pt-12 md:pb-44 pb-24">
+            <div className="mx-auto container md:pt-16 pt-12 md:pb-44 pb-16">
                 {/* Heading + sub copy */}
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-10">
                     <div className=" text-center md:text-left">

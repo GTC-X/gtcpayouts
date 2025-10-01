@@ -526,10 +526,10 @@ const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
                                         }}
                                         className={`w-full h-[54px] rounded-[12px] font-semibold tracking-wide flex items-center justify-center gap-2 transition ${canProceed
                                             ? 'bg-[#09A5DE] hover:bg-[#0797CB] text-white'
-                                            : 'bg-[#9FD9EE] text-white cursor-not-allowed'
+                                            : 'bg-[#F2F2F5] text-[#B2B2C1] cursor-not-allowed'
                                             }`}
                                     >
-                                        Next
+                                        Sign Up as an Affiliate
                                         <svg width="18" height="18" viewBox="0 0 24 24" className="opacity-90">
                                             <path
                                                 fill="currentColor"
