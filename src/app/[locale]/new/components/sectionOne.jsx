@@ -17,11 +17,11 @@ export default function FxOfferingSection() {
             </div>
             <div className=" container mx-auto">
                 {/* content */}
-                <div className="mx-auto max-w-5xl py-14 relative md:py-20 text-center text-white font-[Poppins]">
-                    <h2 className="text-[28px] md:text-[40px] leading-tight font-semibold">
+                <div className="mx-auto px-5 max-w-5xl py-14 relative md:py-20 text-center text-white font-[Poppins]">
+                    <h2 className="text-[24px] md:text-[40px] leading-tight font-semibold">
                         Our FX Affiliate & IB Offering
                     </h2>
-                    <p className="mt-6 text-[15px] md:text-[20px] leading-[28px] text-white/85 max-w-[760px] mx-auto">
+                    <p className="mt-6 text-[16px] md:text-[20px] leading-[28px] text-white max-w-[760px] mx-auto">
                         Whether you’re an FX Affiliate or an Introducing Broker, we’ve got the offer
                         that’ll see your business grow.
                     </p>
@@ -72,24 +72,24 @@ function OfferCard({
                 {title}
             </h3>
 
-            <p className="md:mt-10 mt-5 text-[20px] tracking-wide text-[#04417B]">{kicker}</p>
+            <p className="md:mt-10 mt-8 md:text-[20px] text-[14px] tracking-wide text-[#04417B]">{kicker}</p>
             <div
-                className="mt-1 text-[28px] md:text-[32px] text-[#ed8946] font-extrabold leading-tight"
+                className="mt-1 text-[25px] md:text-[32px] text-[#ed8946] font-extrabold leading-tight"
             >
                 {highlight}
             </div>
 
-            <p className="md:mt-10 mt-5 text-[20px] leading-[28px] text-[#04417B]">
+            <p className="md:mt-10 mt-8 md:text-[20px] md:leading-[28px] text-[14px] text-[#04417B]">
                 {descTop}
             </p>
 
-            <p className="md:mt-10 mt-5 text-[22px] font-semibold text-[#04417B]">
+            <p className="md:mt-10 mt-8 md:text-[22px] md:font-semibold font-normal text-[14px] text-[#04417B]">
                 {descBold}
             </p>
 
             <button
                 type="button"
-                className="md:mt-10 mt-5 cursor-pointer inline-flex h-[46px] items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
+                className="md:mt-10 mt-8 cursor-pointer inline-flex md:h-[46px] h-[36px] items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 md:text-[16px] text-[12px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
                 onMouseEnter={() => router.prefetch?.("/sign-up")} // prefetch on intent too
                 onClick={() => router.push(`/sign-up?source=${page}`)}
 

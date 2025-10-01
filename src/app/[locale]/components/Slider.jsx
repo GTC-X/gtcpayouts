@@ -36,15 +36,15 @@ export default function CommonSlider({ data }) {
 
     return (
         <section className="w-full bg-[#F2F6F9]">
-            <div className="mx-auto container pt-16 pb-44">
+            <div className="mx-auto container md:pt-16 pt-12 md:pb-44 pb-24">
                 {/* Heading + sub copy */}
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-10">
-                    <div>
-                        <h2 className="text-[32px] leading-[1.2] font-semibold text-[#04417B]">
+                    <div className=" text-center md:text-left">
+                        <h2 className="md:text-[32px] text-[24px] leading-[1.2] font-semibold text-[#04417B]">
                             {data?.title1}
-                            <span className="block">{data?.title2}</span>
+                            <span className="md:block">{data?.title2}</span>
                         </h2>
-                        <p className="mt-6 text-[22px] leading-[32px] text-[#04417B] max-w-[540px]">
+                        <p className="mt-6 md:text-[22px] text-[16px] leading-[20px] md:leading-[32px] text-[#04417B] max-w-[540px]">
                             {data?.para}
                         </p>
                     </div>
@@ -104,7 +104,7 @@ export default function CommonSlider({ data }) {
                             </div>
 
                             {/* Ticks */}
-                            <div className="mt-4 flex items-center justify-between text-[12px] font-medium text-[#6E8192]">
+                            <div className="mt-4 flex items-center justify-between md:text-[12px] text-[10px] font-medium text-[#6E8192]">
                                 <span>0</span>
                                 <span>50</span>
                                 <span>100</span>
@@ -118,10 +118,10 @@ export default function CommonSlider({ data }) {
                         <div className="mt-6 grid grid-cols-2 gap-6">
                             {/* Left metric */}
                             <div>
-                                <div className="text-[40px] font-normal leading-none text-[#04417B]">
+                                <div className="md:text-[40px] text-[24px] font-normal leading-none text-[#04417B]">
                                     {fmt(value)}
                                 </div>
-                                <div className="mt-1 text-[14px] font-normal tracking-wide text-[#04417B]">
+                                <div className="mt-1 md:text-[14px] text-[10px] font-normal tracking-wide text-[#04417B]">
                                     Total traders
                                     <span className="block">signed up</span>
                                 </div>
@@ -129,10 +129,10 @@ export default function CommonSlider({ data }) {
 
                             {/* Right metric */}
                             <div className="text-right">
-                                <div className="text-[40px] font-extrabold leading-none text-[#03A7D9]">
+                                <div className="md:text-[40px] text-[24px] font-extrabold leading-none text-[#03A7D9]">
                                     ${fmt(getTotal(value))}
                                 </div>
-                                <div className="mt-1 text-[14px] font-normal tracking-wide text-[#04417B]">
+                                <div className="mt-1 md:text-[14px] text-[10px] font-normal tracking-wide text-[#04417B]">
                                     Your total payouts
                                 </div>
                             </div>
