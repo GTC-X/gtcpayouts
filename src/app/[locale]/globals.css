@@ -124,7 +124,7 @@ html {
 }
 .PhoneInputCountry {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: center;
 }
 .PhoneInputCountry img {
@@ -166,6 +166,7 @@ html {
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   padding-right: 0.75rem;
 }
+
 
 .PhoneInputCountrySelectArrow {
   color: white;
