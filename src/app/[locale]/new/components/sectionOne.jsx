@@ -83,7 +83,7 @@ function OfferCard({
                 {descTop}
             </p>
 
-            <p className="md:mt-10 mt-8 md:text-[22px] md:font-semibold font-normal text-[14px] text-[#04417B]">
+            <p className="md:mt-10 mt-8 md:text-[22px] font-semibold text-[14px] text-[#04417B]">
                 {descBold}
             </p>
 
