@@ -20,7 +20,7 @@ export default function CommonLastBanner({ data, page }) {
             {/* Content */}
             <div className="absolute inset-0">
                 <div className="mx-auto flex h-full container flex-col items-center justify-center text-center">
-                    <h2 className="text-white font-semibold max-w-4xl tracking-tight leading-[26px] text-[20px] sm:text-[20px] md:text-[44px] lg:text-[50px]">
+                    <h2 className="text-white font-semibold max-w-4xl tracking-tight leading-[26px] text-[20px]  md:leading-[56px] md:text-[44px] lg:text-[50px]">
                         {data?.title}
                     </h2>
 

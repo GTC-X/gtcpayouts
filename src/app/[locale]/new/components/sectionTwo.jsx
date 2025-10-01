@@ -363,6 +363,6 @@ function FrontCard({ title, icon, bgColor, color, band }) {
 
 function BackCard({ text }) {
   return (
-    <p className="text-base md:text-[18px] leading-[32px] text-white">{text}</p>
+    <p className="text-base md:text-[18px] leading-[20px] md:leading-[32px] text-white">{text}</p>
   );
 }
