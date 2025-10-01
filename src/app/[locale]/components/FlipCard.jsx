@@ -131,6 +131,6 @@ function FrontCard({ title, icon, bgColor, color, band }) {
 
 function BackCard({ text }) {
     return (
-        <p className="text-[22px] leading-[32px] text-white max-w-[90%]">{text}</p>
+        <p className="md:text-[22px] text-base leading-[20px] md:leading-[32px] text-white max-w-[90%]">{text}</p>
     );
 }
