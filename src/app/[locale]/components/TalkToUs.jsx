@@ -5,6 +5,8 @@ import "react-phone-number-input/style.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useRouter } from "@/i18n/navigation";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 export default function TalkToUs() {
     const btnText = "Talk to Us";
@@ -35,7 +37,19 @@ export default function TalkToUs() {
         //   body: JSON.stringify(values),
         // });
         // if (!res.ok) throw new Error("Failed to submit");
-        router.push(`/success?name=${values.firstName}`) // redirect to success page
+        try {
+            const res = await axios.post("/api/send-support-email", JSON.stringify(values));
+            if (res?.data?.message === "Success") {
+                toast.success("Submitted successfully!");
+                router.push(`/success?name=${values.firstName}`) // redirect to success page
+            } else {
+                toast.error("Failed to submit");
+            }
+            console.log(res)
+        } catch (e) {
+            console.log(e)
+            toast.error("Failed to submit");
+        }
     }
 
     return (
