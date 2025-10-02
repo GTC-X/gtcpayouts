@@ -7,10 +7,12 @@ import * as Yup from "yup";
 import { useRouter } from "@/i18n/navigation";
 import axios from "axios";
 import { toast } from "react-toastify";
+import { useLocationDetail } from "../context/useLocationDetail";
 
 export default function TalkToUs() {
     const btnText = "Talk to Us";
     const router = useRouter()
+    const { countryCode: originCountry, ip: originIp, countryData } = useLocationDetail("en");
 
     // ✅ Yup validation schema
     const Schema = Yup.object({
@@ -170,12 +172,12 @@ export default function TalkToUs() {
                                                         id="phone"
                                                         name="phone"
                                                         international
-                                                        defaultCountry="AE"
+                                                        defaultCountry={countryData?.country ?? "AE"}
                                                         countryCallingCodeEditable={false}
                                                         value={values.phone}
                                                         onChange={(val) => setFieldValue("phone", val)}
                                                         onBlur={() => setFieldTouched("phone", true)}
-                                                        className="phone-setting text-[#0F172A]"
+                                                        className="phone-setting !px-2 text-[#0F172A]"
                                                     />
                                                 </div>
                                                 {touched.phone && errors.phone && (
