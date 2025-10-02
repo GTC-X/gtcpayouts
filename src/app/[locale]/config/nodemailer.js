@@ -15,3 +15,8 @@ export const mailOptions = {
     to:"zeeshan@gtcfx.com",  
     bcc: 'mohammad.zeeshan@gtcfx.com',
 }
+
+export const mailOptionsSupport = {
+    from: "portal@mx4.gtcmail.com",
+    to:"partners@gtcpayouts.com",  
+}
