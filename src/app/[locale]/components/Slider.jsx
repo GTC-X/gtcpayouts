@@ -8,18 +8,22 @@ import React from "react";
  * - Slider with bubble, ticks (0, 50, 100, 150, 200, 250+)
  * TailwindCSS required.
  */
-export default function CommonSlider({ data }) {
+export default function CommonSlider({ data, page }) {
     const [value, setValue] = React.useState(210); // example default to match screenshot
     const min = 0;
     const max = 250;
     const step = 1;
     const base = 600
+    const baseIB = 8
 
     const pct = ((Math.min(value, max) - min) / (max - min)) * 100;
 
     const payout = value * 3; // <-- as requested
 
     const getTotal = (value) => {
+        if (page == "ib") {
+            return value * baseIB
+        }
         if (value <= 29) {
             return value * base
         }
