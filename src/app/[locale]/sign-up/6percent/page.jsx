@@ -12,7 +12,6 @@ const Page = () => {
     return (
         <>
             <section className="relative min-h-screen ">
-                <CommonHeader />
                 <div className="relative z-20 py-10">
                     <img
                         src="/bg-overlay.webp"
