@@ -45,7 +45,11 @@ export default function GtcSignupTabsCard({ defaultTab = "affiliate", onTabChang
 
             <p className="mt-4 max-w-[520px] md:text-[22px] md:leading-[32px] text-[16px] leading-[20px] text-[#04417B]">
               Simply select whether you want to sign up
-              as an Affiliate or as an IB.<br /> Either way,
+              as an Affiliate or as an IB.
+            </p>
+
+            <p className="mt-4 max-w-[520px] md:text-[22px] md:leading-[32px] text-[16px] leading-[20px] text-[#04417B]">
+              Either way,
               you’re in great hands when you become
               a GTC Partner.
             </p>

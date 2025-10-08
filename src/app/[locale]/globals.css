@@ -182,6 +182,10 @@ html {
     border: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
+.react-select__single-value span{
+  color: #1a1a47!important;
+}
+
 @media (min-width: 1920px) {
   .hero-bg img {
     object-fit: contain;
