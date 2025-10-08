@@ -4,7 +4,7 @@ import { useSearchParams } from "next/navigation";
 import AffiliatedForm from "./MainForm";
 import IntroducingBrokerForm from "./IntroducingBroker";
 import FormSixPercent from "./FormSixPercent";
-
+import Link from "next/link";
 /**
  * Props:
  *  - defaultTab: "affiliate" | "ib" (optional, defaults to "affiliate")
@@ -14,6 +14,17 @@ export default function GtcSignupTabsCardSixPercent() {
 
     return (
         <div className="relative overflow-hidden font-[Poppins] text-[#0F172A]">
+            <div className="container text-center flex flex-col justify-center items-center mb-0 md:mb-10">
+                     <Link href="/">
+                                    <img
+                                        src="/logogtcpay.png"
+                                        alt="GTC Payouts"
+                                        className="md:h-8 h-6 cursor-pointer w-auto"
+                                        onMouseEnter={() => router.prefetch?.("/")}
+                                        onClick={() => router.push("/")}
+                                    />
+                                </Link>
+                </div>
 
             {/* page container */}
             <div className="relative">
@@ -28,38 +39,11 @@ export default function GtcSignupTabsCardSixPercent() {
                             GTC  IB
                         </h1>
 
-                        <p className="mt-4 max-w-[520px] md:text-[22px] md:leading-[32px] text-[16px] leading-[20px] text-[#04417B]">
-                            Simply select whether you want to sign up
-                            as an Affiliate or as an IB.
+                        <p className="mt-4 max-w-[400px] md:text-[22px] md:leading-[32px] text-[16px] leading-[20px] text-[#04417B]">
+                           Earn up to 6% in Net Deposit on this limited time Offer!
                         </p>
 
-                        <p className="mt-4 max-w-[520px] md:text-[22px] md:leading-[32px] text-[16px] leading-[20px] text-[#04417B]">
-                            Either way,
-                            you’re in great hands when you become
-                            a GTC Partner.
-                        </p>
-                        <p className="mt-4 max-w-[520px] md:text-[22px] md:leading-[32px] text-[16px] leading-[20px] text-[#04417B]">
-                            Already have an account?
-                        </p>
-                        <p className="mt-2 max-w-[520px] md:text-[22px] md:leading-[32px] text-[16px] leading-[20px] text-[#04417B]"><span className=" text-[#ED8946]  hover:underline">
-                            <a
-                                href={"https://agents.gtcfx.com/v2/login/"}
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                Sign in as an Affiliate
-                            </a>
-                        </span> {" "}
-                            or  <span className=" text-[#ED8946]  hover:underline">
-                                <a
-                                    href={"https://mygtcfx.com/"}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    Sign in as an IB
-                                </a>
-                            </span>
-                        </p>
+                     
                     </div>
                     <div className="lg:col-span-6 xl:col-span-5">
                         <div
