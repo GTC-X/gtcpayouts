@@ -22,7 +22,7 @@ export default function CommonFooter() {
                 className="mx-auto md:m-0"
               />
             </Link>
-            <SocialIcon />
+            {/* <SocialIcon /> */}
            
            
           </div>
