@@ -40,7 +40,7 @@ export default function GtcSignupTabsCard({ defaultTab = "affiliate", onTabChang
               Sign up as a
             </p>
             <h1 className="mt-0 md:text-[76px] text-[50px] text-[#03A7D9] leading-[64px]  md:leading-[96px] font-bold">
-              GTC Partner
+              GTC {tab == "ib" ? "IB" : "Affiliate"}
             </h1>
 
             <p className="mt-4 max-w-[520px] md:text-[22px] md:leading-[32px] text-[16px] leading-[20px] text-[#04417B]">
