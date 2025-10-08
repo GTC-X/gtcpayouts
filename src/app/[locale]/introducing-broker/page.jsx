@@ -5,6 +5,7 @@ import CommonHeader from "../components/Header";
 import CommonHeroBanner from "../components/HeroBanner";
 import CommonLastBanner from "../components/LastBanner";
 import CommonSlider from "../components/Slider";
+import CommonSliderIB from "../components/SliderIB";
 
 export const metadata = {
     title: 'GTC’s Introducing Brokers Earn Up To 80% in Rebates',
@@ -95,7 +96,7 @@ export default function HomePage() {
                 band: "navy",
                 bgColor: "bg-[#04417B]",
                 color: "text-[#04417B]",
-               icon: "/icons/flip-icon4.svg",
+                icon: "/icons/flip-icon4.svg",
                 back: "High-converting banners, videos, landing pages, widgets, and social assets, which are all built to convert. If you need anything that’s tailored to you, simply ask your GTC Business Development Manager.",
             },
             {
@@ -103,7 +104,7 @@ export default function HomePage() {
                 band: "orange",
                 bgColor: "bg-[#ED8946]",
                 color: "text-[#ED8946]",
-                  icon: "/icons/flip-icon5.svg",
+                icon: "/icons/flip-icon5.svg",
                 back: "Full dashboard tracking, so that you know what clicks, referrals, conversions, and revenues are coming your way. Plus it’s all in real time.",
             },
             {
@@ -111,7 +112,7 @@ export default function HomePage() {
                 band: "teal",
                 bgColor: "bg-[#03A7D9]",
                 color: "text-[#03A7D9]",
-                  icon: "/icons/flip-icon-10.svg",
+                icon: "/icons/flip-icon-10.svg",
                 back: "Every trader you refer receives lifetime Swap-Free trading with GTC. No overnight fees, no hidden charges — just pure trading freedom that keeps them active and keeps you earning.",
             },
         ]
@@ -152,7 +153,7 @@ export default function HomePage() {
         <>
             <CommonHeader />
             <CommonHeroBanner data={heroData} page="ib" />
-            <CommonSlider data={sliderData} page="ib" />
+            <CommonSliderIB data={sliderData} page="ib" />
             <CommonEarningSection data={earningData} page="ib" />
             <CommonFlipCard data={flipCardData} page="ib" />
             <CommonLastBanner data={lastSectionData} page="ib" />
