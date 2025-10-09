@@ -15,7 +15,7 @@ export default function CommonFooter() {
           <div className="lg:basis-3/12 lg:flex flex-wrap items-center justify-center md:pr-10 pb-5">
             <Link href="/" locale="en">
               <Image
-                src="/icons/3.svg"
+                src="/log-white.png"
                 width="209"
                 height="32"
                 alt="GTC Payouts"
