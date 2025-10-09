@@ -7,12 +7,13 @@ export default function CommonSliderIB({ data, page }) {
 
     const min = 0;
     const max = 100;
+    const maxClient = 1000;
     const step = 1;
 
     const basePerUnit = 8;               // <-- each unit = 8
     const price = priceUnits * basePerUnit;
 
-    const pct = ((Math.min(value, max) - min) / (max - min)) * 100;
+    const pct = ((Math.min(value, maxClient) - min) / (maxClient - min)) * 100;
     const pctPriceUnits = ((Math.min(priceUnits, max) - min) / (max - min)) * 100;
 
     const getTotal = () => value * price;
@@ -60,7 +61,7 @@ export default function CommonSliderIB({ data, page }) {
                                     <input
                                         type="range"
                                         min={min}
-                                        max={max}
+                                        max={maxClient}
                                         step={step}
                                         value={value}
                                         onChange={(e) => setValue(Number(e.target.value))}
