@@ -184,9 +184,9 @@ const CommonHeader = () => {
             <header className="relative z-50 mx-auto flex container items-center justify-between py-6 w-full">
                 <Link href="/">
                     <img
-                        src="/logogtcpay.png"
+                        src="/LOGO.svg"
                         alt="GTC Payouts"
-                        className="md:h-8 h-6 cursor-pointer w-auto"
+                        className="md:h-9 h-6 cursor-pointer w-auto"
                         onMouseEnter={() => router.prefetch?.("/")}
                         onClick={() => router.push("/")}
                     />
