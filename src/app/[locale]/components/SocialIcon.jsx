@@ -14,12 +14,12 @@ import {
 
 
   const socialMediaIcons = [
-  { icon: BiLogoFacebookCircle, link: "/" },
-  { icon: FaXTwitter, link: "/" },
-  { icon: BiLogoYoutube, link: "/" },
-  { icon: BiLogoLinkedinSquare, link: "/" },
-  { icon: BiLogoInstagramAlt, link: "/" },
-  { icon: BiLogoWhatsapp, link: "/" },
+  { icon: BiLogoFacebookCircle, link: "https://www.facebook.com/profile.php?id=61581869887151" },
+  // { icon: FaXTwitter, link: "/" },
+  // { icon: BiLogoYoutube, link: "/" },
+  { icon: BiLogoLinkedinSquare, link: "https://www.linkedin.com/company/gtc-payouts/" },
+  { icon: BiLogoInstagramAlt, link: "https://www.instagram.com/gtcpayouts_official/" },
+  // { icon: BiLogoWhatsapp, link: "/" },
 
 ];
 
