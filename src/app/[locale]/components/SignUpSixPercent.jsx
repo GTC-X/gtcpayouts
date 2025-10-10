@@ -15,7 +15,7 @@ export default function GtcSignupTabsCardSixPercent() {
     return (
         <div className="relative overflow-hidden font-[Poppins] text-[#0F172A]">
             <div className="container text-center flex flex-col justify-center items-center mb-0 md:mb-10">
-                     <Link href="/">
+                     <Link href="#">
                                     <img
                                         src="/logogtcpay.png"
                                         alt="GTC Payouts"
