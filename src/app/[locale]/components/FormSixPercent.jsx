@@ -110,8 +110,8 @@ const FormSixPercent = () => {
                 // Redirect based on locale
                 const targetLocale =
                     locale === "ar"
-                        ? "/"
-                        : "/";
+                        ? "/sign-up/6percent/"
+                        : "/sign-up/6percent/success"; 
                 router.push(targetLocale);
                 formik.resetForm();
                 setShowOtp(false);
