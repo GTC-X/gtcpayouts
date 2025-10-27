@@ -464,7 +464,7 @@ const IntroducingBrokerForm = () => {
                             & the{" "}
                             <a
                                 className="text-secondary underline"
-                                href="/ar/privacy-policy"
+                                href="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Financial+Consultancy/GTC+Fin+Consultancy+%26+GTC+Global+Ltd/08.+Privacy+Policy+%E2%80%93+GTC+Financial+Consultancy+LLC+V1.0+09-06-2025.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >

@@ -106,7 +106,7 @@ export default function GtcCpaHero() {
                                 <Stat value={`Over <b class="text-[#03A7D9]">$2 Billion</b> <br/> In Payouts`} />
                                 <Stat value={`<b class="text-[#03A7D9]">Award-Winning</b> <br/> IB Programme`} />
 
-                                <Stat value={`Over <b class="text-[#03A7D9]">$3.3 Million</b> <br/> Payouts a Month`} />
+                                <Stat value={`Over <b class="text-[#03A7D9]">$5M </b> <br/> Payouts a Month`} />
                                 <Stat value={`Over <b class="text-[#03A7D9]">Up To 80% in</b> <br/> Rebates for IBs`} />
                             </div>
                         </div>
@@ -127,7 +127,7 @@ export default function GtcCpaHero() {
                     <StatMobile value={`Over <b class="text-[#03A7D9]">$2 Billion</b>  In Payouts`} />
                     <StatMobile value={`<b class="text-[#03A7D9]">Award-Winning</b>  IB Programme`} />
 
-                    <StatMobile value={`Over <b class="text-[#03A7D9]">$3.3 Million</b>  Payouts a Month`} />
+                    <StatMobile value={`Over <b class="text-[#03A7D9]">$5M</b>  Payouts a Month`} />
                     <StatMobile value={`Over <b class="text-[#03A7D9]">Up To 80% in</b>  Rebates for IBs`} />
                 </div>
             </div>
