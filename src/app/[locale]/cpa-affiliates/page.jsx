@@ -52,7 +52,7 @@ export default function AffiliatePage() {
         heading2: "with GTC Payouts",
         para: "Stop chasing small deals. At GTC Payouts, we give affiliates one of the highest CPA offers in the market, up to $1,850 per referral. Global traffic accepted, instant payouts, and no caps. This is how you scale your affiliate business.  ",
         btnText: "Sign Up as an Affiliate",
-        titleColor: "#ED8946"
+        titleColor: "#0c143a"
     }
     const sliderData = {
         title1: "How Much You’ll Earn as a GTC   ",
@@ -67,8 +67,8 @@ export default function AffiliatePage() {
             {
                 title: "Up to $1,850 CPA",
                 band: "teal",
-                bgColor: "bg-[#03A7D9]",
-                color: "text-[#03A7D9]",
+                bgColor: "bg-[#b88857]",
+                color: "text-[#b88857]",
                 icon: "/icons/flip-icon1.svg",
                 back: "Earn one of the biggest CPA deals in the world. No caps, no gimmicks.",
             },
@@ -83,8 +83,8 @@ export default function AffiliatePage() {
             {
                 title: "Instant Payouts",
                 band: "orange",
-                bgColor: "bg-[#ED8946]",
-                color: "text-[#ED8946]",
+                bgColor: "bg-[#0c143a]",
+                color: "text-[#0c143a]",
                 icon: "/icons/flip-icon3.svg",
 
                 back: "Your commissions are available instantly. No delays, no excuses.",
@@ -101,16 +101,16 @@ export default function AffiliatePage() {
             {
                 title: "Real-Time \n Analytics",
                 band: "orange",
-                bgColor: "bg-[#ED8946]",
-                color: "text-[#ED8946]",
+                bgColor: "bg-[#0c143a]",
+                color: "text-[#0c143a]",
                 icon: "/icons/flip-icon5.svg",
                 back: "Full dashboard tracking to monitor clicks, signups, conversions, and payouts in real time.",
             },
             {
                 title: "Exclusive Affiliate Bonuses",
                 band: "teal",
-                bgColor: "bg-[#03A7D9]",
-                color: "text-[#03A7D9]",
+                bgColor: "bg-[#b88857]",
+                color: "text-[#b88857]",
                 icon: "/icons/flip-icon6.svg",
                 back: "Boost your earnings with special promotions, loyalty perks, and VIP rewards.",
             },

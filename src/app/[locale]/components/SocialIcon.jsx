@@ -29,7 +29,7 @@ const CopyRight = () => {
     <ul className="flex justify-center items-center mt-6 gap-2">
     {socialMediaIcons.map((social, index) => (
       <li key={index}>
-        <Link href={social.link} target='_blank' className='hover:animate-spi text-secondary hover:text-white'>
+        <Link href={social.link} target='_blank' className='hover:animate-spi text-[#b88857] hover:text-white'>
           {React.createElement(social.icon, { size: 26})}
         </Link>
       </li>
@@ -38,4 +38,4 @@ const CopyRight = () => {
   )
 }
 
-export default CopyRight
+export default CopyRight 

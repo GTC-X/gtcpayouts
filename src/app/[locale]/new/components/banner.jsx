@@ -38,8 +38,8 @@ export default function GtcCpaHero() {
                             <p className="md:text-[50px] text-[24px] text-[#04417B]">Up to</p>
 
                             <h1 className="mt-1">
-                                <span className="block text-[50px] leading-[64px]  md:text-[100px] md:leading-[100px] font-extrabold text-[#03A7D9] tracking-[-0.02em]">
-                                    $1,850 <span className="text-[#00B8D4]">CPA</span>
+                                <span className="block text-[50px] leading-[64px]  md:text-[100px] md:leading-[100px] font-extrabold text-[#b88857] tracking-[-0.02em]">
+                                    $1,850 <span className="text-[#0c143a]">CPA</span>
                                 </span>
                             </h1>
 
@@ -54,7 +54,7 @@ export default function GtcCpaHero() {
                                 onMouseEnter={() => router.prefetch?.("/single-form")} // prefetch on intent too
                                 onClick={go}
                                 disabled={navigating}
-                                className="md:mt-10 mt-6 w-full md:w-fit justify-center inline-flex md:h-[46px] h-[36px] cursor-pointer items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
+                                className="md:mt-10 mt-6 w-full md:w-fit justify-center inline-flex md:h-[46px] h-[36px] cursor-pointer items-center gap-2 rounded-[12px] bg-[#0c143a] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
                             >
                                 Grow My Business
                                 <svg
@@ -100,14 +100,14 @@ export default function GtcCpaHero() {
                     <div className="md:mt-16 mt-6 hidden md:block lg:mt-16 relative z-50">
                         <div className="rounded-[12px] border border-[#B4C5D2] bg-white px-4 py-4 shadow-[0_10px_30px_rgba(15,23,42,0.08)] sm:px-6 lg:px-8">
                             <div className="grid grid-cols-1 divide-y divide-[#E6ECF2] sm:grid-cols-3 sm:divide-y-0 sm:divide-x lg:grid-cols-6">
-                                <Stat value={`Over <b class="text-[#03A7D9]">175K</b><br/> Partners Worldwide`} />
-                                <Stat value={`Up To <br/> <b class="text-[#03A7D9]">$1,850</b> CPA`} />
+                                <Stat value={`Over <b class="text-[#b88857]">175K</b><br/> Partners Worldwide`} />
+                                <Stat value={`Up To <br/> <b class="text-[#b88857]">$1,850</b> CPA`} />
 
-                                <Stat value={`Over <b class="text-[#03A7D9]">$2 Billion</b> <br/> In Payouts`} />
-                                <Stat value={`<b class="text-[#03A7D9]">Award-Winning</b> <br/> IB Programme`} />
+                                <Stat value={`Over <b class="text-[#b88857]">$2 Billion</b> <br/> In Payouts`} />
+                                <Stat value={`<b class="text-[#b88857]">Award-Winning</b> <br/> IB Programme`} />
 
-                                <Stat value={`Over <b class="text-[#03A7D9]">$3.3 Million</b> <br/> Payouts a Month`} />
-                                <Stat value={`Over <b class="text-[#03A7D9]">Up To 80% in</b> <br/> Rebates for IBs`} />
+                                <Stat value={`Over <b class="text-[#b88857]">$3.3 Million</b> <br/> Payouts a Month`} />
+                                <Stat value={`Over <b class="text-[#b88857]">Up To 80% in</b> <br/> Rebates for IBs`} />
                             </div>
                         </div>
                         <p className="sr-only">Up to 80% in Rebates for IBs</p>
@@ -121,14 +121,14 @@ export default function GtcCpaHero() {
                     the market. Isn’t it time you grew your Introducing Broker business with us?
                 </p>
                 <div className="grid grid-cols-1 mt-6 gap-y-6 lg:grid-cols-6">
-                    <StatMobile value={`Over <b class="text-[#03A7D9] text-[18px]">175K</b> Partners Worldwide`} />
-                    <StatMobile value={`Up To  <b class="text-[#03A7D9]">$1,850</b> CPA`} />
+                    <StatMobile value={`Over <b class="text-[#b88857] text-[18px]">175K</b> Partners Worldwide`} />
+                    <StatMobile value={`Up To  <b class="text-[#b88857]">$1,850</b> CPA`} />
 
-                    <StatMobile value={`Over <b class="text-[#03A7D9]">$2 Billion</b>  In Payouts`} />
-                    <StatMobile value={`<b class="text-[#03A7D9]">Award-Winning</b>  IB Programme`} />
+                    <StatMobile value={`Over <b class="text-[#b88857]">$2 Billion</b>  In Payouts`} />
+                    <StatMobile value={`<b class="text-[#b88857]">Award-Winning</b>  IB Programme`} />
 
-                    <StatMobile value={`Over <b class="text-[#03A7D9]">$3.3 Million</b>  Payouts a Month`} />
-                    <StatMobile value={`Over <b class="text-[#03A7D9]">Up To 80% in</b>  Rebates for IBs`} />
+                    <StatMobile value={`Over <b class="text-[#b88857]">$3.3 Million</b>  Payouts a Month`} />
+                    <StatMobile value={`Over <b class="text-[#b88857]">Up To 80% in</b>  Rebates for IBs`} />
                 </div>
             </div>
         </>

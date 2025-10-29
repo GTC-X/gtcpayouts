@@ -39,7 +39,7 @@ export default function GtcSignupTabsCard({ defaultTab = "affiliate", onTabChang
             <p className="mt-4 max-w-[520px] md:text-[22px] md:leading-[32px] text-[16px] text-[#04417B]">
               Sign up as a
             </p>
-            <h1 className="mt-0 md:text-[76px] text-[50px] text-[#03A7D9] leading-[64px]  md:leading-[96px] font-bold">
+            <h1 className="mt-0 md:text-[76px] text-[50px] text-[#b88857] leading-[64px]  md:leading-[96px] font-bold">
               GTC {tab == "ib" ? "IB" : "Affiliate"}
             </h1>
 
@@ -56,7 +56,7 @@ export default function GtcSignupTabsCard({ defaultTab = "affiliate", onTabChang
             <p className="mt-4 max-w-[520px] md:text-[22px] md:leading-[32px] text-[16px] leading-[20px] text-[#04417B]">
               Already have an account?
             </p>
-            <p className="mt-2 max-w-[520px] md:text-[22px] md:leading-[32px] text-[16px] leading-[20px] text-[#04417B]"><span className=" text-[#ED8946]  hover:underline">
+            <p className="mt-2 max-w-[520px] md:text-[22px] md:leading-[32px] text-[16px] leading-[20px] text-[#04417B]"><span className=" text-[#0c143a]  hover:underline">
               <a
                 href={"https://agents.gtcfx.com/v2/login/"}
                 target="_blank"
@@ -65,7 +65,7 @@ export default function GtcSignupTabsCard({ defaultTab = "affiliate", onTabChang
                 Sign in as an Affiliate
               </a>
             </span> {" "}
-              or  <span className=" text-[#ED8946]  hover:underline">
+              or  <span className=" text-[#0c143a]  hover:underline">
                 <a
                   href={"https://mygtcfx.com/"}
                   target="_blank"
@@ -151,9 +151,9 @@ function TabButton({ id, controls, active, onClick, children }) {
       onClick={onClick}
       className={[
         "flex-1 px-5 md:px-6 py-4 text-[15px] md:text-[16px] leading-5 font-medium transition-colors",
-        "focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ED8946]/40",
+        "focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0c143a]/40",
         active
-          ? "text-[#ED8946] bg-white"
+          ? "text-[#0c143a] bg-white"
           : "text-[#B8C0CC] bg-[#EDF2F7]/60 hover:text-[#94A3B8]"
       ].join(" ")}
     >

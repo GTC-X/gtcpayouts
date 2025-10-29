@@ -28,8 +28,8 @@ export default function GtcSignupTabs() {
                     <div className="lg:col-span-6 xl:col-span-7">
                         <p className="text-[32px] leading-[40px] text-[#04417B]">Sign up as a</p>
                         <h1 className="mt-2 text-[76px]  leading-[96px] tracking-[-0.02em] font-bold">
-                            <span className="text-[#03A7D9]">GTC</span>{" "}
-                            <span className="text-[#03A7D9]">Partner</span>
+                            <span className="text-[#b88857]">GTC</span>{" "}
+                            <span className="text-[#b88857]">Partner</span>
                         </h1>
 
                         <p className="mt-4 max-w-[520px] text-[22px] leading-[32px] text-[#04417B]">
@@ -39,7 +39,7 @@ export default function GtcSignupTabs() {
 
                         <p className="mt-6 text-[22px] leading-[32px] text-[#04417B]">
                             If you’re already a GTC Partner,{" "}
-                            <a href="#" className="font-bold text-[#ED8946] hover:opacity-80">
+                            <a href="#" className="font-bold text-[#0c143a] hover:opacity-80">
                                 sign in.
                             </a>
                         </p>

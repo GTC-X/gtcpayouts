@@ -2,7 +2,7 @@ import React from "react";
 
 const ORANGE = "#F7994B";
 const NAVY = "#04417B";
-const TEAL = "#03A7D9";
+const TEAL = "#b88857";
 const BODY = "#04417B";
 
 function CircleIcon({ children }) {
@@ -18,7 +18,7 @@ function CircleIcon({ children }) {
 export default function CommonEarningSection({ data }) {
     return (
         <section className="relative"
-            style={{ background: "var(--Prime-Gradient, linear-gradient(135deg, var(--color-GTC-Prime-Navy, #003651) 0%, var(--color-GTC-Prime-Blue, #04417B) 35.1%, var(--color-GTC-Prime-Sky, #03A7D9) 100%))" }}
+            style={{ background: "var(--Prime-Gradient, linear-gradient(135deg, var(--color-GTC-Prime-Navy, #003651) 0%, var(--color-GTC-Prime-Blue, #04417B) 35.1%, var(--color-GTC-Prime-Sky, #b88857) 100%))" }}
         >
             {/* subtle chart-ish lines */}
             <div className="pointer-events-none">

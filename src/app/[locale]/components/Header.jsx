@@ -15,10 +15,10 @@
 //                </Link> 
 //                 <nav className="hidden items-center gap-8 text-[14px] text-[#0F172A]/70 md:flex">
 
-//                     <Link className="transition-colors hover:text-[#00B8D4]" href="/cpa-affiliates"> CPA Affiliates</Link>
-//                     <Link className="transition-colors hover:text-[#00B8D4]" href="/introducing-broker">Introducing Broker</Link>
-//                     <Link className="transition-colors hover:text-[#00B8D4]" href="/contact-us">Contact Us</Link>
-//                     <Link className="transition-colors hover:bg-[#00B8D4] bg-secondary text-white font-medium px-4 py-2 rounded-lg" href="/sign-up">Sign Up</Link>
+//                     <Link className="transition-colors hover:text-[#0c143a]" href="/cpa-affiliates"> CPA Affiliates</Link>
+//                     <Link className="transition-colors hover:text-[#0c143a]" href="/introducing-broker">Introducing Broker</Link>
+//                     <Link className="transition-colors hover:text-[#0c143a]" href="/contact-us">Contact Us</Link>
+//                     <Link className="transition-colors hover:bg-[#0c143a] bg-secondary text-white font-medium px-4 py-2 rounded-lg" href="/sign-up">Sign Up</Link>
 //                 </nav>
 //             </header> 
 
@@ -82,17 +82,17 @@ const CommonHeader = () => {
 
     const NavLinks = () => (
         <>
-            <Link className="transition-colors hover:text-[#00B8D4]" href="/cpa-affiliates">
+            <Link className="transition-colors hover:text-[#0c143a]" href="/cpa-affiliates">
                 CPA Affiliates
             </Link>
-            <Link className="transition-colors hover:text-[#00B8D4]" href="/introducing-broker">
+            <Link className="transition-colors hover:text-[#0c143a]" href="/introducing-broker">
                 Introducing Broker
             </Link>
-            <Link className="transition-colors hover:text-[#00B8D4]" href="/contact-us">
+            <Link className="transition-colors hover:text-[#0c143a]" href="/contact-us">
                 Contact Us
             </Link>
             <Link
-                className="transition-colors hover:bg-[#00B8D4] bg-secondary text-white font-medium px-4 py-2 rounded-lg"
+                className="transition-colors hover:bg-[#0c143a] bg-secondary text-white font-medium px-4 py-2 rounded-lg"
                 href="/sign-up"
             >
                 Sign Up
@@ -106,7 +106,7 @@ const CommonHeader = () => {
                 <button
                     type="button"
                     onClick={() => toggle("login")}
-                    className=" cursor-pointer rounded-lg hover:text-[#00B8D4] transition-colors inline-flex items-center"
+                    className=" cursor-pointer rounded-lg hover:text-[#0c143a] transition-colors inline-flex items-center"
                     aria-haspopup="menu"
                     aria-expanded={open === "login"}
                 >
@@ -126,7 +126,7 @@ const CommonHeader = () => {
                                 href={IB_PORTAL_URL}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="group rounded-xl px-4 py-2 text-center font-medium bg-[#03A7D9] text-white shadow-sm hover:opacity-95"
+                                className="group rounded-xl px-4 py-2 text-center font-medium bg-[#b88857] text-white shadow-sm hover:opacity-95"
                             >
                                 IB Portal
                             </a>
@@ -134,7 +134,7 @@ const CommonHeader = () => {
                                 href={CPA_PORTAL_URL}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="group rounded-xl px-4 py-2 text-center font-medium bg-[#03A7D9] text-white shadow-sm hover:opacity-95"
+                                className="group rounded-xl px-4 py-2 text-center font-medium bg-[#b88857] text-white shadow-sm hover:opacity-95"
                             >
                                 CPA Portal
                             </a>
@@ -184,7 +184,7 @@ const CommonHeader = () => {
             <header className="relative z-50 mx-auto flex container items-center justify-between py-6 w-full">
                 <Link href="/">
                     <img
-                        src="/LOGO.svg"
+                        src="/logo-gtcaffiliates.webp"
                         alt="GTC Payouts"
                         className="md:h-9 h-6 cursor-pointer w-auto"
                         onMouseEnter={() => router.prefetch?.("/")}
@@ -199,7 +199,7 @@ const CommonHeader = () => {
 
                 {/* Mobile hamburger */}
                 <button
-                    className="md:hidden inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#00B8D4]"
+                    className="md:hidden inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#0c143a]"
                     onClick={(e) => {
                         e.stopPropagation();
                         setOpen("mobile");
@@ -258,7 +258,7 @@ const CommonHeader = () => {
                                         target="_blank"
                                         rel="noreferrer"
                                         className="text-center rounded-lg px-4 py-2 font-medium 
-                                         bg-[#03A7D9] text-white"
+                                         bg-[#b88857] text-white"
                                         onClick={() => setOpen("none")}
                                     >
                                         IB Portal
@@ -268,7 +268,7 @@ const CommonHeader = () => {
                                         target="_blank"
                                         rel="noreferrer"
                                         className="text-center rounded-lg px-4 py-2 font-medium 
-                                         bg-[#03A7D9] text-white"
+                                         bg-[#b88857] text-white"
                                         onClick={() => setOpen("none")}
                                     >
                                         CPA Portal

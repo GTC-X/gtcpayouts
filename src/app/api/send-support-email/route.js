@@ -20,7 +20,7 @@ const generateEmailContent = (data) => ({
                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-radius: 36px; padding: 20px; background-color: #fff; width: 100%;">
                         <tr>
                             <td class="header" style="padding: 20px; text-align: center;">
-                                <img src="https://www.gtcpayouts.com/logogtcpay.png" alt="GTC Global Capital Trade Logo" style="max-width: 165px; height: auto;">
+                                <img src="https://www.gtcaffiliates/logogtcpay.png" alt="GTC Global Capital Trade Logo" style="max-width: 165px; height: auto;">
                             </td>
                         </tr>
                         <tr>

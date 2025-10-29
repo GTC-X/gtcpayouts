@@ -3,9 +3,9 @@ import React, { useState } from "react";
 
 /** Brand palette from your mock */
 const COLORS = {
-    navy: "#03A7D9",
-    teal: "#03A7D9",
-    orange: "#ED8946", // heading accent
+    navy: "#b88857",
+    teal: "#b88857",
+    orange: "#0c143a", // heading accent
     body: "#04417B",
     divider: "#E6EEF6",
 };

@@ -25,7 +25,7 @@ export default function CommonLastBanner({ data, page }) {
                     </h2>
 
                     <button
-                        className={`md:mt-16 mt-8 inline-flex h-[46px] justify-center w-full md:w-fit cursor-pointer items-center gap-2 rounded-[12px] ${isAffiliate ? " bg-white" : "bg-[#ED8946]"} px-6 text-[16px] font-semibold ${isAffiliate ? "text-[#04417B]" : "text-white"} transition-colors ${isAffiliate ? " hover:bg-white" : "hover:bg-[#ea9a0a]"}`}
+                        className={`md:mt-16 mt-8 inline-flex h-[46px] justify-center w-full md:w-fit cursor-pointer items-center gap-2 rounded-[12px] ${isAffiliate ? " bg-white" : "bg-[#0c143a]"} px-6 text-[16px] font-semibold ${isAffiliate ? "text-[#04417B]" : "text-white"} transition-colors ${isAffiliate ? " hover:bg-white" : "hover:bg-[#ea9a0a]"}`}
                         onMouseEnter={() => router.prefetch?.("/sign-up")} // prefetch on intent too
                         onClick={() => router.push(`/sign-up?source=${page}`)}
                     >

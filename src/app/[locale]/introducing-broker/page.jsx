@@ -53,7 +53,7 @@ export default function HomePage() {
         heading2: "as an Introducing Broker with GTC!",
         para: "Unlike other brokers where you’ll receive just a cut of the profits, at GTC you’re going to keep the lion’s share of revenue from every trader you refer. Instant payouts, global reach, zero caps.",
         btnText: "Sign Up as an IB",
-        titleColor: "#03A7D9",
+        titleColor: "#b88857",
         img: "icons/new-ib-banner.png",
     }
     const sliderData = {
@@ -69,8 +69,8 @@ export default function HomePage() {
             {
                 title: "80% Revenue Share",
                 band: "teal",
-                bgColor: "bg-[#03A7D9]",
-                color: "text-[#03A7D9]",
+                bgColor: "bg-[#b88857]",
+                color: "text-[#b88857]",
                 icon: "/icons/flip-icon1.svg",
                 back: "Earn the highest rebates on the planet! Get 80% of every dollar your traders generate.",
             },
@@ -86,8 +86,8 @@ export default function HomePage() {
             {
                 title: "Instant Payouts",
                 band: "orange",
-                bgColor: "bg-[#ED8946]",
-                color: "text-[#ED8946]",
+                bgColor: "bg-[#0c143a]",
+                color: "text-[#0c143a]",
                 icon: "/icons/flip-icon3.svg",
                 back: "Instant commission payouts. Your money moves as fast as you do. Simply make a withdrawal request and the funds will be on their way to you.",
             },
@@ -102,16 +102,16 @@ export default function HomePage() {
             {
                 title: "Real-Time \n Analytics",
                 band: "orange",
-                bgColor: "bg-[#ED8946]",
-                color: "text-[#ED8946]",
+                bgColor: "bg-[#0c143a]",
+                color: "text-[#0c143a]",
                 icon: "/icons/flip-icon5.svg",
                 back: "Full dashboard tracking, so that you know what clicks, referrals, conversions, and revenues are coming your way. Plus it’s all in real time.",
             },
             {
                 title: "Swap Free \n for Life",
                 band: "teal",
-                bgColor: "bg-[#03A7D9]",
-                color: "text-[#03A7D9]",
+                bgColor: "bg-[#b88857]",
+                color: "text-[#b88857]",
                 icon: "/icons/flip-icon-10.svg",
                 back: "Every trader you refer receives lifetime Swap-Free trading with GTC. No overnight fees, no hidden charges — just pure trading freedom that keeps them active and keeps you earning.",
             },

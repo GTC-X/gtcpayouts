@@ -9,7 +9,7 @@ export default function CommonFlipCard({ data, page }) {
         <section className="bg-white">
             <div className="container mx-auto pt-12 pb-14 md:pt-16 md:pb-20 font-[Poppins]">
                 {/* heading */}
-                <h2 className="text-center text-[#03A7D9] font-semibold text-[24px] md:text-[32px] leading-tight">
+                <h2 className="text-center text-[#b88857] font-semibold text-[24px] md:text-[32px] leading-tight">
                     {data?.title}
                 </h2>
                 <p className="mt-8 text-center px-3 md:px-0  text-[#04417B] text-[16px] leading-[20px] md:leading-[32px] max-w-[780px] mx-auto">
@@ -29,7 +29,7 @@ export default function CommonFlipCard({ data, page }) {
 
                 {/* CTA */}
                 <div className="mt-10 md:mt-12 text-center">
-                    <button className=" inline-flex h-[46px] md:w-fit w-full justify-center cursor-pointer items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
+                    <button className=" inline-flex h-[46px] md:w-fit w-full justify-center cursor-pointer items-center gap-2 rounded-[12px] bg-[#0c143a] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
                         onMouseEnter={() => router.prefetch?.("/sign-up")} // prefetch on intent too
                         onClick={() => router.push(`/sign-up?source=${page}`)}
                     >
@@ -87,7 +87,7 @@ function FlipCard({ front, back }) {
                     className="
             absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)]
             rounded-[16px] text-white
-            bg-[#03A7D9]
+            bg-[#b88857]
              border border-transparent
             flex items-center justify-center px-6 text-center
           "
@@ -106,7 +106,7 @@ function FlipCard({ front, back }) {
 function FrontCard({ title, icon, bgColor, color, band }) {
     const bandBg =
         band === "teal"
-            ? "bg-[linear-gradient(135deg,#00B8D4_0%,#15A7CF_48%,transparent_48%)]"
+            ? "bg-[linear-gradient(135deg,#0c143a_0%,#15A7CF_48%,transparent_48%)]"
             : band === "navy"
                 ? "bg-[linear-gradient(135deg,#0B4E8F_0%,#0B6BB2_48%,transparent_48%)]"
                 : "bg-[linear-gradient(135deg,#F59E0B_0%,#F39A0D_48%,transparent_48%)]";

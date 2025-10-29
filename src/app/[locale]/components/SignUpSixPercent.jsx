@@ -35,7 +35,7 @@ export default function GtcSignupTabsCardSixPercent() {
                         <p className="mt-4 max-w-[520px] md:text-[22px] md:leading-[32px] text-[16px] text-[#04417B]">
                             Sign up as a
                         </p>
-                        <h1 className="mt-0 md:text-[76px] text-[50px] text-[#03A7D9] leading-[64px]  md:leading-[96px] font-bold">
+                        <h1 className="mt-0 md:text-[76px] text-[50px] text-[#b88857] leading-[64px]  md:leading-[96px] font-bold">
                             GTC  IB
                         </h1>
 

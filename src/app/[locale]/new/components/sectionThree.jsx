@@ -3,7 +3,7 @@ import React, { useEffect, useMemo, useState } from "react";
 
 /** Brand colors used in the mock */
 const BRAND = {
-  teal: "#00B8D4",
+  teal: "#0c143a",
   navy: "#0B4E8F",
   orange: "#F59E0B",
   grayText: "#5B6B79",
@@ -83,7 +83,7 @@ export default function ClientsSlider() {
     <section className="bg-white">
       <div className="mx-auto container  pt-5 md:pt-14 md:pb-14 pb-10">
         {/* heading */}
-        <h2 className="text-[24px] leading-[32px] text-center md:text-left md:text-[40px] font-semibold md:leading-tight text-[#03A7D9]">
+        <h2 className="text-[24px] leading-[32px] text-center md:text-left md:text-[40px] font-semibold md:leading-tight text-[#b88857]">
           Your clients are going to adore trading with GTC
         </h2>
         <p className="md:mt-2  mt-6 text-[16px] leading-[20px] text-center md:text-left md:text-[22px] md:leading-[32px] text-[#04417B] max-w-[880px]">
@@ -129,7 +129,7 @@ export default function ClientsSlider() {
                   key={i}
                   onClick={() => setPage(i)}
                   aria-label={`Go to slide ${i + 1}`}
-                  className={`h-2.5 w-2.5 rounded-full transition-all ${i === page ? "bg-[#ED8946]" : "bg-[#C8D3DD]"
+                  className={`h-2.5 w-2.5 rounded-full transition-all ${i === page ? "bg-[#0c143a]" : "bg-[#C8D3DD]"
                     }`}
                 />
               ))}
@@ -143,7 +143,7 @@ export default function ClientsSlider() {
   disabled={page === 0}
   aria-label="Previous"
   className={`md:h-9 md:w-9 h-6 w-6 rounded-full grid place-items-center text-white transition
-    ${page === 0 ? "bg-[#F3D9A8] cursor-not-allowed" : "bg-[#ED8946] hover:bg-[#ec990b]"}
+    ${page === 0 ? "bg-[#F3D9A8] cursor-not-allowed" : "bg-[#0c143a] hover:bg-[#ec990b]"}
   `}
 >
   <svg viewBox="0 0 24 24" fill="none" className="w-3 h-3 md:w-5 md:h-5">
@@ -157,7 +157,7 @@ export default function ClientsSlider() {
   disabled={page === maxPage}
   aria-label="Next"
   className={`md:h-9 md:w-9 h-6 w-6 rounded-full grid place-items-center text-white transition
-    ${page === maxPage ? "bg-[#F3D9A8] cursor-not-allowed" : "bg-[#ED8946] hover:bg-[#ec990b]"}
+    ${page === maxPage ? "bg-[#F3D9A8] cursor-not-allowed" : "bg-[#0c143a] hover:bg-[#ec990b]"}
   `}
 >
   <svg viewBox="0 0 24 24" fill="none" className="w-3 h-3 md:w-5 md:h-5">
@@ -181,11 +181,11 @@ function Card({ icon, title, body }) {
       style={{ borderColor: BRAND.cardBorder }}
     >
       <div className="px-5 py-8">
-        <div className="flex items-center gap-2 text-[#03A7D9]">
+        <div className="flex items-center gap-2 text-[#b88857]">
           <div>
             <img src={icon} alt="" className="shrink-0" />
           </div>
-          <h3 className="md:text-[16px] text-[13px] font-semibold text-[#03A7D9]">{title}</h3>
+          <h3 className="md:text-[16px] text-[13px] font-semibold text-[#b88857]">{title}</h3>
         </div>
         <p className="mt-3 md:text-[16px] text-[13px] leading-[20px] text-[#4D4D70]">{body}</p>
       </div>

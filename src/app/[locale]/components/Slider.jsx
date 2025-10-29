@@ -133,7 +133,7 @@ export default function CommonSlider({ data, page }) {
 
                             {/* Right metric */}
                             <div className="text-right">
-                                <div className="md:text-[40px] text-[24px] font-extrabold leading-none text-[#03A7D9]">
+                                <div className="md:text-[40px] text-[24px] font-extrabold leading-none text-[#b88857]">
                                     ${fmt(getTotal(value))}
                                 </div>
                                 <div className="mt-1 md:text-[14px] text-[10px] font-normal tracking-wide text-[#04417B]">

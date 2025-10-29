@@ -5,7 +5,7 @@ import React from "react";
 export default function FxOfferingSection() {
     return (
         <section className="relative overflow-hidden"
-            style={{ background: "var(--Prime-Gradient, linear-gradient(135deg, var(--color-GTC-Prime-Navy, #003651) 0%, var(--color-GTC-Prime-Blue, #04417B) 35.1%, var(--color-GTC-Prime-Sky, #03A7D9) 100%))" }}
+            style={{ background: "var(--Prime-Gradient, linear-gradient(135deg, var(--color-GTC-Prime-Navy, #003651) 0%, var(--color-GTC-Prime-Blue, #04417B) 35.1%, var(--color-GTC-Prime-Sky, #b88857) 100%))" }}
         >
             {/* subtle chart-ish lines */}
             <div className="pointer-events-none">
@@ -32,7 +32,7 @@ export default function FxOfferingSection() {
                             title="FX Affiliate Programme"
                             kicker="Up to"
                             highlight="$1,850 CPA"
-                            highlightColor="#00B8D4"
+                            highlightColor="#b88857" 
                             descTop="As a GTC Affiliate, you can earn up to 50% of the revenue that’s generated from all the traders you refer to us."
                             descBold="When your traders trade, you earn, and earn big!"
                             cta="Become a GTC Affiliate"
@@ -41,8 +41,8 @@ export default function FxOfferingSection() {
                         <OfferCard
                             title="IB Programme"
                             kicker="Up to"
-                            highlight="80% in Rebates"
-                            highlightColor="#F59E0B"
+                            highlight="80% in Rebates" 
+                            highlightColor="#b88857" 
                             descTop="As a GTC IB, you can earn up to 80% of the revenue that’s generated from all the traders you refer to us."
                             descBold="Your traders move the markets & you collect the rewards."
                             cta="Become a GTC IB"
@@ -68,13 +68,13 @@ function OfferCard({
     const router = useRouter()
     return (
         <div className="rounded-[16px] bg-white text-[#0F172A] shadow-[0_12px_36px_rgba(0,0,0,0.10)] border border-white/80 px-8 sm:px-8 py-8 md:py-10">
-            <h3 className="text-[20px] md:text-[32px] font-semibold text-[#04417B]">
+            <h3 className="text-[20px] md:text-[32px] font-semibold text-[#b88857]">
                 {title}
             </h3>
 
             <p className="md:mt-10 mt-8 md:text-[20px] text-[14px] tracking-wide text-[#04417B]">{kicker}</p>
             <div
-                className="mt-1 text-[25px] md:text-[32px] text-[#ed8946] font-extrabold leading-tight"
+                className="mt-1 text-[25px] md:text-[32px] text-[#0c143a] font-extrabold leading-tight"
             >
                 {highlight}
             </div>
@@ -89,7 +89,7 @@ function OfferCard({
 
             <button
                 type="button"
-                className="md:mt-10 mt-8 cursor-pointer inline-flex md:h-[46px] h-[36px] items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 md:text-[16px] text-[12px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
+                className="md:mt-10 mt-8 cursor-pointer inline-flex md:h-[46px] h-[36px] items-center gap-2 rounded-[12px] bg-[#b88857] px-6 md:text-[16px] text-[12px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
                 onMouseEnter={() => router.prefetch?.("/sign-up")} // prefetch on intent too
                 onClick={() => router.push(`/sign-up?source=${page}`)}
 

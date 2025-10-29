@@ -16,7 +16,7 @@ export default function CommonHeroBanner({ data, page }) {
                         <p className="md:text-[32px] text-[24px] font-semibold text-[#04417B]">{data?.heading1}</p>
 
                         <h1 className="mt-1">
-                            <span className="block text-[40px] leading-[48px] sm:text-[68px] sm:leading-[72px] lg:text-[76px] md:my-2 font-extrabold text-[#ED8946] tracking-[-0.02em]" style={{ color: data?.titleColor }}>
+                            <span className="block text-[40px] leading-[48px] sm:text-[68px] sm:leading-[72px] lg:text-[76px] md:my-2 font-extrabold text-[#0c143a] tracking-[-0.02em]" style={{ color: data?.titleColor }}>
                                 {data?.title}
                             </span>
                         </h1>
@@ -28,7 +28,7 @@ export default function CommonHeroBanner({ data, page }) {
 
                         <button
                             type="button"
-                            className="md:mt-10 mt-8 inline-flex justify-center h-[46px] w-full md:w-fit cursor-pointer items-center gap-2 rounded-[12px] bg-[#ED8946] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
+                            className="md:mt-10 mt-8 inline-flex justify-center h-[46px] w-full md:w-fit cursor-pointer items-center gap-2 rounded-[12px] bg-[#0c143a] px-6 text-[16px] font-semibold text-white transition-colors hover:bg-[#ea9a0a]"
                             onMouseEnter={() => router.prefetch?.("/sign-up")} // prefetch on intent too
                             onClick={() => router.push(`/sign-up?source=${page}`)}
                         >

@@ -18,7 +18,7 @@ export default function SuccessPage() {
                     {/* left copy */}
                     <div className="lg:col-span-6 xl:col-span-7 text-center md:text-left">
                         <h1 className="mt-2 md:text-[76px] text-[50px] leading-[64px] md:leading-[96px] tracking-[-0.02em] font-bold">
-                            <span className="text-[#03A7D9]">Thanks, {name || ""}</span>{" "}
+                            <span className="text-[#b88857]">Thanks, {name || ""}</span>{" "}
                         </h1>
 
                         <p className="mt-4 max-w-[520px] md:text-[22px] md:leading-[32px] text-[16px] leading-[20px] text-[#04417B]">
