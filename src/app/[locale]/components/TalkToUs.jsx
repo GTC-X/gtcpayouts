@@ -63,7 +63,7 @@ export default function TalkToUs() {
                     {/* left copy */}
                     <div className="lg:col-span-6 xl:col-span-7 text-center md:text-left">
                         <h1 className="mt-2 md:text-[76px] text-[50px] leading-[64px] md:leading-[96px] tracking-[-0.02em] font-bold">
-                            <span className="text-[#b88857]">Talk to Us</span>{" "}
+                            <span className="text-[#04417B]">Talk to Us</span>{" "}
                         </h1>
 
                         <p className="mt-4 max-w-[520px] md:text-[22px] md:leading-[32px] text-[16px] leading-[20px] text-[#04417B]">
@@ -140,26 +140,26 @@ export default function TalkToUs() {
                                                         />
                                                     </div>
 
-                                                <div>
-                                                    <label className="block text-[14px] text-[#04417B] mb-1">
-                                                        Last Name
-                                                    </label>
-                                                    <Field
-                                                        type="text"
-                                                        name="lastName"
-                                                        placeholder="Last Name (e.g., Doe)"
-                                                        className={`w-full h-[42px] rounded-[8px] border px-3 text-[14px] placeholder:text-[#A3AAB5] outline-none focus:border-[#00B8D4] focus:ring-2 focus:ring-[#00B8D4]/15 ${touched.lastName && errors.lastName
-                                                            ? "border-red-400"
-                                                            : "border-[#E5E7EB]"
-                                                            }`}
-                                                    />
-                                                    <ErrorMessage
-                                                        name="lastName"
-                                                        component="div"
-                                                        className="mt-1 text-[12px] text-red-500"
-                                                    />
+                                                    <div>
+                                                        <label className="block text-[14px] text-[#04417B] mb-1">
+                                                            Last Name
+                                                        </label>
+                                                        <Field
+                                                            type="text"
+                                                            name="lastName"
+                                                            placeholder="Last Name (e.g., Doe)"
+                                                            className={`w-full h-[42px] rounded-[8px] border px-3 text-[14px] placeholder:text-[#A3AAB5] outline-none focus:border-[#00B8D4] focus:ring-2 focus:ring-[#00B8D4]/15 ${touched.lastName && errors.lastName
+                                                                ? "border-red-400"
+                                                                : "border-[#E5E7EB]"
+                                                                }`}
+                                                        />
+                                                        <ErrorMessage
+                                                            name="lastName"
+                                                            component="div"
+                                                            className="mt-1 text-[12px] text-red-500"
+                                                        />
+                                                    </div>
                                                 </div>
-                                            </div>
 
                                                 {/* Mobile */}
                                                 <div className="mt-4">
@@ -191,63 +191,64 @@ export default function TalkToUs() {
                                                     )}
                                                 </div>
 
-                                            {/* Email */}
-                                            <div className="mt-4">
-                                                <label className="block text-[14px] text-[#04417B] mb-1">
-                                                    Email
-                                                </label>
-                                                <Field
-                                                    type="email"
-                                                    name="email"
-                                                    placeholder="example@mail.com"
-                                                    className={`w-full h-[42px] rounded-[8px] border px-3 text-[14px] placeholder:text-[#A3AAB5] outline-none focus:border-[#00B8D4] focus:ring-2 focus:ring-[#00B8D4]/15 ${touched.email && errors.email
-                                                        ? "border-red-400"
-                                                        : "border-[#E5E7EB]"
-                                                        }`}
-                                                />
-                                                <ErrorMessage
-                                                    name="email"
-                                                    component="div"
-                                                    className="mt-1 text-[12px] text-red-500"
-                                                />
-                                            </div>
+                                                {/* Email */}
+                                                <div className="mt-4">
+                                                    <label className="block text-[14px] text-[#04417B] mb-1">
+                                                        Email
+                                                    </label>
+                                                    <Field
+                                                        type="email"
+                                                        name="email"
+                                                        placeholder="example@mail.com"
+                                                        className={`w-full h-[42px] rounded-[8px] border px-3 text-[14px] placeholder:text-[#A3AAB5] outline-none focus:border-[#00B8D4] focus:ring-2 focus:ring-[#00B8D4]/15 ${touched.email && errors.email
+                                                            ? "border-red-400"
+                                                            : "border-[#E5E7EB]"
+                                                            }`}
+                                                    />
+                                                    <ErrorMessage
+                                                        name="email"
+                                                        component="div"
+                                                        className="mt-1 text-[12px] text-red-500"
+                                                    />
+                                                </div>
 
-                                            {/* Message */}
-                                            <div className="mt-4">
-                                                <label className="block text-[14px] text-[#04417B] mb-1">
-                                                    Message
-                                                </label>
-                                                <Field
-                                                    as="textarea"
-                                                    name="message"
-                                                    placeholder="Add text here..."
-                                                    rows={6}
-                                                    className={`w-full rounded-[8px] border p-3 text-[14px] placeholder:text-[#A3AAB5] outline-none focus:border-[#00B8D4] focus:ring-2 focus:ring-[#00B8D4]/15 ${touched.message && errors.message
-                                                        ? "border-red-400"
-                                                        : "border-[#E5E7EB]"
-                                                        }`}
-                                                />
-                                                <ErrorMessage
-                                                    name="message"
-                                                    component="div"
-                                                    className="mt-1 text-[12px] text-red-500"
-                                                />
-                                            </div>
+                                                {/* Message */}
+                                                <div className="mt-4">
+                                                    <label className="block text-[14px] text-[#04417B] mb-1">
+                                                        Message
+                                                    </label>
+                                                    <Field
+                                                        as="textarea"
+                                                        name="message"
+                                                        placeholder="Add text here..."
+                                                        rows={6}
+                                                        className={`w-full rounded-[8px] border p-3 text-[14px] placeholder:text-[#A3AAB5] outline-none focus:border-[#00B8D4] focus:ring-2 focus:ring-[#00B8D4]/15 ${touched.message && errors.message
+                                                            ? "border-red-400"
+                                                            : "border-[#E5E7EB]"
+                                                            }`}
+                                                    />
+                                                    <ErrorMessage
+                                                        name="message"
+                                                        component="div"
+                                                        className="mt-1 text-[12px] text-red-500"
+                                                    />
+                                                </div>
 
-                                            {/* Submit */}
-                                            <button
-                                                type="submit"
-                                                disabled={isSubmitting || !isValid}
-                                                className={`mt-10 inline-flex w-full items-center justify-center cursor-pointer gap-2 h-[46px] rounded-[10px] font-medium text-[18px] transition
-                          ${isSubmitting || !isValid
-                                                        ? "bg-[#EEF2F7] text-[#A0AEC0] cursor-not-allowed"
-                                                        : "bg-[#03A7D9] text-white hover:opacity-90"
-                                                    }`}
-                                            >
-                                                {isSubmitting ? "Submitting..." : btnText}
-                                            </button>
-                                        </Form>
-                                    )}
+                                                {/* Submit */}
+                                                <button
+                                                    type="submit"
+                                                    disabled={!canSubmit}
+                                                    className={`mt-10 inline-flex w-full items-center justify-center cursor-pointer gap-2 h-[46px] rounded-[10px] font-medium text-[18px] transition
+                                                               ${!canSubmit
+                                                            ? "bg-[#EEF2F7] text-[#A0AEC0] cursor-not-allowed"
+                                                            : "bg-[#04417B] text-white hover:opacity-90"
+                                                        }`}
+                                                >
+                                                    {isSubmitting ? "Submitting..." : btnText}
+                                                </button>
+                                            </Form>
+                                        );
+                                    }}
                                 </Formik>
                             </div>
                         </div>
