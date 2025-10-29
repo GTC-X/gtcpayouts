@@ -269,11 +269,11 @@ const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
     return (
         <div className="mx-auto flex w-full flex-col items-center justify-center text-center">
             <div className="w-full max-w-100%">
-       
+
 
                 <div className={` bg-white ${cardShadow} border border-[#E6EEF6]`}>
                     <div className="px-6 pt-7 pb-6">
-                  
+
                         {subtitle ? (
                             <p className="text-center text-sm text-[#6B7A8B] mb-5">{subtitle}</p>
                         ) : (
@@ -706,7 +706,7 @@ const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
                                             Client Agreement
                                         </Link>{' '}
                                         and the{' '}
-                                        <Link href="/privacy-policy" target="_blank" className="underline text-[#0C7BCF]">
+                                        <Link href="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Financial+Consultancy/GTC+Fin+Consultancy+%26+GTC+Global+Ltd/08.+Privacy+Policy+%E2%80%93+GTC+Financial+Consultancy+LLC+V1.0+09-06-2025.pdf" target="_blank" className="underline text-[#0C7BCF]">
                                             Privacy Policy
                                         </Link>
                                         .
