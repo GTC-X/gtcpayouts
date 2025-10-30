@@ -143,38 +143,7 @@ const CommonHeader = () => {
                 )}
             </div>
 
-            {/* Language (dropdown) */}
-            <div className="relative" onClick={(e) => e.stopPropagation()}>
-                <button
-                    type="button"
-                    onClick={() => toggle("lang")}
-                    className="px-3 py-2 rounded-lg border border-gray-200 text-[#0F172A]/80 hover:bg-gray-50 inline-flex items-center"
-                    aria-haspopup="menu"
-                    aria-expanded={open === "lang"}
-                >
-                    {/* <svg className="mr-2 h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                        <path strokeWidth="2" d="M3 5h6M6 5s0 9 6 14M10 9H3m11-4h7m-3 0s0 9-6 14m2-10h7" />
-                    </svg> */}
-                    EN <Chevron open={open === "lang"} />
-                </button>
-
-                {open === "lang" && (
-                    <div
-                        className="absolute right-0 mt-2 w-32 rounded-xl bg-white shadow-lg ring-1 ring-black/5 py-2 z-30 animate-[fadeIn_.12s_ease-out]"
-                        onClick={(e) => e.stopPropagation()}
-                    >
-                        {locales.map((l) => (
-                            <button
-                                key={l.code}
-                                onClick={() => switchLocale(l.code)}
-                                className="w-full px-3 py-2 text-left text-sm hover:bg-gray-50"
-                            >
-                                {l.label}
-                            </button>
-                        ))}
-                    </div>
-                )}
-            </div>
+         
         </>
     );
 
@@ -272,26 +241,7 @@ const CommonHeader = () => {
                                         onClick={() => setOpen("none")}
                                     >
                                         CPA Portal
-                                    </a>
-                                </div>
-                            </div>
-
-                            {/* Language picker */}
-                            <div className="mt-4">
-                                <p className="text-sm font-semibold text-[#0F172A] mb-2">Language</p>
-                                <div className="flex gap-2">
-                                    {locales.map((l) => (
-                                        <button
-                                            key={l.code}
-                                            onClick={() => {
-                                                switchLocale(l.code);
-                                                setOpen("none");
-                                            }}
-                                            className="px-3 py-2 rounded-lg border text-sm hover:bg-gray-50"
-                                        >
-                                            {l.label}
-                                        </button>
-                                    ))}
+                                    </a> 
                                 </div>
                             </div>
                         </div>
