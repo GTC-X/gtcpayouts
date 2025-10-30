@@ -49,8 +49,8 @@ export default function AffiliatePage() {
     const heroData = {
         heading1: "Earn Up To",
         title: "$1,850 CPA",
-        heading2: "with GTC Payouts",
-        para: "Stop chasing small deals. At GTC Payouts, we give affiliates one of the highest CPA offers in the market, up to $1,850 per referral. Global traffic accepted, instant payouts, and no caps. This is how you scale your affiliate business.  ",
+        heading2: "with GTC Affiliates",
+        para: "Stop chasing small deals. At GTC Affiliates, we give affiliates one of the highest CPA offers in the market, up to $1,850 per referral. Global traffic accepted, instant payouts, and no caps. This is how you scale your affiliate business.  ",
         btnText: "Sign Up as an Affiliate",
         titleColor: "#0c143a"
     }
@@ -78,7 +78,7 @@ export default function AffiliatePage() {
                 bgColor: "bg-[#04417B]",
                 color: "text-[#04417B]",
                 icon: "/icons/flip-icon2.svg",
-                back: "We accept traffic from South America, South East Asia, Africa, the CIS, MENA, and the GCC. Grow globally with GTC Payouts.",
+                back: "We accept traffic from South America, South East Asia, Africa, the CIS, MENA, and the GCC. Grow globally with GTC Affiliates.",
             },
             {
                 title: "Instant Payouts",

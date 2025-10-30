@@ -4,7 +4,7 @@ import bgOverlay from "../assets/bg-overlay.webp"; // ✅ static import gives a 
 import TalkToUs from "../components/TalkToUs";
 
 export const metadata = {
-    title: 'Talk to Us | GTC Payouts',
+    title: 'Talk to Us | GTC Affiliates',
     description: 'If you’ve got a question about joining us as a Forex Affiliate or as an Introducing Broker, go ahead and send it over to us. Simply fill in the form and we’ll get back to you!',
 }
 

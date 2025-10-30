@@ -31,7 +31,7 @@ export default function SuccessPage() {
                             Talk to you soon!
                         </p>
                         <p className="mt-6 max-w-[520px] font-semibold md:text-[22px] md:leading-[32px] text-[16px] leading-[20px] text-[#04417B]">
-                            The GTC Payouts Team
+                            The GTC Affiliates Team
                         </p>
                     </div>
 

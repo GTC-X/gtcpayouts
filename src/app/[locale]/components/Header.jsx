@@ -8,7 +8,7 @@
 //             {/* ==== HEADER ==== */}
 //             <header className="relative z-20 mx-auto flex container items-center justify-between py-6 w-full">
 //                <Link href="/">
-//                <img src="/logogtcpay.png" alt="GTC Payouts" className="h-8 cursor-pointer w-auto"
+//                <img src="/logogtcpay.png" alt="GTC Affiliates" className="h-8 cursor-pointer w-auto"
 //                     onMouseEnter={() => router.prefetch?.("/")} // prefetch on intent too
 //                     onClick={() => router.push("/")}
 //                 />
@@ -185,7 +185,7 @@ const CommonHeader = () => {
                 <Link href="/">
                     <img
                         src="/logo-gtcaffiliates.webp"
-                        alt="GTC Payouts"
+                        alt="GTC Affiliates"
                         className="md:h-9 h-6 cursor-pointer w-auto"
                         onMouseEnter={() => router.prefetch?.("/")}
                         onClick={() => router.push("/")}

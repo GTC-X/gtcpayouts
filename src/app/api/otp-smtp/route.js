@@ -12,9 +12,9 @@ export async function POST(req) {
     lowerCaseAlphabets: false,
   });
   const mailData = {
-    from: '"GTC Payouts" <portal@mx4.gtcmail.com>',
+    from: '"GTC Affiliates" <portal@mx4.gtcmail.com>',
     to: email,
-    subject: "Your GTC Payouts OTP Code",
+    subject: "Your GTC Affiliates OTP Code",
     text: `Your OTP is ${otp}`,
     html:
       locale == "ar"
@@ -321,7 +321,7 @@ export async function POST(req) {
 
 <tr>
   <td align="center" style="font-size: 12px; color: #666666; padding-top: 15px; padding-bottom: 30px;">
-    &copy; Copyright 2025 GTC Payouts – All Rights Reserved
+    &copy; Copyright 2025 GTC Affiliates – All Rights Reserved
   </td>
 </tr>
 

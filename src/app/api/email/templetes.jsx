@@ -101,7 +101,7 @@ You’ve just filled in the GTC Partnership Programme form. Here’s what to do 
 
 <tr>
   <td align="center" style="font-size: 12px; color: #666666; padding-top: 15px; padding-bottom: 30px;">
-    &copy; Copyright 2025 GTC Payouts – All Rights Reserved
+    &copy; Copyright 2025 GTC Affiliates – All Rights Reserved
   </td>
 </tr>
 
@@ -436,7 +436,7 @@ Confirm your email to switch to GTC.
 
 <tr>
   <td align="center" style="font-size: 12px; color: #666666; padding-top: 15px; padding-bottom: 30px;">
-    &copy; Copyright 2025 GTC Payouts – All Rights Reserved
+    &copy; Copyright 2025 GTC Affiliates – All Rights Reserved
   </td>
 </tr>
 

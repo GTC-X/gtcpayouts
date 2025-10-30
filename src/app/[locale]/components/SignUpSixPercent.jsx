@@ -18,7 +18,7 @@ export default function GtcSignupTabsCardSixPercent() {
                      <Link href="#">
                                     <img
                                         src="/logogtcpay.png"
-                                        alt="GTC Payouts"
+                                        alt="GTC Affiliates"
                                         className="md:h-8 h-6 cursor-pointer w-auto"
                                         onMouseEnter={() => router.prefetch?.("/")}
                                         onClick={() => router.push("/")}

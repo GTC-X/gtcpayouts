@@ -45,7 +45,7 @@ export default function GtcCpaHero() {
 
                             <p className="mt-4 max-w-[600px]  hidden md:flex text-[20px] leading-[26px] text-[#04417B]">
                                 Other FX broker affiliate websites talk about “earning a stable income.” Forget
-                                stable. Think explosive! GTC Payouts gives you one of the highest CPA offers in
+                                stable. Think explosive! GTC Affiliates gives you one of the highest CPA offers in
                                 the market. Isn’t it time you grew your Introducing Broker business with us?
                             </p>
 
@@ -117,7 +117,7 @@ export default function GtcCpaHero() {
             <div className=" container mx-auto text-center py-10 md:hidden block">
                 <p className=" max-w-[600px] text-[16px] leading-[20px] text-[#04417B]">
                     Other FX broker affiliate websites talk about “earning a stable income.” Forget
-                    stable. Think explosive! GTC Payouts gives you one of the highest CPA offers in
+                    stable. Think explosive! GTC Affiliates gives you one of the highest CPA offers in
                     the market. Isn’t it time you grew your Introducing Broker business with us?
                 </p>
                 <div className="grid grid-cols-1 mt-6 gap-y-6 lg:grid-cols-6">
@@ -127,9 +127,9 @@ export default function GtcCpaHero() {
                     <StatMobile value={`Over <b class="text-[#b88857]">$2 Billion</b>  In Payouts`} />
                     <StatMobile value={`<b class="text-[#b88857]">Award-Winning</b>  IB Programme`} />
 
-                    <StatMobile value={`Over <b class="text-[#04417B]">$3.3 Million</b>  Payouts a Month`} />
+                    <StatMobile value={`Over <b class="text-[#04417B]">$5 Million</b>  Payouts a Month`} />
                     <StatMobile value={`Over <b class="text-[#04417B]">Up To 80% in</b>  Rebates for IBs`} />
-                </div>
+                </div> 
             </div>
         </>
     );

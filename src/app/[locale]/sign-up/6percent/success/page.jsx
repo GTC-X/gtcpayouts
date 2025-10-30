@@ -5,7 +5,7 @@ import SuccessPage from "@/app/[locale]/components/Success";
 import Image from "next/image";
 
 export const metadata = {
-    title: 'Thanks you | GTC Payouts',
+    title: 'Thanks you | GTC Affiliates',
     description: 'We’ll be taking a look at it shortly and will do our best to get back to you within the next 24 hours.',
 }
 
@@ -17,7 +17,7 @@ export default function page() {
                      <Link href="/">
                                     <img
                                         src="/logogtcpay.png"
-                                        alt="GTC Payouts"
+                                        alt="GTC Affiliates"
                                         className="md:h-8 h-6 cursor-pointer w-auto"
                                         
                                     />

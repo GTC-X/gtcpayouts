@@ -11,7 +11,7 @@ export default function FooterBar() {
             {/* swap src with your asset */}
             <img
               src="/logogtcpay.png"
-              alt="GTC Payouts"
+              alt="GTC Affiliates"
               className="h-8 w-auto"
             />
           </a>

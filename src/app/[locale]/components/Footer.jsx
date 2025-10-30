@@ -18,12 +18,11 @@ export default function CommonFooter() {
                 src="/footer-logo1.webp"
                 width="250"
                 height="36"
-                alt="GTC Payouts" 
+                alt="GTC Affiliates" 
                 className="mx-auto md:m-0"
               />
             </Link>
-            <SocialIcon />
-           
+       
            
           </div>
           <div className="lg:basis-9/12 text-xs text-white text-opacity-70 space-y-3 leading-5">

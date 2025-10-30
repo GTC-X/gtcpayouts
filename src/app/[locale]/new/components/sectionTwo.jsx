@@ -25,7 +25,7 @@ const CARDS = [
         />
       </svg>
     ),
-    back: "We don’t play small. With GTC Payouts you can earn up to $1,850 CPA per referral, which is one of the highest offers in the entire FX world. More referrals, more cash, no caps.",
+    back: "We don’t play small. With GTC Affiliates you can earn up to $1,850 CPA per referral, which is one of the highest offers in the entire FX world. More referrals, more cash, no caps.",
   },
   {
     title: "Massive \n Rebates for IBs",

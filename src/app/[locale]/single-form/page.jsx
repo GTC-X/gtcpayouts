@@ -4,7 +4,7 @@ import GtcSignupTabs from "../components/SingleForm"
 import bgOverlay from "../assets/bg-overlay.webp"; // ✅ static import gives a hashed .src at build
 
 export const metadata = {
-    title: 'Sign Up as a GTC Partner | GTC Payouts',
+    title: 'Sign Up as a GTC Partner | GTC Affiliates',
     description: 'Simply select whether you want to sign up as an Affiliate or as an IB. Either way, you’re in great hands when you become a GTC Partner.',
 }
 export default function page() {

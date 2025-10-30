@@ -5,7 +5,7 @@ import TalkToUs from "../components/TalkToUs";
 import SuccessPage from "../components/Success";
 
 export const metadata = {
-    title: 'Thanks you | GTC Payouts',
+    title: 'Thanks you | GTC Affiliates',
     description: 'We’ll be taking a look at it shortly and will do our best to get back to you within the next 24 hours.',
 }
 

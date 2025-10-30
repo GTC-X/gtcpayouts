@@ -4,7 +4,7 @@ import CommonFooter from "../../components/Footer";
 import GtcSignupTabsCardSixPercent from "../../components/SignUpSixPercent";
 
 export const metadata = {
-    title: 'Sign Up as a GTC IB | GTC Payouts',
+    title: 'Sign Up as a GTC IB | GTC Affiliates',
     description: 'Earn up to 6% in Net Deposit on this limited time Offer!',
 }
 
