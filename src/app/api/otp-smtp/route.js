@@ -73,11 +73,11 @@ export async function POST(req) {
               </td>
             </tr>
 
-            <!-- Support Info -->
+            <!-- partners Info -->
             <tr>
               <td style="font-size:14px;color:#000000;padding-bottom:20px;">
                 إذا كانت لديك أي أسئلة أو تحتاج إلى مساعدة إضافية، فلا تتردد في التواصل معنا عبر 
-                <a href="mailto:support@gtcaffiliates" style="color:#0066cc;text-decoration:none;">support@gtcaffiliates</a>.
+                <a href="mailto:partners@gtcaffiliates" style="color:#0066cc;text-decoration:none;">partners@gtcaffiliates</a>.
                 نحن هنا لدعمك وضمان أفضل تجربة لك معنا.
               </td>
             </tr>
@@ -104,7 +104,7 @@ export async function POST(req) {
                     </td>
                   <td align="right" dir="rtl" style="font-size: 13px; color: #192055; line-height: 25px; text-align: right;">
                     📞 الهاتف: <span dir="ltr">+971 800 667788</span><br/>
-                    ✉️ البريد الإلكتروني: <a href="mailto:support@gtcaffiliates" style="color: #192055; text-decoration: none;">support@gtcaffiliates</a>
+                    ✉️ البريد الإلكتروني: <a href="mailto:partners@gtcaffiliates" style="color: #192055; text-decoration: none;">partners@gtcaffiliates</a>
                   </td>
                   </tr>
                 </table>
@@ -278,12 +278,12 @@ export async function POST(req) {
               </td>
             </tr>
         
-            <!-- Support Info -->
+            <!-- partners Info -->
             <tr>
               <td style="font-size:14px;color:#000000;padding-bottom:20px;">
                 If you’ve got any questions or need further assistance, please don’t hesitate to contact us at 
-                <a href="mailto:support@gtcaffiliates" style="color:#0066cc;text-decoration:none;">support@gtcaffiliates</a>.
-                We are here to support you and ensure your experience with us is the best you’ve ever experienced.
+                <a href="mailto:partners@gtcaffiliates" style="color:#0066cc;text-decoration:none;">partners@gtcaffiliates</a>.
+                We are here to partners you and ensure your experience with us is the best you’ve ever experienced.
               </td>
             </tr>
 
@@ -309,7 +309,7 @@ export async function POST(req) {
                     </td>
                     <td align="right" style="font-size: 13px; color: #192055; line-height: 25px;">
                       📞 Phone: +971 800 667788<br/>
-                      ✉️ Email: <a href="mailto:support@gtcaffiliates" style="color: #192055; text-decoration: none;">support@gtcaffiliates</a>
+                      ✉️ Email: <a href="mailto:partners@gtcaffiliates" style="color: #192055; text-decoration: none;">partners@gtcaffiliates</a>
                     </td>
                   </tr>
                   
