@@ -254,6 +254,12 @@ const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
             AgreedToPrivacyPolicy: values.terms ? '1' : '0',
             AgreedToMarketingMaterial: values.terms ? '1' : '0',
             account: values?.accountAff || '',
+            mainTargetCountries: values.mainTargetCountries.join(", "),
+            telegramId: values?.telegramId || '',
+            promotionMethod: values.promotionMethod,
+            affiliateOtherBroker: values.affiliateOtherBroker,
+            monthlyClients: values.monthlyClients,
+            hasGtcAccount: hasGtcAccount,
             page: "signup",
 
         }
