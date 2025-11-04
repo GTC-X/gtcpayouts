@@ -240,12 +240,34 @@ const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
             account: values?.accountAff || '',
         });
 
+        const payloadSupport = {
+            username: values.userName || values.email,
+            password: values?.Password,
+            firstName: values.first_name,
+            lastName: values?.last_name || 'null',
+            email: values.email,
+            country: values.country,
+            phone: values.phone,
+            website: values.website || '',
+            skype: values?.skype || '',
+            AgreedToTermsAndConditions: values.terms ? '1' : '0',
+            AgreedToPrivacyPolicy: values.terms ? '1' : '0',
+            AgreedToMarketingMaterial: values.terms ? '1' : '0',
+            account: values?.accountAff || '',
+            page: "signup",
+
+        }
+
         const response = await fetch(apiUrl, {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: params.toString(),
         });
         const data = await response.text();
+        await axios.post(
+            '/api/send-support-email',
+            JSON.stringify(payloadSupport)
+        );
         console.log('CellXpert response:', data);
         return response;
     };
