@@ -1,9 +1,8 @@
 import { NextResponse } from "next/server";
 import {
-  transporter,
-  mailOptionsSupport,
   mailgunClient,
   MAILGUN_DOMAIN,
+  MAILGUN_FROM,
 } from "../../[locale]/config/nodemailer";
 import { generateEmailContentSignUp } from "./templates";
 
