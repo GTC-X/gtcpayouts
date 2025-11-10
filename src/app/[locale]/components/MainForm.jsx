@@ -259,7 +259,7 @@ const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
             promotionMethod: values.promotionMethod,
             affiliateOtherBroker: values.affiliateOtherBroker,
             monthlyClients: values.monthlyClients,
-            hasGtcAccount: hasGtcAccount,
+            hasGtcAccount: values?.hasGtcAccount,
             page: "signup",
 
         }
@@ -270,6 +270,11 @@ const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
             body: params.toString(),
         });
         const data = await response.text();
+        if (!response?.ok) {
+            toast.error(JSON.parse(data)?.message)
+            return
+        }
+
         await axios.post(
             '/api/send-support-email',
             JSON.stringify(payloadSupport)
