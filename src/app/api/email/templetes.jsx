@@ -136,7 +136,7 @@ export const emailTempletesArabic = (data) => {
             <!-- Logo -->
             <tr>
               <td align="right" style="padding-bottom: 20px;">
-                <img src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/email-test.png" alt="شعار GTC" style="width: 140px;" />
+                <img src="https://www.gtcaffiliates.com/logo-gtcaffiliates.webp" alt="شعار GTC" style="width: 140px;" />
               </td>
             </tr>
 
@@ -206,7 +206,7 @@ export const emailTempletesArabic = (data) => {
                 <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
                     <td align="right">
-                      <img src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/email-test.png" alt="شعار GTC" style="width: 140px;" />
+                      <img src="https://www.gtcaffiliates.com/logo-gtcaffiliates.webp" alt="شعار GTC" style="width: 140px;" />
                     </td>
                    <td align="right" dir="rtl" style="font-size: 13px; color: #192055; line-height: 25px; text-align: right;">
                     📞 الهاتف: <span dir="ltr">+971 800 667788</span><br/>
@@ -468,7 +468,7 @@ export const emailTempleteSwitchArabic = (data) => {
             <!-- الشعار -->
             <tr>
               <td align="right" style="padding-bottom: 20px;">
-                <img src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/email-test.png" alt="GTC Logo" style="width: 140px;" />
+                <img src="https://www.gtcaffiliates.com/logo-gtcaffiliates.webp" alt="GTC Logo" style="width: 140px;" />
               </td>
             </tr>
 
@@ -531,7 +531,7 @@ export const emailTempleteSwitchArabic = (data) => {
                 <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
                     <td align="right">
-                      <img src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/email-test.png" alt="GTC Logo" style="width: 140px;" />
+                      <img src="https://www.gtcaffiliates.com/logo-gtcaffiliates.webp" alt="GTC Logo" style="width: 140px;" />
                     </td>
                     <td align="left" style="font-size: 13px; color: #192055; line-height: 25px;">
                       📞 الهاتف: +971 800 667788<br/>
@@ -649,7 +649,7 @@ export const emailTempleteSwitchRussian = (data) => {
            <!-- Logo -->
             <tr>
               <td align="left" style="padding-bottom: 20px;">
-                <img src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/email-test.png" alt="Логотип GTC" style="width: 140px;" />
+                <img src="https://www.gtcaffiliates.com/logo-gtcaffiliates.webp" alt="Логотип GTC" style="width: 140px;" />
               </td>
             </tr>
 
@@ -713,7 +713,7 @@ export const emailTempleteSwitchRussian = (data) => {
                 <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
                     <td align="left">
-                      <img src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/email-test.png" alt="Логотип GTC" style="width: 140px;" />
+                      <img src="https://www.gtcaffiliates.com/logo-gtcaffiliates.webp" alt="Логотип GTC" style="width: 140px;" />
                     </td>
                     <td align="right" style="font-size: 13px; color: #192055; line-height: 25px;">
                       📞 Телефон: +971 800 667788<br/>
@@ -833,7 +833,7 @@ export const emailTempleteSwitchSpanish = (data) => {
            <!-- Logo -->
             <tr>
               <td align="left" style="padding-bottom: 20px;">
-                <img src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/email-test.png" alt="Logotipo de GTC" style="width: 140px;" />
+                <img src="https://www.gtcaffiliates.com/logo-gtcaffiliates.webp" alt="Logotipo de GTC" style="width: 140px;" />
               </td>
             </tr>
 
@@ -898,7 +898,7 @@ Confirma tu correo electrónico para pasarte a GTC.
                 <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
                     <td align="left">
-                      <img src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/email-test.png" alt="Logotipo de GTC" style="width: 140px;" />
+                      <img src="https://www.gtcaffiliates.com/logo-gtcaffiliates.webp" alt="Logotipo de GTC" style="width: 140px;" />
                     </td>
                     <td align="right" style="font-size: 13px; color: #192055; line-height: 25px;">
                       📞 Teléfono: +971 800 667788<br/>
@@ -1018,7 +1018,7 @@ export const emailTempleteSwitchPortuguese = (data) => {
            <!-- Logo -->
             <tr>
               <td align="left" style="padding-bottom: 20px;">
-                <img src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/email-test.png" alt="Logotipo da GTC" style="width: 140px;" />
+                <img src="https://www.gtcaffiliates.com/logo-gtcaffiliates.webp" alt="Logotipo da GTC" style="width: 140px;" />
               </td>
             </tr>
 
@@ -1082,7 +1082,7 @@ Confirme seu e-mail para migrar para a GTC.
                 <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
                     <td align="left">
-                      <img src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/email-test.png" alt="Logotipo da GTC" style="width: 140px;" />
+                      <img src="https://www.gtcaffiliates.com/logo-gtcaffiliates.webp" alt="Logotipo da GTC" style="width: 140px;" />
                     </td>
                     <td align="right" style="font-size: 13px; color: #192055; line-height: 25px;">
                       📞 Telefone: +971 800 667788<br/>
@@ -1203,7 +1203,7 @@ export const emailTempleteSwitchChinese = (data) => {
            <!-- Logo -->
             <tr>
               <td align="left" style="padding-bottom: 20px;">
-                <img src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/email-test.png" alt="GTC 标志" style="width: 140px;" />
+                <img src="https://www.gtcaffiliates.com/logo-gtcaffiliates.webp" alt="GTC 标志" style="width: 140px;" />
               </td>
             </tr>
 
@@ -1267,7 +1267,7 @@ export const emailTempleteSwitchChinese = (data) => {
                 <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
                     <td align="left">
-                      <img src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/email-test.png" alt="GTC 标志" style="width: 140px;" />
+                      <img src="https://www.gtcaffiliates.com/logo-gtcaffiliates.webp" alt="GTC 标志" style="width: 140px;" />
                     </td>
                     <td align="right" style="font-size: 13px; color: #192055; line-height: 25px;">
                       📞 电话：+971 800 667788<br/>

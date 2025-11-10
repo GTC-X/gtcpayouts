@@ -41,7 +41,7 @@ export async function POST(req) {
             <!-- Logo -->
             <tr>
               <td align="right" style="padding-bottom: 20px;">
-                <img src="https://gtcpayouts.vercel.app/_next/static/media/logogtcpay.b11b4629.png" alt="شعار GTC" style="width: 120px;" />
+                <img src="https://www.gtcaffiliates.com/logo-gtcaffiliates.webp" alt="شعار GTC" style="width: 120px;" />
               </td>
             </tr>
 
@@ -105,7 +105,7 @@ export async function POST(req) {
                 <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
                     <td align="right">
-                      <img src="https://gtcpayouts.vercel.app/_next/static/media/logogtcpay.b11b4629.png" alt="شعار GTC" style="width: 100px;" />
+                      <img src="https://www.gtcaffiliates.com/logo-gtcaffiliates.webp" alt="شعار GTC" style="width: 100px;" />
                     </td>
                   <td align="right" dir="rtl" style="font-size: 13px; color: #192055; line-height: 25px; text-align: right;">
                     📞 الهاتف: <span dir="ltr">+971 800 667788</span><br/>
@@ -244,7 +244,7 @@ export async function POST(req) {
            <!-- Logo -->
             <tr>
               <td align="left" style="padding-bottom: 20px;">
-                <img src="https://gtcpayouts.vercel.app/_next/static/media/logogtcpay.b11b4629.png" alt="GTC Logo" style="width: 120px;" />
+                <img src="https://www.gtcaffiliates.com/logo-gtcaffiliates.webp" alt="GTC Logo" style="width: 120px;" />
               </td>
             </tr>
 
@@ -310,7 +310,7 @@ export async function POST(req) {
                 <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
                     <td align="left">
-                      <img src="https://gtcpayouts.vercel.app/_next/static/media/logogtcpay.b11b4629.png" alt="GTC Logo" style="width: 100px;" />
+                      <img src="https://www.gtcaffiliates.com/logo-gtcaffiliates.webp" alt="GTC Logo" style="width: 100px;" />
                     </td>
                     <td align="right" style="font-size: 13px; color: #192055; line-height: 25px;">
                       📞 Phone: +971 800 667788<br/>

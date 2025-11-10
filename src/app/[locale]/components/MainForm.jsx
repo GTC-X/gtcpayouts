@@ -213,7 +213,7 @@ const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
     const verifyEmailOtp = () => {
         if (formik.values.otp && storedEmailOtp && formik.values.otp === storedEmailOtp) {
             setEmailVerified(true);
-            toast.success("Varified");
+            toast.success("Verified");
             setOtpOpen(false);
         } else {
             setEmailVerified(false);
