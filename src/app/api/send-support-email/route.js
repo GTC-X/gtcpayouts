@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import {
   transporter,
   mailOptionsSupport,
+  mailgunClient,
+  MAILGUN_DOMAIN,
 } from "../../[locale]/config/nodemailer";
 import { generateEmailContentSignUp } from "./templates";
 
@@ -114,12 +116,12 @@ export async function POST(req) {
         ? generateEmailContentSignUp(reqBody)
         : generateEmailContent(reqBody);
 
-    const emailPayload = {
-      ...mailOptionsSupport,
+    const res = await mailgunClient.messages.create(MAILGUN_DOMAIN, {
+      from: MAILGUN_FROM,
+      to: "partners@gtcaffiliates.com",
       ...content,
-    };
+    });
 
-    await transporter.sendMail(emailPayload);
     return NextResponse.json({ message: "Success" }, { status: 200 });
   } catch (error) {
     console.error("Email Error:", error);
