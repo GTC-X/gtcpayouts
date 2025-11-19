@@ -36,13 +36,7 @@ export default async function LocaleLayout({ children, params }) {
           content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
         />
 
-        {/* HTML Meta Tags */}
-        <title>Become a GTC Partner & Earn More with Top CPA & Rebates</title>
-        <meta
-          name="description"
-          content="Register as a GTC Partner today & earn up to $1,850 CPA as an Affiliate or 80% in rebates as an IB. Fast payouts & loyalty rewards that keep traders active."
-        />
-
+   
         {/* Facebook Meta Tags */}
         <meta
           property="og:url"
