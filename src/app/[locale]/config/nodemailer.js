@@ -4,35 +4,34 @@ import Mailgun from "mailgun.js";
 import formData from "form-data";
 
 export const transporter = nodemailer.createTransport({
-  host: "smtpdm-eu-central-1.aliyuncs.com", // Mailgun SMTP host
-  port: 465, // SSL/TLS port
-  secure: true, // Use TLS
+  host: process.env.SMTP_HOST || "smtp.mailgun.org", // Mailgun SMTP host
+  port: Number(process.env.SMTP_PORT || 465), // SSL/TLS port
+  secure: process.env.SMTP_SECURE ? process.env.SMTP_SECURE === "true" : true, // Use TLS
   auth: {
-    user: "portal@mx4.gtcmail.com", // Mailgun SMTP username
-    pass: "Ab3Cde4FgH", // Mailgun SMTP password
+    user: process.env.SMTP_USER, // Mailgun SMTP username
+    pass: process.env.SMTP_PASS, // Mailgun SMTP password
   },
 });
 
 export const mailOptions = {
-  from: "portal@mx4.gtcmail.com",
+  from: process.env.MAILGUN_FROM,
   to: "zeeshan@gtcfx.com",
   bcc: "mohammad.zeeshan@gtcfx.com",
 };
 
 export const mailOptionsSupport = {
-  from: "portal@mx4.gtcmail.com",
+  from: process.env.MAILGUN_FROM,
   to: "partners@gtcaffiliates.com",
 };
 
 const mg = new Mailgun(formData);
 
 export const mailgunClient = mg.client({
-  username: "api",
-  key: "fefaa6885175faea6d180940d69e415a-02300200-60e6fa68",
-  url: "https://api.mailgun.net" || "https://api.mailgun.net",
+  username: process.env.MAILGUN_USERNAME || "api",
+  key: process.env.MAILGUN_API_KEY,
+  url: process.env.MAILGUN_API_URL || "https://api.mailgun.net",
 });
-
-export const MAILGUN_DOMAIN = "mx5.gtcmail.com" || "mx5.gtcmail.com";
+export const MAILGUN_DOMAIN = process.env.MAILGUN_DOMAIN || "mx.gtcmail.com";
 
 export const MAILGUN_FROM =
-  "GTCFX <portal@mx5.gtcmail.com>" || `GTCFX <postmaster@${MAILGUN_DOMAIN}>`;
+  "GTCFX <portal@mx.gtcmail.com>" || `GTCFX <postmaster@${MAILGUN_DOMAIN}>`;
