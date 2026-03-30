@@ -5,7 +5,7 @@ import React, { useMemo, useState, useEffect, useContext } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
-import { usePathname, useSearchParams } from 'next/navigation';
+import { useParams, usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useLocationDetail } from "../context/useLocationDetail";
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
@@ -55,6 +55,8 @@ const promotionMethods = [
 const yesNo = ['Yes', 'No'];
 
 const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
+    const router = useRouter();
+    const { locale } = useParams();
     const searchParams = useSearchParams();
     const path = usePathname();
     const { countryCode: originCountry, ip: originIp, countryData } = useLocationDetail("en");
@@ -161,6 +163,7 @@ const AffiliatedForm = ({ title = 'Register Now', subtitle = '' }) => {
                 await sendToCellxpertAPI(payload);
 
                 toast.success("Successfully Submitted");
+                router.push(`/${locale}/success?name=${encodeURIComponent(payload.first_name || '')}`);
                 formik.resetForm();
                 setStep(0);
                 setEmailVerified(false);

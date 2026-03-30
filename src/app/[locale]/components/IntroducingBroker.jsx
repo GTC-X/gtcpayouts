@@ -107,12 +107,7 @@ const IntroducingBrokerForm = () => {
                 formik.resetForm();
                 setLoading(false);
                 localStorage.setItem("user", JSON.stringify(data));
-                // Redirect based on locale
-                const targetLocale =
-                    locale === "ar"
-                        ? "/"
-                        : "/";
-                router.push(targetLocale);
+                router.push(`/${locale}/success?name=${encodeURIComponent(data.nickname || "")}`);
                 formik.resetForm();
                 setShowOtp(false);
             })
